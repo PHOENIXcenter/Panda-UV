@@ -195,7 +195,7 @@ class paramClass:
         #保存参数的路径
         self.dir = "."
         #保存参数的文件名字
-        self.filename = "PANDA-UV_param.yaml"
+        self.filename = "Panda-UV_param.yaml"
         self.param_output_dir = self.dir+"/"+self.filename
         self.param_dict = self.get_param_template()
         
@@ -473,6 +473,6 @@ def batch_main(param_dict,msalign_dir,msalign_filename_list,fixed_mod_file_dir,u
 
 if __name__=="__main__":
     param = paramClass()
-    param.read_param(r"CA_param.yaml")
+    param.read_param("Panda-UV_param.yaml")
     param_dict = param.param_dict
     main(param_dict)

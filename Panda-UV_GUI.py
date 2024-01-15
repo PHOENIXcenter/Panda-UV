@@ -658,7 +658,7 @@ class MyMainWindow(QMainWindow,Ui_MainWindow):
         #初始化界面
         self.setupUi(self)
         #设置图标
-        self.setWindowIcon(QIcon(r'C:\Users\zhu\Desktop\Panda-UV初稿及图表\AI绘图汇总\Icon.png'))
+        self.setWindowIcon(QIcon('./Icon.png'))
         #初始化param
         self.param = paramClass()
         #实例一直保存，方便查看运行状态
@@ -926,7 +926,7 @@ class paramClass:
         #保存参数的路径
         self.dir = "."
         #保存参数的文件名字
-        self.filename = "PANDA-UV_param.yaml"
+        self.filename = "Panda-UV_param.yaml"
         self.param_output_dir = self.dir+"/"+self.filename
         self.param_dict = self.get_param_template()
         
