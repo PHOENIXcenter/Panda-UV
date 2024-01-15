@@ -1,5 +1,5 @@
 <div align=center>
-<img src="https://github.com/PHOENIXcenter/Panda-UV/Icon.png">
+<img src="https://github.com/PHOENIXcenter/Panda-UV/Icon.png](https://github.com/PHOENIXcenter/Panda-UV/blob/main/Icon.png">
 </div>
 
 Panda-UV is an efficient tool for highly confident fragment assignment in UVPD (Ultraviolet Photodissociation) data. Panda-UV is also compatible with common dissociation methods. Compared to traditional software, Panda-UV implements two strategies as quality control for matched fragments: spectral calibration and Pearson correlation scoring. With its high accuracy and confidence, Panda-UV brings the internal fragments that are prevalent in UVPD data into real-world applications, removing the hurdle of random matching of internal fragments caused by the larger search space compared to terminal fragments.
