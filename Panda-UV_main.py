@@ -335,9 +335,9 @@ def main(param_dict):
     seqLen = test_protein.SEQLEN
 
     #add_H = param_dict["add_H"]#是否以[M+H]+模式从msalign文件读取单同位素质量,需要和离子匹配模式统一。同时也需要和FragIon_IsoPatterna_copy.R脚本同步，因为默认输入的是[M+H]+模式
-    print("蛋白序列：",test_protein)
-    print("蛋白长度：",seqLen)
-    print("蛋白质量：",test_protein.MASS)
+    print("Sequence: ",test_protein)
+    print("Length",seqLen)
+    print("Mass：",test_protein.MASS)
     #terminal_mass_error = param_dict["terminal_mass_error"]#离子匹配误差
     #terminal_mass_error = param_dict["terminal_mass_error"]#离子匹配误差
 
@@ -361,7 +361,7 @@ def main(param_dict):
     #ms_mz_int_arr = get_spec_i_mz_arr(input_dir,spec_num_i)#获取mzml的谱峰信息
 
     ms_peak_arr = get_ms_peak_arr(mzml_dir,spec_num_i)
-    print(f"初始化R环境：{os.environ['R_HOME']}")
+    print(f"Initiating R environment: {os.environ['R_HOME']}")
     #print(f"初始化enviPat脚本：{r_script_dir}")
     r_source = robjects.r#初始化R脚本
     r_source(r_script)
@@ -389,7 +389,7 @@ def main(param_dict):
     UE_output_terminal = get_UE_output_terminal(mono_mass_arr,test_protein,n_terminal_frag_type,c_terminal_frag_type,first_mass_match_ppm,unloc_mod_df)
 
     precursor_peak_shift_ppm = get_terminal_error(UE_output_terminal)
-    print(f"终端离子偏移：{precursor_peak_shift_ppm}")
+    print(f"Mass shift of terminal fragments: {precursor_peak_shift_ppm}")
     #else:
     #    assert False,f"Error flag invalid: {how_cal_error}"
     #指定Mb 连接heme之后的质量偏移
@@ -406,43 +406,43 @@ def main(param_dict):
         mass_shift_ppm = 0
         mono_mass_arr_shift = mono_mass_arr
     #根据整体偏移计算偏移之后的质量
-    print(f"单同位素质量偏移：{mass_shift_ppm} ppm")
+    print(f"Mass shift of deconvoluted mass: {mass_shift_ppm} ppm")
     #进行谱图偏移，然后计算PCC
     if ms_calibration:
         #使用母离子偏差作为谱图的偏差
         ms_peak_arr_shift = mz_shift(ms_peak_arr,precursor_peak_shift_ppm)
-        print(f"谱图偏移：{precursor_peak_shift_ppm} ppm")
+        print(f"Spectral shift: {precursor_peak_shift_ppm} ppm")
     else:
         ms_peak_arr_shift = ms_peak_arr
-        print(f"谱图偏移：{0} ppm")
+        print(f"Spectral shift: {0} ppm")
     #mono_mass_arr_shift = mono_preprocess(mono_mass_arr,ppm_shift)
     #ion_type_list = ["a","b","c","x","y","z+1","a+1","x+1","y-1"]
     #使用UE匹配离子，
-    print("正在匹配离子....")
+    print("Matching fragments....")
     #进行离子匹配
     UE_output = get_UE_output(mono_mass_arr_shift,test_protein,n_terminal_frag_type,c_terminal_frag_type,internal_frag_type,terminal_mass_error,internal_mass_error,unloc_mod_df)
     #保存结果
-    print("正在进行PCC打分....")
+    print("PCC scorting....")
     score_term_series = UE_output.apply(lambda x:get_score_term(ms_peak_arr_shift,x,r_source,peak_match_error),axis=1)
     score_term_df = pd.DataFrame(np.vstack(score_term_series),columns = ["PCC","adjust_PCC","dx","dy","peak num","missing peak num"])
     UE_output_with_PCC = pd.concat([UE_output,score_term_df],axis=1)
-    print("正在保存结果....")
+    print("Saving result....")
     UE_output_with_PCC.to_csv(f"{workplace_dir}/{output_filename}",index=False)
     #save_CM_output(UE_output_with_PCC,input_dir,spec_num_i,output_filename)
-    print("去除重复匹配....")
+    print("Drop duplicates....")
     #保存几种不同策略过滤结果，包括csv，txt文件保存序列覆盖率等信息
     #0.9和3这两个参数没有使用，已注释，但是为了不更改参数，还是将其传入了函数，实际并没有发挥作用。
     post_process_and_save(UE_output_with_PCC,mono_mass_arr,seqLen,workplace_dir,0.9,3)
-    print(f"离子匹配文件输出到：{workplace_dir}/{output_filename}")
+    print(f"Output dir: {workplace_dir}/{output_filename}")
     print_time()
     #save_CM_output(UE_output,input_dir,spec_num_i,output_filename)
     #加上PCC打分
     #cal_and_save_one_scan(input_dir,spec_num_i,output_filename,precursor_formula,precursor_charge,r_script_dir,ppm)
     #添加绘制碎裂位点图的功能--zhuyl,230616
     CA_output_s4 = pd.read_csv(fr"{workplace_dir}/UE_output_s4.csv")
-    print("绘制碎裂位点图....")
+    print("Plotting fragment cleavage maps....")
     seg_map_plot_main(workplace_dir,CA_output_s4,test_seq)
-    print("绘制离子产率图....")
+    print("Plotting bar plots of residual fragment yield....")
     fragment_abundance_plot_main(workplace_dir,CA_output_s4,test_seq)
     print("Done. ")
 
