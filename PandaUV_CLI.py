@@ -12,7 +12,7 @@ from PandaUV_main import main
 
 
 def argp():
-    paser=argparse.ArgumentParser(prog="PANDA-UV 2.0",
+    paser=argparse.ArgumentParser(prog="PANDA-UV 1.0",
                                   description="An efficient tool for high confident fragment assignment of UVPD data")
 
     paser.add_argument('-param_dir', help='Set the dir of param file reqired by Panda-UV', type=str, required=True)

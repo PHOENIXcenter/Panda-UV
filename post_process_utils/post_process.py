@@ -24,7 +24,7 @@ def sta_output(ions_df,seqLen):
 def get_process_info(ions_df,mono_mass_arr,seqLen):
     all_num,all_cov,matched_frags_num,ter_num,ter_cov,ter_frags_num,int_num,int_cov,int_frags_num = sta_output(ions_df,seqLen)
     exp_ion_num = len(mono_mass_arr)#实验离子数量
-    info_str = f"所有离子的数量：{all_num}\n所有离子的覆盖率：{all_cov}\n实验离子数量：{matched_frags_num}\n离子利用率：{matched_frags_num/exp_ion_num}\n\n终端离子的数量：{ter_num}\n终端离子的覆盖率：{ter_cov}\n实验离子数量：{ter_frags_num}\n离子利用率：{ter_frags_num/exp_ion_num}\n\n内部离子的数量：{int_num}\n内部离子的覆盖率：{int_cov}\n实验离子数量：{int_frags_num}\n离子利用率：{int_frags_num/exp_ion_num}"
+    info_str = f"Total number of fragments: {all_num}\nTotal sequence coverage: {all_cov}\nNumber of matched decovoluted fragments: {matched_frags_num}\nPercentage of explained dconvoluted fragments: {matched_frags_num/exp_ion_num}\n\nNumber of terminal fragments: {ter_num}\nSequence coverage of terminal fragments: {ter_cov}\nNumber of matched decovoluted fragments: {ter_frags_num}\nPercentage of explained dconvoluted fragments: {ter_frags_num/exp_ion_num}\n\nNumber of internal fragments: {int_num}\nSequence coverage of internal fragments: {int_cov}\nNumber of matched decovoluted fragments: {int_frags_num}\nNumber of matched decovoluted fragments: {int_frags_num/exp_ion_num}"
     return info_str
 
 def print_process_info(ions_df,mono_mass_arr,seqLen):
@@ -55,7 +55,6 @@ def post_process_and_save(ions_df,mono_mass_arr,seqLen,workplace_dir,PCC_thr,Err
     #save_CM_output(UE_output_s4,save_dir,spec_num_i,"UE_output_s4.csv")
     with open(f"{workplace_dir}/output_sta_s4.txt",mode="w") as f:
         f.write(get_process_info(UE_output_s4,mono_mass_arr,seqLen))
-
     
 if __name__ == "__main__":
     CA_seq = "SHHWGYGKHNGPEHWHKDFPIANGERQSPVDIDTKAVVQDPALKPLALVYGEATSRRMVNNGHSFNVEYDDSQDKAVLKDGPLTGTYRLVQFHFHWGSSDDQGSEHTVDRKKYAAELHLVHWNTKYGDFGTAAQQPDGLAVVGVFLKVGDANPALQKVLDALDSIKTKGKSTDFPNFDPGSLLPNVLDYWTYPGSLTTPPLLESVTWIVLKEPISVSSQQMLKFRTLNFNAEGEPELLMLANWRPAQPLKNRQVRGFPK"

@@ -11,8 +11,6 @@ import math
 
 import copy
 
-#sys.path.append(r"D:\software\jupyter\BPRC\DICP\UVPD_Explorer\230525-PANDA-UV 1.0")
-
 from ion_match_utils.utils import get_CM_output,save_CM_output,get_terminal_frag_df,get_internal_frag_df
 
 from seq_cov_utils.seq_cov_utils import get_seq_conv,get_matched_frags,get_terminal_seg_site,get_internal_seg_site,get_N_terminal_seg_site,get_C_terminal_seg_site
@@ -291,74 +289,39 @@ def seg_map_plot_main(workplace_dir,ions_df,seq):
     #获取序列的trace，所有氨基酸都在一个trace
     seq_trace = get_seq_trace(seq,x_cor_arr,y_cor_arr)
     terminal_frag_df = get_terminal_frag_df(ions_df,seqLen)
-    terminal_frag_df_PCC = terminal_frag_df[terminal_frag_df["adjust_PCC"]>=0.9]
+    #terminal_frag_df_PCC = terminal_frag_df[terminal_frag_df["adjust_PCC"]>=0.9]
     
     #获取每个碎裂位点的trace,每个位点单独一个trace，在相同位点产生的离子trace会重叠
     terminal_seg_site_trace = list(terminal_frag_df.apply(lambda x:terminal_seg_trace_constructor(x,seqLen,x_cor_arr,y_cor_arr),axis=1))
-    terminal_seg_site_trace_PCC = list(terminal_frag_df_PCC.apply(lambda x:terminal_seg_trace_constructor(x,seqLen,x_cor_arr,y_cor_arr),axis=1))
+    #terminal_seg_site_trace_PCC = list(terminal_frag_df_PCC.apply(lambda x:terminal_seg_trace_constructor(x,seqLen,x_cor_arr,y_cor_arr),axis=1))
     
     #按照离子类型反向排序
     terminal_seg_site_trace = post_process_seg_trace(terminal_seg_site_trace)
-    terminal_seg_site_trace_PCC = post_process_seg_trace(terminal_seg_site_trace_PCC)
+    #terminal_seg_site_trace_PCC = post_process_seg_trace(terminal_seg_site_trace_PCC)
     
     #分离子类型的trace
     terminal_ion_site_trace = list(terminal_frag_df.apply(lambda x:terminal_ion_trace_contructor(x,seqLen,x_cor_arr,y_cor_arr),axis=1))
-    terminal_ion_site_trace_PCC = list(terminal_frag_df_PCC.apply(lambda x:terminal_ion_trace_contructor(x,seqLen,x_cor_arr,y_cor_arr),axis=1))
+    #terminal_ion_site_trace_PCC = list(terminal_frag_df_PCC.apply(lambda x:terminal_ion_trace_contructor(x,seqLen,x_cor_arr,y_cor_arr),axis=1))
     
     #按照弯折角度排序反向排序，大角度的trace再最低的图层
     terminal_ion_site_trace = post_process_ion_trace(terminal_ion_site_trace)
-    terminal_ion_site_trace_PCC = post_process_ion_trace(terminal_ion_site_trace_PCC)
+    #terminal_ion_site_trace_PCC = post_process_ion_trace(terminal_ion_site_trace_PCC)
     
     #将重叠的trace的信息同步到表面的trace，方便显示信息。
     terminal_ion_site_trace = merge_overlap_ion_trace(terminal_ion_site_trace)
-    terminal_ion_site_trace_PCC = merge_overlap_ion_trace(terminal_ion_site_trace_PCC)
+    #terminal_ion_site_trace_PCC = merge_overlap_ion_trace(terminal_ion_site_trace_PCC)
     
     fig1 = go.Figure(terminal_seg_site_trace+terminal_ion_site_trace+[seq_trace],layout=layout)
     #不显示，仅保存
-    plot(fig1, filename=fr"{workplace_dir}/terminal_seg_site_map.html", auto_open=False,include_plotlyjs=True)
+    plot(fig1, filename=fr"{workplace_dir}/terminal_fragment_cleavage_map.html", auto_open=False,include_plotlyjs=True)
     
-    fig2 = go.Figure(terminal_seg_site_trace_PCC+terminal_ion_site_trace_PCC+[seq_trace],layout=layout)
+    #fig2 = go.Figure(terminal_seg_site_trace_PCC+terminal_ion_site_trace_PCC+[seq_trace],layout=layout)
     #不显示，仅保存
-    plot(fig2, filename=fr"{workplace_dir}/terminal_seg_site_map_PCC.html", auto_open=False,include_plotlyjs=True)
+    #plot(fig2, filename=fr"{workplace_dir}/terminal_seg_site_map_PCC.html", auto_open=False,include_plotlyjs=True)
     #fig.add_trace(seq_trace)
     #fig.show()
     internal_frag_df = get_internal_frag_df(ions_df,seqLen)
     internal_seg_site_trace = list(internal_frag_df.apply(lambda x:internal_seg_trace_constructor(x,x_cor_arr,y_cor_arr),axis=1))
     #不显示，仅保存
     fig3 = go.Figure(internal_seg_site_trace+[seq_trace],layout=layout)
-    plot(fig3,filename=fr"{workplace_dir}/internal_seg_site_map.html", auto_open=False,include_plotlyjs=True)
-    
-    #添加PCC>0.9的代码--zhuyl,230615
-    internal_frag_df_PCC = internal_frag_df[internal_frag_df["adjust_PCC"]>=0.9]
-    internal_seg_site_trace_PCC = list(internal_frag_df_PCC.apply(lambda x:internal_seg_trace_constructor(x,x_cor_arr,y_cor_arr),axis=1))
-    #不显示，仅保存
-    fig4 = go.Figure(internal_seg_site_trace_PCC+[seq_trace],layout=layout)
-    plot(fig4,filename=fr"{workplace_dir}/internal_seg_site_map_PCC.html", auto_open=False,include_plotlyjs=True)
-    
-if __name__=="__main__":
-    CA_seq = "SHHWGYGKHNGPEHWHKDFPIANGERQSPVDIDTKAVVQDPALKPLALVYGEATSRRMVNNGHSFNVEYDDSQDKAVLKDGPLTGTYRLVQFHFHWGSSDDQGSEHTVDRKKYAAELHLVHWNTKYGDFGTAAQQPDGLAVVGVFLKVGDANPALQKVLDALDSIKTKGKSTDFPNFDPGSLLPNVLDYWTYPGSLTTPPLLESVTWIVLKEPISVSSQQMLKFRTLNFNAEGEPELLMLANWRPAQPLKNRQVRGFPK"
-    Ub_seq = "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLRLRGG"
-    Mb_seq = "GLSDGEWQQVLNVWGKVEADIAGHGQEVLIRLFTGHPETLEKFDKFKHLKTEAEMKASEDLKKHGTVVLTALGGILKKKGHHEAELKPLAQSHATKHKIPIKYLEFISDAIIHVLHSKHPGDFGADAQGAMTKALELFRNDIAAKYKELGFQG"
-    M_apple_seq = "MVSKGEENNMAIIKEFMRFKVHMEGSVNGHEFEIEGEGEGRPYEAFQTAKLKVTKGGPLPFAWDILSPQFMYGSKVYIKHPADIPDYFKLSFPEGFRWERVMNFEDGGIIHVNQDSSLQDGVFIYKVKLRGTNFPSDGPVMQKKTMGWEASEERMYPEDGALKSEIKKRLKLKDGGHYAAEVKTTYKAKKPVQLPGAYIVDIKLDIVSHNEDYTIVEQYERAEGRHSTGGMDELYKGSAFKLEHHHHHH"
-    M_apple_67_AMF_seq = "VSKGEENNMAIIKEFMRFKVHMEGSVNGHEFEIEGEGEGRPYEAFQTAKLKVTKGGPLPFAWDILSPQFMYGSKVYIKHPADIPDYFKLSFPEGFRWERVMNFEDGGIIHVNQDSSLQDGVFIYKVKLRGTNFPSDGPVMQKKTMGWEASEERMYPEDGALKSEIKKRLKLKDGGHYAAEVKTTYKAKKPVQLPGAYIVDIKLDIVSHNEDYTIVEQYERAEGRHSTGGMDELYKGSAFKLEHHHHHH"
-    
-    NTerm_ion_type = ["x","x+1","x-1","y","y-2","z","z+1","z-1"]
-    CTerm_ion_type = ["a","a+1","a-1","b","c","c."]
-    internal_ion_type = ["ax","ay","az+2","bx","bz+2","cx","cy"]
-    ion_type_color_map = {"red":["a","a+1","a-1","x","x+1","x-1"],"green":["b","y","y-1","y-2"],"blue":["c","c.","z","z+1","z-1"]}
-    #msalign_dir= r"F:\JUPYTER\BPCR\DICP\ClipsMS\UE_output_230526\CA_shift"
-    msalign_dir = r"F:\JUPYTER\BPCR\DICP\ClipsMS\UE_output_230616\M_Apple"
-    #存放三个文件的文件夹名，该文件夹下包含mzml,msalign,raw这三个文件
-    #msalign_filename= r"20220802_Native_Mb_193nm_Z8_SID15_3"
-    #msalign_filename= r"20220411_NativeCA_UVPD193_Z10_AT1_3"
-    #msalign_filename = "20230330_M_Apple_UVPD_193_1_5MJ_Z11_2591_4"
-    msalign_filename = "20230607_APPLE_67_AMF_193nmUVPD_Z11_2579_4"
-    test_seq = M_apple_67_AMF_seq
-    seqLen = len(test_seq)
-    input_dir = f"{msalign_dir}/{msalign_filename}"
-    spec_num_i = 0
-    #filename = "UE_output_s1.csv"
-    #CA_output_s4 = get_CM_output(input_dir,spec_num_i,"UE_output_s4.csv")
-    #CA_output_s2 = get_CM_output(input_dir,spec_num_i,"UE_output_s2.csv")
-    CA_output_s1 = get_CM_output(input_dir,spec_num_i,"UE_output_s1.csv")
-    seg_map_plot_main(input_dir,spec_num_i,CA_output_s1,test_seq)
+    plot(fig3,filename=fr"{workplace_dir}/internal_fragment_cleavage_map.html", auto_open=False,include_plotlyjs=True)
