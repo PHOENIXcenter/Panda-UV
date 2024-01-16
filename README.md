@@ -4,7 +4,7 @@
 
 Panda-UV is an efficient tool for highly confident fragment assignment in UVPD (Ultraviolet Photodissociation) data. Panda-UV is also compatible with common dissociation methods. Compared to traditional software, Panda-UV implements two strategies as quality control for matched fragments: spectral calibration and Pearson correlation scoring. With its high accuracy and confidence, Panda-UV brings the internal fragments that are prevalent in UVPD data into real-world applications, removing the hurdle of random matching of internal fragments caused by the larger search space compared to terminal fragments.
 
-Panda-UV only requires a parameter file (.yaml) as input. With both a GUI (Graphical User Interface) and a CLI (Command Line Interface), Panda-UV is easy to use for a variety of users. The GUI is built using PyQt5 v5.15.9, and all dependencies are packaged into an executable file Panda-UV_GUI.exe. It can be downloaded by clicking the “Releases” on the right side of your window. The program can be run by double-clicking on it, and it does not require any third-party libraries. 
+Panda-UV only requires a parameter file (example_param.yaml) as input. With both a GUI (Graphical User Interface) and a CLI (Command Line Interface), Panda-UV is easy to use for a variety of users. The GUI is built using PyQt5 v5.15.9, and all dependencies are packaged into an executable file Panda-UV_GUI.exe. It can be downloaded by clicking the “Releases” on the right side of your window. The program can be run by double-clicking on it, and it does not require any third-party libraries. 
 
 The required python libraries:  
 python 3.7.3+  
