@@ -3,7 +3,7 @@
 </div>
 
 # Introduction  
-Panda-UV is an efficient tool for highly confident fragment assignment in UVPD (Ultraviolet Photodissociation) data. Panda-UV is also compatible with common dissociation methods. Compared to traditional software, Panda-UV implements two strategies as quality control for matched fragments: spectral calibration and Pearson correlation scoring.   
+Panda-UV is an efficient tool for highly confident fragment assignment in UVPD (Ultraviolet Photodissociation) data. Panda-UV is also compatible with common dissociation methods. Compared to traditional software, Panda-UV implements two strategies as quality control for matched fragments: spectral calibration and Pearson Correlation Coefficient (PCC) scoring.   
 
 With its high accuracy and confidence, Panda-UV brings the internal fragments that are prevalent in UVPD data into real-world applications, removing the hurdle of random matching of internal fragments caused by the larger search space compared to terminal fragments. With both a GUI (Graphical User Interface) and a CLI (Command Line Interface), Panda-UV is easy to use for a variety of users.  
 <hr /> 
@@ -24,14 +24,14 @@ The [Panda-UV_CLI](https://github.com/PHOENIXcenter/Panda-UV/blob/main/PandaUV_G
 Panda-UV only requires a [parameter file](https://github.com/PHOENIXcenter/Panda-UV/blob/main/example_param.yaml) as input. An [example folder](https://github.com/PHOENIXcenter/Panda-UV/tree/main/examples/20200110_ubiquitin_193nm_1_2mj_monomer_Z6_1428_1) is provided above. After dowonload the [parameter file](https://github.com/PHOENIXcenter/Panda-UV/blob/main/example_param.yaml), [example folder](https://github.com/PHOENIXcenter/Panda-UV/tree/main/examples/20200110_ubiquitin_193nm_1_2mj_monomer_Z6_1428_1), [Panda-UV_GUI](https://github.com/PHOENIXcenter/Panda-UV/releases/tag/v1.0.0) and put them together, the Panda-UV_GUI can be run by double-clicking on it. After open the main window, user can upload the parameter file and edit them. Once all parameters are correctly entered, Panda-UV_GUI can be run by clicking the  "Run" button.  
 
 
-Panda-UV_CLI are convenient for batch data processing which required the minimal python libraries. Panda-UV_CLI can be run by following command in python environment:  
+Panda-UV_CLI are convenient for batch data processing and can be run by following command in python environment:  
 `pythob PandaUV_GUI.py example_param.yaml`  
 
 
 When matching fragments, Panda-UV will generate all possible theoretical fragments according to sequence, modifications, fragment types. These fragments are then matched with deconvoluted masses within the specified mass error tolerance. The Pearson Correlation Coefficient (PCC) scores are calculated to measure the confidence level between the theoretical envelopes of matched fragments and the experimental envelopes extracted from the analyzed spectrum. Duplicate matches are eliminated by considering both the error and the PCC score. Panda-UV first retains the terminal fragments that have a lower mass error and a higher PCC score. The workspace directory stores the fragment matching file, fragment cleavage maps, and bar plots of the residual fragment yield of matched fragments for manual review.  
 
 
-Feel free to contact me if you have any questions: 2248479641@qq.com
+Feel free to contact us if you have any questions: 2248479641@qq.com
 <hr />   
 
 # Parameter instruction  
