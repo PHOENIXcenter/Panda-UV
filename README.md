@@ -2,20 +2,40 @@
 <img src=https://github.com/PHOENIXcenter/Panda-UV/assets/55739492/42bc2fc6-1e61-4df7-b84d-b32d1dafabeb>
 </div>
 
-Panda-UV is an efficient tool for highly confident fragment assignment in UVPD (Ultraviolet Photodissociation) data. Panda-UV is also compatible with common dissociation methods. Compared to traditional software, Panda-UV implements two strategies as quality control for matched fragments: spectral calibration and Pearson correlation scoring. With its high accuracy and confidence, Panda-UV brings the internal fragments that are prevalent in UVPD data into real-world applications, removing the hurdle of random matching of internal fragments caused by the larger search space compared to terminal fragments.
+# Introduction  
+Panda-UV is an efficient tool for highly confident fragment assignment in UVPD (Ultraviolet Photodissociation) data. Panda-UV is also compatible with common dissociation methods. Compared to traditional software, Panda-UV implements two strategies as quality control for matched fragments: spectral calibration and Pearson correlation scoring.   
 
-Panda-UV only requires a parameter file (example_param.yaml) as input. With both a GUI (Graphical User Interface) and a CLI (Command Line Interface), Panda-UV is easy to use for a variety of users. The GUI is built using PyQt5 v5.15.9, and all dependencies are packaged into an executable file Panda-UV_GUI.exe. It can be downloaded by clicking the “Releases” on the right side of your window. The program can be run by double-clicking on it, and it does not require any third-party libraries. 
+With its high accuracy and confidence, Panda-UV brings the internal fragments that are prevalent in UVPD data into real-world applications, removing the hurdle of random matching of internal fragments caused by the larger search space compared to terminal fragments. With both a GUI (Graphical User Interface) and a CLI (Command Line Interface), Panda-UV is easy to use for a variety of users.  
+<hr /> 
 
-The required python libraries:  
-python 3.7.3+  
-pandas > 1.3.5  
-numpy > 1.2.16  
-argparse > 1.2.1  
-pyteomics > 4.5.6  
-PyQt5 > 5.15.9  
-plotly > 5.14.1  
+# Download Panda-UV  
+The [Panda-UV_GUI](https://github.com/PHOENIXcenter/Panda-UV/releases/tag/v1.0.0) is built using PyQt5 v5.15.9. All dependencies are packaged into an executable file Panda-UV_GUI.exe and can be run wihtout any third-party libraries. It can be downloaded by clicking the [Releases](https://github.com/PHOENIXcenter/Panda-UV/releases/tag/v1.0.0) on the right side of your window.  
+The [Panda-UV_CLI](https://github.com/PHOENIXcenter/Panda-UV/blob/main/PandaUV_GUI.py) is built based on python 3.7.3. The required python libraries are listed below: 
+* python 3.7.3+  
+* pandas > 1.3.5  
+* numpy > 1.2.16  
+* argparse > 1.2.1  
+* pyteomics > 4.5.6  
+* PyQt5 > 5.15.9  
+* plotly > 5.14.1  
+<hr /> 
 
-A template parameter file is provided in the source code list above, and users can generate a template by clicking “Save param” button in the GUI. The parameter file contains the following parameters:  
+# Running Panda-UV  
+Panda-UV only requires a [parameter file](https://github.com/PHOENIXcenter/Panda-UV/blob/main/example_param.yaml) as input. An [example folder](https://github.com/PHOENIXcenter/Panda-UV/tree/main/examples/20200110_ubiquitin_193nm_1_2mj_monomer_Z6_1428_1) is provided above. After dowonload the [parameter file](https://github.com/PHOENIXcenter/Panda-UV/blob/main/example_param.yaml), [example folder](https://github.com/PHOENIXcenter/Panda-UV/tree/main/examples/20200110_ubiquitin_193nm_1_2mj_monomer_Z6_1428_1), [Panda-UV_GUI](https://github.com/PHOENIXcenter/Panda-UV/releases/tag/v1.0.0) and put them together, the Panda-UV_GUI can be run by double-clicking on it. After open the main window, user can upload the parameter file and edit them. Once all parameters are correctly entered, Panda-UV_GUI can be run by clicking the  "Run" button.  
+
+
+Panda-UV_CLI are convenient for batch data processing which required the minimal python libraries. Panda-UV_CLI can be run by following command in python environment:  
+`pythob PandaUV_GUI.py example_param.yaml`  
+
+
+When matching fragments, Panda-UV will generate all possible theoretical fragments according to sequence, modifications, fragment types. These fragments are then matched with deconvoluted masses within the specified mass error tolerance. The Pearson Correlation Coefficient (PCC) scores are calculated to measure the confidence level between the theoretical envelopes of matched fragments and the experimental envelopes extracted from the analyzed spectrum. Duplicate matches are eliminated by considering both the error and the PCC score. Panda-UV first retains the terminal fragments that have a lower mass error and a higher PCC score. The workspace directory stores the fragment matching file, fragment cleavage maps, and bar plots of the residual fragment yield of matched fragments for manual review.  
+
+
+Feel free to contact me if you have any questions: 2248479641@qq.com
+<hr />   
+
+# Parameter instruction  
+A template [parameter file](https://github.com/PHOENIXcenter/Panda-UV/blob/main/example_param.yaml) is provided in the source code list above, and users can generate a template by clicking “Save param” button in the GUI. The parameter file contains the following parameters:  
 1.	Sequence: The protein sequence corresponding to the mass spectra.  
 2.	Deconv mass: The file directory of the deconvoluted masses, which includes four columns: monoisotopic mass, intensity, m/z, and charge. Both masses and charges are required for fragment matching and theoretical   envelope calculation. If intensity and m/z are unknown, they should be set to zero.  
 3.	Fixed mod: The file directory of the fixed modifications of the analyzed protein, which includes three columns: name, formula, and location. If a fixed modification is added to a certain location of the protein sequence, the theoretical fragments containing the modification will be generated with the mass shift of the modification. The formulas of the theoretical fragments are also updated by the formulas of the added modifications to calculate theoretical envelopes. For example, in the analysis of holo carbonic anhydrase II with an acetylated modification at the N-terminal, a fixed mod file (.csv) containing name, formula, and location as columns, and acetylation, H2C2O, and 1 as values, is required for correct fragment matching. All fragments containing the first amino acid are generated with the addition of the mass and formula of the acetylation.  
@@ -31,5 +51,5 @@ A template parameter file is provided in the source code list above, and users c
 13.	Scan id: This refers to the index of centralized spectra used for extracting the experimental envelope.  
 14.	Peak match error (ppm): This is the error tolerance allowed during the extraction of the experimental envelopes.  
 15.	Frag Type: This refers to the possible types of fragments based on the dissociation method used.  
+<hr /> 
 
-Once all parameters are correctly entered into the parameter file, the user can start Panda-UV using either the CLI or GUI interfaces. The Panda-UV GUI allows users to upload and edit existing parameter files. After all modifications are added to the protein sequence at the user-defined location, all possible theoretical fragments are generated. These fragments are then matched with deconvoluted masses within the specified mass error tolerance. The Pearson Correlation Coefficient (PCC) scores are calculated to measure the confidence level between the theoretical envelopes of matched fragments and the experimental envelopes extracted from the analyzed spectrum. Duplicate matches are eliminated by considering both the error and the PCC score. Panda-UV first retains the terminal fragments that have a lower mass error and a higher PCC score. The workspace directory stores the fragment matching file, fragment cleavage maps, and bar plots of the residual fragment yield of matched fragments for manual review.
