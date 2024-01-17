@@ -349,7 +349,7 @@ class MyMainWindow(QMainWindow,Ui_MainWindow):
         #初始化界面
         self.setupUi(self)
         #设置图标
-        self.setWindowIcon(QIcon('Icon.png'))
+        self.setWindowIcon(QIcon('Icon.ico'))
         #初始化param
         self.param = paramClass()
         #实例一直保存，方便查看运行状态
