@@ -46,6 +46,7 @@ import datetime
 
 
 import sys
+import os
 
 
 # In[4]:
@@ -185,13 +186,17 @@ def get_unloc_mod_df(file_dir):
 # In[15]:
 
 
+#读写参数的PANDA-UV参数的类
 class paramClass:
     def __init__(self):
+        #保存参数的路径
         self.dir = "."
-        self.filename = "Panda-UV_param.yaml"
+        #保存参数的文件名字
+        self.filename = "PANDA-UV_param.yaml"
         self.param_output_dir = self.dir+"/"+self.filename
         self.param_dict = self.get_param_template()
         
+    #生成一个空白的PANDA-UV配置文件
     def get_param_template(self):
         param_dict = {"sequence":'',"deconv_mass_file_dir":'',"fixed_mod_file_dir":'',"unlocalized_mod_file_dir":'',"r_env_dir":'',
                       "mass_calibration":True,"ms_calibration":True,"mass_mode":'',"terminal_mass_error":10,
@@ -199,7 +204,9 @@ class paramClass:
                       "internal_frag_type":[],"workplace_dir":'',"mzml_file_dir":''}
         return param_dict
     
+    #输入python数据结构对象，保存到当前目录的默认参数文件夹中
     def save_param(self,param_dict=None,param_output_dir=None):
+        #如果没有输入参数，则默认保存模板
         if param_dict is None:
             param_dict = self.param_dict
         else:
@@ -214,15 +221,23 @@ class paramClass:
             yaml.dump(param_dict,f)
     
     def read_param(self,param_input_dir=None):
+        #没有输入路径时默认读取模板
         if param_input_dir is None:
             param_input_dir = self.param_output_dir
         else:
             pass
         
-        with open(param_input_dir,mode="r",encoding="utf-8") as f:
-            yamlConf = yaml.load(f.read(), Loader=yaml.FullLoader)
-        self.param_dict = yamlConf
-    
+        if os.path.isfile(param_input_dir):
+            with open(param_input_dir,mode="r",encoding="utf-8") as f:
+                try:
+                    yamlConf = yaml.load(f.read(), Loader=yaml.FullLoader)
+                except Exception as exp:
+                    print(exp)
+                else:
+                    self.param_dict = yamlConf
+        else:
+            pass
+    #设置param_dict属性
     def set_param(self,param_dict):
         self.param_dict = param_dict
 

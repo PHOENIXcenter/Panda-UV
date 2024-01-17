@@ -31,15 +31,9 @@ import os
 
 
 from PandaUV_main import main
-
-
-# In[4]:
-
-
 import Icon
 
-
-# In[5]:
+# In[4]:
 
 
 class Ui_MainWindow(object):
@@ -346,7 +340,7 @@ class Ui_MainWindow(object):
     # retranslateUi
 
 
-# In[6]:
+# In[5]:
 
 
 class MyMainWindow(QMainWindow,Ui_MainWindow):
@@ -366,12 +360,16 @@ class MyMainWindow(QMainWindow,Ui_MainWindow):
         
     #选择参数文件并加载到界面，初始化参数类
     def load_param(self):
-        filename,filetype_str = QFileDialog.getOpenFileName()
-        self.lineEdit_param_file_dir.setText(filename)
-        print(f"Open file:{filename}")
-        #读取配置文件并更新param
-        self.param.read_param(filename)
-        self.refresh_param()
+        filename,filetype_str = QFileDialog.getOpenFileName(caption = "Select a parameter file",filter = "Parameter file (*.yaml)")
+        #选择了文件并且是文件时才更新参数
+        if os.path.isfile(filename):
+            self.lineEdit_param_file_dir.setText(filename)
+            print(f"Open file:{filename}")
+            #读取配置文件并更新param
+            self.param.read_param(filename)
+            self.refresh_param()
+        else:
+            print("Please select a valid parameter file.")
     
     #加载配置参数到界面
     def refresh_param(self,param_dict=None):
@@ -597,7 +595,7 @@ class MyMainWindow(QMainWindow,Ui_MainWindow):
         QApplication.processEvents()
 
 
-# In[7]:
+# In[6]:
 
 
 #一个继承子QThread的类，线程开始时运行PANDA-UV主函数
@@ -616,14 +614,17 @@ class PANDA_UV_main(QThread):
     
     #参数属性在实例化之后添加
     def run(self):
-        main(self.param)
+        try:
+            main(self.param)
+        except Exception as exp:
+            print(exp)
         
     def stop(self):
         print("Aborting....")
         self.terminate()
 
 
-# In[8]:
+# In[7]:
 
 
 #读写参数的PANDA-UV参数的类
@@ -667,11 +668,16 @@ class paramClass:
         else:
             pass
         
-        with open(param_input_dir,mode="r",encoding="utf-8") as f:
-            yamlConf = yaml.load(f.read(), Loader=yaml.FullLoader)
-        self.param_dict = yamlConf
-        #return yamlConf
-    
+        if os.path.isfile(param_input_dir):
+            with open(param_input_dir,mode="r",encoding="utf-8") as f:
+                try:
+                    yamlConf = yaml.load(f.read(), Loader=yaml.FullLoader)
+                except Exception as exp:
+                    print(exp)
+                else:
+                    self.param_dict = yamlConf
+        else:
+            pass
     #设置param_dict属性
     def set_param(self,param_dict):
         self.param_dict = param_dict
