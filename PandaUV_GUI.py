@@ -36,6 +36,12 @@ from PandaUV_main import main
 # In[4]:
 
 
+import Icon
+
+
+# In[5]:
+
+
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
@@ -340,7 +346,7 @@ class Ui_MainWindow(object):
     # retranslateUi
 
 
-# In[5]:
+# In[6]:
 
 
 class MyMainWindow(QMainWindow,Ui_MainWindow):
@@ -349,7 +355,7 @@ class MyMainWindow(QMainWindow,Ui_MainWindow):
         #初始化界面
         self.setupUi(self)
         #设置图标
-        self.setWindowIcon(QIcon('Icon.ico'))
+        self.setWindowIcon(QIcon(":/Icon.ico"))
         #初始化param
         self.param = paramClass()
         #实例一直保存，方便查看运行状态
@@ -591,7 +597,7 @@ class MyMainWindow(QMainWindow,Ui_MainWindow):
         QApplication.processEvents()
 
 
-# In[6]:
+# In[7]:
 
 
 #一个继承子QThread的类，线程开始时运行PANDA-UV主函数
@@ -617,7 +623,7 @@ class PANDA_UV_main(QThread):
         self.terminate()
 
 
-# In[7]:
+# In[8]:
 
 
 #读写参数的PANDA-UV参数的类
