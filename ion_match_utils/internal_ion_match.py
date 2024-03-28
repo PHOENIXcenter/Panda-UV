@@ -40,14 +40,15 @@ def get_internal_CM_output(mono_mass_arr,protein,ion_type_list,ppm,unloc_mod_df)
                             pass
                     if len(unloc_mod_list)>0:
                         for unloc_mod in unloc_mod_list:
-                            ion += unloc_mod
-                        matched_mass_index = get_matched_index(mono_mass_arr,ion,ppm)#考虑一个实验离子匹配到多个理论离子的情况
-                        matched_mass_df = mono_mass_arr[matched_mass_index]
-                        for _,matched_mass_series in matched_mass_df.iterrows():
-                        #matched_mass_series = get_matched_mass(mono_mass_arr,ion,ppm)
-                        #print(matched_mass_series)
-                            CM_output_series = construct_CM_series(matched_mass_series,ion,start,end,ion_type,list(pep.mod_list.values()),unloc_mod_list)
-                            CM_output_template = CM_output_template.append(CM_output_series,ignore_index=True)
+                            #将unloc_mod顺序添加然后进行匹配--zhuyl,230228
+                            modified_ion = ion + unloc_mod
+                            matched_mass_index = get_matched_index(mono_mass_arr,modified_ion,ppm)#考虑一个实验离子匹配到多个理论离子的情况
+                            matched_mass_df = mono_mass_arr[matched_mass_index]
+                            for _,matched_mass_series in matched_mass_df.iterrows():
+                            #matched_mass_series = get_matched_mass(mono_mass_arr,ion,ppm)
+                            #print(matched_mass_series)
+                                CM_output_series = construct_CM_series(matched_mass_series,modified_ion,start,end,ion_type,list(pep.mod_list.values()),[unloc_mod])
+                                CM_output_template = CM_output_template.append(CM_output_series,ignore_index=True)
                     else:
                         pass
                 else:

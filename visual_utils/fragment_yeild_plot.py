@@ -11,6 +11,8 @@ import sys
 
 import copy
 
+#sys.path.append(r"D:\software\jupyter\BPRC\DICP\UVPD_Explorer\230525-PANDA-UV 1.0")
+
 from ion_match_utils.utils import get_CM_output,save_CM_output,get_terminal_frag_df,get_internal_frag_df
 
 #计算Intensity的总和
@@ -62,39 +64,40 @@ def fragment_abundance_plot_main(workplace_dir,ions_df,seq):
     seqLen = len(seq)
     #获取终端离子
     terminal_frag_df = get_terminal_frag_df(ions_df,seqLen).sort_values("Frag Type")
-    #terminal_frag_df_PCC = copy.deepcopy(terminal_frag_df[terminal_frag_df["adjust_PCC"]>=0.6]).sort_values("Frag Type")
-    #获取终端离子的相对碎裂位置
-    terminal_relative_AA_site = get_terminal_relative_AA_site(terminal_frag_df,seqLen)
-    #terminal_relative_AA_site_PCC = get_terminal_relative_AA_site(terminal_frag_df_PCC,seqLen)
-    #将相对位置加入df
-    terminal_frag_df["Backbone position"] = terminal_relative_AA_site
-    #terminal_frag_df_PCC["Backbone position"] = terminal_relative_AA_site_PCC
-    
-    #或取出终端离子的abundance fig
-    termianl_abundance_fig = get_terminal_abundance_fig(terminal_frag_df,seqLen)
-    #termianl_abundance_fig_PCC = get_terminal_abundance_fig(terminal_frag_df_PCC,seqLen)
-    
-    #仅保存
-    plot(termianl_abundance_fig,filename=fr"{workplace_dir}/bar_plot_of_terminal_residual_fragment_yield.html", auto_open=False,include_plotlyjs=True)
-    #plot(termianl_abundance_fig_PCC,filename=fr"{workplace_dir}/terminal_abundance_map_PCC.html", auto_open=False,include_plotlyjs=True)
+    if not terminal_frag_df.empty:
+        terminal_frag_df_PCC = copy.deepcopy(terminal_frag_df[terminal_frag_df["adjust_PCC"]>=0.6]).sort_values("Frag Type")
+        #获取终端离子的相对碎裂位置
+        terminal_relative_AA_site = get_terminal_relative_AA_site(terminal_frag_df,seqLen)
+        terminal_relative_AA_site_PCC = get_terminal_relative_AA_site(terminal_frag_df_PCC,seqLen)
+        #将相对位置加入df
+        terminal_frag_df["Backbone position"] = terminal_relative_AA_site
+        terminal_frag_df_PCC["Backbone position"] = terminal_relative_AA_site_PCC
+
+        #或取出终端离子的abundance fig
+        termianl_abundance_fig = get_terminal_abundance_fig(terminal_frag_df,seqLen)
+        termianl_abundance_fig_PCC = get_terminal_abundance_fig(terminal_frag_df_PCC,seqLen)
+
+        #仅保存
+        plot(termianl_abundance_fig,filename=fr"{workplace_dir}/terminal_abundance_map.html", auto_open=False,include_plotlyjs=True)
+        plot(termianl_abundance_fig_PCC,filename=fr"{workplace_dir}/terminal_abundance_map_PCC.html", auto_open=False,include_plotlyjs=True)
     
     internal_frag_df = get_internal_frag_df(ions_df,seqLen)
-    
-    split_internal_df = pd.DataFrame(columns=internal_frag_df.columns)
-    for _,internal_frag_df_i in internal_frag_df.iterrows():
-        split_internal_df_i_1,split_internal_df_i_2 = split_internal_to_terminal(internal_frag_df_i,seqLen)
-        split_internal_df = split_internal_df.append([split_internal_df_i_1,split_internal_df_i_2])
-    split_internal_df.reset_index(inplace=True)
-    internal_relative_AA_site = get_terminal_relative_AA_site(split_internal_df,seqLen)
-    #PCC>0.9的内部离子产率图
-    split_internal_df["Backbone position"] = internal_relative_AA_site
-    #split_internal_df_PCC = split_internal_df[split_internal_df["adjust_PCC"]>=0.8]
-    internal_abundance_fig = get_terminal_abundance_fig(split_internal_df.sort_values("Frag Type"),seqLen)
-    #internal_abundance_fig_PCC = get_terminal_abundance_fig(split_internal_df_PCC.sort_values("Frag Type"),seqLen)
-    #plot(termianl_abundance_fig)
-    #仅保存
-    plot(internal_abundance_fig,filename=fr"{workplace_dir}/bar_plot_of_internal_residual_fragment_yield.html", auto_open=False,include_plotlyjs=True)
-    #plot(internal_abundance_fig_PCC,filename=fr"{workplace_dir}/internal_abundance_map_PCC.html", auto_open=False,include_plotlyjs=True)    
+    if not internal_frag_df.empty:
+        split_internal_df = pd.DataFrame(columns=internal_frag_df.columns)
+        for _,internal_frag_df_i in internal_frag_df.iterrows():
+            split_internal_df_i_1,split_internal_df_i_2 = split_internal_to_terminal(internal_frag_df_i,seqLen)
+            split_internal_df = split_internal_df.append([split_internal_df_i_1,split_internal_df_i_2])
+        split_internal_df.reset_index(inplace=True)
+        internal_relative_AA_site = get_terminal_relative_AA_site(split_internal_df,seqLen)
+        #PCC>0.9的内部离子产率图
+        split_internal_df["Backbone position"] = internal_relative_AA_site
+        split_internal_df_PCC = split_internal_df[split_internal_df["adjust_PCC"]>=0.8]
+        internal_abundance_fig = get_terminal_abundance_fig(split_internal_df.sort_values("Frag Type"),seqLen)
+        internal_abundance_fig_PCC = get_terminal_abundance_fig(split_internal_df_PCC.sort_values("Frag Type"),seqLen)
+        #plot(termianl_abundance_fig)
+        #仅保存
+        plot(internal_abundance_fig,filename=fr"{workplace_dir}/internal_abundance_map.html", auto_open=False,include_plotlyjs=True)
+        plot(internal_abundance_fig_PCC,filename=fr"{workplace_dir}/internal_abundance_map_PCC.html", auto_open=False,include_plotlyjs=True)    
     
 if __name__=="__main__":
     CA_seq = "SHHWGYGKHNGPEHWHKDFPIANGERQSPVDIDTKAVVQDPALKPLALVYGEATSRRMVNNGHSFNVEYDDSQDKAVLKDGPLTGTYRLVQFHFHWGSSDDQGSEHTVDRKKYAAELHLVHWNTKYGDFGTAAQQPDGLAVVGVFLKVGDANPALQKVLDALDSIKTKGKSTDFPNFDPGSLLPNVLDYWTYPGSLTTPPLLESVTWIVLKEPISVSSQQMLKFRTLNFNAEGEPELLMLANWRPAQPLKNRQVRGFPK"

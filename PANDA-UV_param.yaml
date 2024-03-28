@@ -1,4 +1,4 @@
-c_terminal_frag_type: 
+c_terminal_frag_type:
 - x
 - x+1
 - y
@@ -7,7 +7,7 @@ c_terminal_frag_type:
 - z+1
 deconv_mass_file_dir: .\examples\20200110_ubiquitin_193nm_1_2mj_monomer_Z6_1428_1\ms2_0\mono_mass_with_charge.csv
 fixed_mod_file_dir: ''
-internal_frag_type: 
+internal_frag_type:
 - ax
 - ay
 - az+2
@@ -20,7 +20,7 @@ mass_calibration: true
 mass_mode: MH+
 ms_calibration: true
 mzml_file_dir: .\examples\20200110_ubiquitin_193nm_1_2mj_monomer_Z6_1428_1\20200110_ubiquitin_193nm_1_2mj_monomer_Z6_1428_1.mzML
-n_terminal_frag_type: 
+n_terminal_frag_type:
 - a
 - a+1
 - b

@@ -127,26 +127,65 @@ def mono_preprocess(mono_mass_arr,ppm_shift):
 
 
 def get_UE_output(mono_mass_arr,protein,n_terminal_frag_type,c_terminal_frag_type,internal_frag_type,terminal_mass_error,internal_mass_error,unloc_mod_df):
-    N_Terminal_CM_output = get_Nterminal_CM_output(mono_mass_arr,protein,n_terminal_frag_type,terminal_mass_error,unloc_mod_df)
-    C_Terminal_CM_output = get_Cterminal_CM_output(mono_mass_arr,protein,c_terminal_frag_type,terminal_mass_error,unloc_mod_df)
-    Terminal_CM_output = pd.concat([N_Terminal_CM_output,C_Terminal_CM_output],ignore_index=True)
-    Internal_CM_output = get_internal_CM_output(mono_mass_arr,protein,internal_frag_type,internal_mass_error,unloc_mod_df)#ax,by,cz离子相同，只保留ax离子 
     output_columns = ["Frag Type","Observed Mass","Theoretical Mass","Start AA","End AA","Error","Fixed Mod","Unlocalized Mod","Sequence","Intensity","Formula","Charge","mz"]
-    UE_output = pd.DataFrame(np.vstack([Terminal_CM_output.values,Internal_CM_output.values]),columns = output_columns)
+    #修复终端离子或者内部离子类型缺失的问题--zhuy,240228
+    Terminal_CM_output = None
+    UE_output = None
+    n_terminal_frag_type_len = len(n_terminal_frag_type)
+    c_terminal_frag_type_len = len(c_terminal_frag_type)
+    internal_frag_type_len = len(internal_frag_type)
+    if n_terminal_frag_type_len!=0:
+        N_Terminal_CM_output = get_Nterminal_CM_output(mono_mass_arr,protein,n_terminal_frag_type,terminal_mass_error,unloc_mod_df)
+        Terminal_CM_output = N_Terminal_CM_output
+    if c_terminal_frag_type_len!=0:
+        C_Terminal_CM_output = get_Cterminal_CM_output(mono_mass_arr,protein,c_terminal_frag_type,terminal_mass_error,unloc_mod_df)
+        if Terminal_CM_output is not None:
+            Terminal_CM_output = pd.concat([N_Terminal_CM_output,C_Terminal_CM_output],ignore_index=True)
+        else:
+            Terminal_CM_output = C_Terminal_CM_output
+    if internal_frag_type_len!=0:
+        Internal_CM_output = get_internal_CM_output(mono_mass_arr,protein,internal_frag_type,internal_mass_error,unloc_mod_df)#ax,by,cz离子相同，只保留ax离子 
+        if Terminal_CM_output is not None:
+            UE_output = pd.DataFrame(np.vstack([Terminal_CM_output.values,Internal_CM_output.values]),columns = output_columns)
+        #不能直接concat，columns匹配会错误。
+        else:
+            #Internal_CM_output.columns = output_columns
+            UE_output = Internal_CM_output
+    else:
+        if Terminal_CM_output is not None:
+            UE_output = Terminal_CM_output
+    if UE_output is None:
+        assert False, print("Please enter valid ion types. ")
+    else:
+        UE_output.columns = output_columns
     return UE_output
 
 
 # In[10]:
 
 
+#计算终端离子，用于计算离子偏移
 def get_UE_output_terminal(mono_mass_arr,protein,n_terminal_frag_type,c_terminal_frag_type,terminal_mass_error,unloc_mod_df):
-    N_Terminal_CM_output = get_Nterminal_CM_output(mono_mass_arr,protein,n_terminal_frag_type,terminal_mass_error,unloc_mod_df)
-    C_Terminal_CM_output = get_Cterminal_CM_output(mono_mass_arr,protein,c_terminal_frag_type,terminal_mass_error,unloc_mod_df)
-    Terminal_CM_output = pd.concat([N_Terminal_CM_output,C_Terminal_CM_output],ignore_index=True)
+    output_columns = ["Frag Type","Observed Mass","Theoretical Mass","Start AA","End AA","Error","Fixed Mod","Unlocalized Mod","Sequence","Intensity","Formula","Charge","mz"]
+    Terminal_CM_output = None
+    UE_output = None
+    n_terminal_frag_type_len = len(n_terminal_frag_type)
+    c_terminal_frag_type_len = len(c_terminal_frag_type)
+    if n_terminal_frag_type_len!=0:
+        N_Terminal_CM_output = get_Nterminal_CM_output(mono_mass_arr,protein,n_terminal_frag_type,terminal_mass_error,unloc_mod_df)
+        Terminal_CM_output = N_Terminal_CM_output
+    if c_terminal_frag_type_len!=0:
+        C_Terminal_CM_output = get_Cterminal_CM_output(mono_mass_arr,protein,c_terminal_frag_type,terminal_mass_error,unloc_mod_df)
+        if Terminal_CM_output is not None:
+            Terminal_CM_output = pd.concat([N_Terminal_CM_output,C_Terminal_CM_output],ignore_index=True)
+        else:
+            Terminal_CM_output = C_Terminal_CM_output
     #Internal_CM_output = get_internal_CM_output(mono_mass_arr,protein,[],add_H,ppm)#ax,by,cz离子相同，只保留ax离子 
     #不能直接concat，columns匹配会错误。
-    output_columns = ["Frag Type","Observed Mass","Theoretical Mass","Start AA","End AA","Error","Fixed Mod","Unlocalized Mod","Sequence","Intensity","Formula","Charge","mz"]
-    UE_output = pd.DataFrame(Terminal_CM_output.values,columns = output_columns)
+    if Terminal_CM_output is not None:
+        UE_output = pd.DataFrame(Terminal_CM_output.values,columns = output_columns)
+    else:
+        assert False, print("Please enter valid ion types. ")
     return UE_output
 
 
@@ -329,11 +368,12 @@ def main(param_dict):
     else:
         assert False,print(f"Invalid mass mode:{mass_mode}")
 
-    terminal_frag_type = n_terminal_frag_type+c_terminal_frag_type
-    UE_output_terminal = get_UE_output_terminal(mono_mass_arr,test_protein,n_terminal_frag_type,c_terminal_frag_type,first_mass_match_ppm,unloc_mod_df)
-
-    precursor_peak_shift_ppm = get_terminal_error(UE_output_terminal)
-    print(f"Mass shift of terminal fragments: {precursor_peak_shift_ppm}")
+    if (mass_calibration or ms_calibration) and (len(n_terminal_frag_type)>0 or len(c_terminal_frag_type)>0):
+        UE_output_terminal = get_UE_output_terminal(mono_mass_arr,test_protein,n_terminal_frag_type,c_terminal_frag_type,first_mass_match_ppm,unloc_mod_df)
+        precursor_peak_shift_ppm = get_terminal_error(UE_output_terminal)
+        print(f"Mass shift of terminal fragments: {precursor_peak_shift_ppm}")
+    else:
+        precursor_peak_shift_ppm = 0
     if mass_calibration:
         mass_shift_ppm = precursor_peak_shift_ppm
         mono_mass_arr_shift = mono_preprocess(mono_mass_arr,mass_shift_ppm)
@@ -369,7 +409,7 @@ def main(param_dict):
     print("Done. ")
 
 
-# In[17]:
+# In[22]:
 
 
 if __name__=="__main__":
