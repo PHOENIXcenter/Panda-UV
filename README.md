@@ -1,5 +1,5 @@
 <div align=center>
-<img src=https://github.com/PHOENIXcenter/Panda-UV/assets/55739492/42bc2fc6-1e61-4df7-b84d-b32d1dafabeb>
+![image](https://github.com/PHOENIXcenter/Panda-UV/assets/55739492/e6ea173a-1930-4075-a1b5-8417f2cfad12)
 </div>
 
 # Introduction  
