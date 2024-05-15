@@ -53,3 +53,5 @@ A template [parameter file](https://github.com/PHOENIXcenter/Panda-UV/blob/main/
 15.	Frag Type: This refers to the possible types of fragments based on the dissociation method used.  
 <hr /> 
 
+# Citation
+Please cite: [10.1021/acs.analchem.4c00253](https://pubs.acs.org/doi/10.1021/acs.analchem.4c00253)
