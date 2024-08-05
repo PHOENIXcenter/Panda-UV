@@ -25,7 +25,7 @@ Panda-UV only requires a [parameter file](https://github.com/PHOENIXcenter/Panda
 
 
 Panda-UV_CLI are convenient for batch data processing and can be run by following command in python environment:  
-`pythob PandaUV_GUI.py example_param.yaml`  
+`python PandaUV_GUI.py example_param.yaml`  
 
 
 When matching fragments, Panda-UV will generate all possible theoretical fragments according to sequence, modifications, fragment types. These fragments are then matched with deconvoluted masses within the specified mass error tolerance. The Pearson Correlation Coefficient (PCC) scores are calculated to measure the confidence level between the theoretical envelopes of matched fragments and the experimental envelopes extracted from the analyzed spectrum. Duplicate matches are eliminated by considering both the error and the PCC score. Panda-UV first retains the terminal fragments that have a lower mass error and a higher PCC score. The workspace directory stores the fragment matching file, fragment cleavage maps, and bar plots of the residual fragment yield of matched fragments for manual review.  
