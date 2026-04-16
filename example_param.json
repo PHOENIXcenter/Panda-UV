@@ -1,0 +1,48 @@
+{
+  "sequence": {
+    "1": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLRLRGG"
+  },
+  "msalign_file_dir": ".\\examples\\20200110_ubiquitin_193nm_1_2mj_monomer_Z6_1428_1\\20200110_ubiquitin_193nm_1_2mj_monomer_Z6_1428_1_ms2.msalign",
+  "r_env_dir": "G:\\software\\R\\R-4.2.3",
+  "unloc_mod": {
+    "header": ["name", "formula", "start_loc", "end_loc", "ion type"],
+    "2": [["heme", "C34H31O4N4Fe", "any", "any", "any"]]
+  },
+  "fixed_mod": {
+    "header": ["name", "formula", "loc"],
+    "2": [["ca-", "H2C2O", "1"]]
+  },
+  "mass_calibration": true,
+  "ms_calibration": true,
+  "mass_mode": "M",
+  "terminal_mass_error": 5,
+  "internal_mass_error": 5,
+  "peak_match_error": 10,
+  "n_terminal_frag_type": [
+    "a",
+    "a+1",
+    "b",
+    "c"
+  ],
+  "c_terminal_frag_type": [
+    "x",
+    "x+1",
+    "y",
+    "y-1",
+    "y-2",
+    "z+1"
+  ],
+  "internal_frag_type": [
+    "ax",
+    "ay",
+    "az+2",
+    "bx",
+    "bz+2",
+    "cx",
+    "cy"
+  ],
+  "mzml_file_dir": ".\\examples\\20200110_ubiquitin_193nm_1_2mj_monomer_Z6_1428_1\\20200110_ubiquitin_193nm_1_2mj_monomer_Z6_1428_1.mzML",
+  "scans": [1],
+  "prsm_id": {"1":0},
+  "workplace_dir": ".\\examples\\20200110_ubiquitin_193nm_1_2mj_monomer_Z6_1428_1"
+}
