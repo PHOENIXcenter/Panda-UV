@@ -229,28 +229,33 @@ terminal_mass_error: 10
 }
 ```
 
+### 6.3 Example Datasets
+
+#### example_param_Ub_monomer.json
+- **Dataset Location**: examples/20200110_ubiquitin_193nm_1_2mj_monomer_Z6_1428_1
+- **Description**: Single protein (Ubiquitin) example demonstrating basic Panda-UV usage
+- **Data Source**: UVPD mass spectrometry data of Ubiquitin monomer
+- **Use Case**: Demonstrates single protein analysis with fixed and variable modifications
+
+#### example_param_OT_rep1_toppic1.5.4.json
+- **Dataset Location**: examples/CPTAC_Intact_rep1_15Jan15_Bane_C2-14-08-02RZ
+- **Description**: Complex dataset from CPTAC intact proteomics study
+- **Data Source**: Park, J., et al. "Informed-Proteomics: open-source software package for top-down proteomics." Nat. Methods 14.9 (2017): 909-914.
+- **Search Method**: TopPIC v1.5.4 (Top-down proteomics identification and characterization)
+- **Parameter Generation**: Generated using prsm_parse.py based on TopPIC search results
+- **Reference**: Basharat, A.R., Ning, X., & Liu, X. "EnvCNN: a convolutional neural network model for evaluating isotopic envelopes in top-down mass-spectral deconvolution." Anal. Chem. 92.11 (2020): 7778-7785.
+
+**Related References**:
+- Park, J., et al. "Informed-Proteomics: open-source software package for top-down proteomics." Nat. Methods 14.9 (2017): 909-914.
+- Basharat, A.R., Ning, X., & Liu, X. "EnvCNN: a convolutional neural network model for evaluating isotopic envelopes in top-down mass-spectral deconvolution." Anal. Chem. 92.11 (2020): 7778-7785.
+
 ---
 
-### 6. Migration Guide
+### 7. Citation
 
-#### 6.1 From v1.0 to v2.0
+If you use Panda-UV in your research, please cite:
 
-1. **Parameter File Conversion**
-   - Old version uses separate CSV files for modifications
-   - New version requires embedding modification data into JSON structure
-
-2. **scan_id to scans**
-   - Old: `scan_id: 3871`
-   - New: `scans: [3871]`, add corresponding sequence in `sequence`
-
-3. **File Path Updates**
-   - `deconv_mass_file_dir` → `msalign_file_dir`
-   - Format changed from CSV to msalign
-
-#### 6.2 Compatibility Notes
-
-- v2.0 uses JSON format, v1.0 uses YAML format
-- The two versions have completely different parameter structures and require manual conversion
+**Panda-UV**: Zhu, Y., et al. "Panda-UV Unlocks Deeper Protein Characterization with Internal Fragments in Ultraviolet Photodissociation Mass Spectrometry." Anal. Chem. 96.21 (2024): 8474-8483.
 
 ---
 

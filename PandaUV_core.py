@@ -634,7 +634,7 @@ def argp():
 if __name__ == "__main__":
     param = Param()
     param.read_param(
-        r"Z:\I\EnvCNN_Publish_Data\Ovarian_Tumor_Data\raw\CPTAC_Intact_rep2_15Jan15_Bane_C2-14-08-02RZ_html\toppic_prsm_cutoff\data_js\prsms\Panda-UV_param.json"
+        r"example_param_Ub_monomer.json"
     )
     # param.read_param("example_param.json")
     main(param)
