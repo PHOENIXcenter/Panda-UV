@@ -2,6 +2,37 @@
 
 ## v2.0 Update (2026-04-16)
 
+### Requirements
+
+Panda-UV runs on **Python 3.7+** with the following dependencies:
+
+| Package | Version | Description |
+|--------|---------|-------------|
+| pyteomics | ≥4.5.6 | Mass spectrometry data processing |
+| pandas | ≥1.3.5 | Data manipulation |
+| numpy | ≥1.21.0 | Numerical computing |
+| plotly | ≥5.14.1 | Visualization |
+| PyQt5 | ≥5.15.9 | GUI framework |
+| tqdm | ≥4.60.0 | Progress bar (for prsm_parser.py) |
+| rpy2 | ≥3.5.0 | R integration (for enviPat calculations) |
+
+**R Environment:**
+- R with enviPat package is required for theoretical isotope envelope calculations
+
+**Installation:**
+```bash
+# Using conda environment file
+conda env create -f requirements.yml
+conda activate main
+
+# Or using pip
+pip install pyteomics pandas numpy plotly PyQt5 tqdm rpy2
+```
+
+**Note:** R and the enviPat package must be installed separately for isotope peak calculations.
+
+---
+
 ### 1. Parameter Structure Refactoring
 
 #### 1.1 Unified Parameter File Format
