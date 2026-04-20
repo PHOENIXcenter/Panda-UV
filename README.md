@@ -23,7 +23,7 @@ Panda-UV runs on **Python 3.7+** with the following dependencies:
 ```bash
 # Using conda environment file
 conda env create -f requirements.yml
-conda activate main
+conda activate Panda-UV
 
 # Or using pip
 pip install pyteomics pandas numpy plotly PyQt5 tqdm rpy2

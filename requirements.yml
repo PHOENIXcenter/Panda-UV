@@ -1,4 +1,4 @@
-name: main
+name: Panda-UV
 channels:
   - defaults
   - conda-forge
