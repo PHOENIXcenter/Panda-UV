@@ -14,10 +14,11 @@ Panda-UV runs on **Python 3.7+** with the following dependencies:
 | plotly | ≥5.14.1 | Visualization |
 | PyQt5 | ≥5.15.9 | GUI framework |
 | tqdm | ≥4.60.0 | Progress bar (for prsm_parser.py) |
-| rpy2 | ≥3.5.0 | R integration (for enviPat calculations) |
+| Averagine | built-in | Isotopic envelope calculation (C++ wrapped) |
 
-**R Environment:**
-- R with enviPat package is required for theoretical isotope envelope calculations
+**Isotope Calculation:**
+- Averagine library (built-in, C++ wrapped) is used for theoretical isotope envelope calculations
+- Reference: Rockwood, A.L., & Haimi, P. (2006). Efficient calculation of accurate masses of isotopic peaks. J. Am. Soc. Mass Spectrom., 17(3), 415-419.
 
 **Installation:**
 ```bash
@@ -26,10 +27,8 @@ conda env create -f requirements.yml
 conda activate Panda-UV
 
 # Or using pip
-pip install pyteomics pandas numpy plotly PyQt5 tqdm rpy2
+pip install pyteomics pandas numpy plotly PyQt5 tqdm
 ```
-
-**Note:** R and the enviPat package must be installed separately for isotope peak calculations.
 
 ---
 
@@ -287,6 +286,39 @@ terminal_mass_error: 10
 If you use Panda-UV in your research, please cite:
 
 **Panda-UV**: Zhu, Y., et al. "Panda-UV Unlocks Deeper Protein Characterization with Internal Fragments in Ultraviolet Photodissociation Mass Spectrometry." Anal. Chem. 96.21 (2024): 8474-8483.
+
+---
+
+## v2.1 Update (2026-04-21)
+
+### Removed R Dependency
+
+#### Dependency Changes
+
+| Change | Description |
+|--------|-------------|
+| Removed | rpy2 package and R environment dependency |
+| Removed | r_env_dir parameter |
+| Changed | Averagine library (based on emass, built-in C++ wrapped) for isotope envelope calculations |
+
+#### Code Changes
+
+| File | Change |
+|------|--------|
+| PandaUV_core.py | Removed r_source and r_lock, replaced with Averagine-based calculation |
+| PandaUV_core.py | Removed r_env_dir parameter from template |
+| PandaUV_GUI.py | Removed R env dir input field |
+| Scoring_function_utils.py | Replaced R-based get_iso_peak_arr with Averagine.formula_to_iso |
+
+#### Citation
+
+emass provides efficient isotopic envelope calculations without requiring R runtime:
+- Rockwood, A.L., & Haimi, P. (2006). Efficient calculation of accurate masses of isotopic peaks. J. Am. Soc. Mass Spectrom., 17(3), 415-419.
+
+#### Threading Fix
+
+- Added global lock (self.lock) for thread-safe isotope calculations
+- Lock protects averagine module calls in multi-threaded processing
 
 ---
 

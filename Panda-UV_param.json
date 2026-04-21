@@ -23,7 +23,6 @@
     "1586": "RYEREMKTYIPPKGETKKKFKDPNAPKRPPSA"
   },
   "msalign_file_dir": ".\\examples\\CPTAC_Intact_rep1_15Jan15_Bane_C2-14-08-02RZ\\CPTAC_Intact_rep1_15Jan15_Bane_C2-14-08-02RZ_ms2.msalign",
-  "r_env_dir": "G:\\software\\R\\R-4.2.3",
   "unloc_mod": {
     "header": [
       "name",
@@ -110,5 +109,6 @@
     "1903": 109
   },
   "workplace_dir": ".\\examples\\CPTAC_Intact_rep1_15Jan15_Bane_C2-14-08-02RZ\\CPTAC_Intact_rep1_15Jan15_Bane_C2-14-08-02RZ_html\\toppic_prsm_cutoff\\data_js\\prsms",
-  "thread": 4
+  "thread": 4,
+  "r_env_dir": "G:\\software\\R\\R-4.2.3"
 }

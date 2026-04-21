@@ -57,7 +57,6 @@ from PyQt5.QtWidgets import (
 )
 
 
-import yaml
 import sys
 import os
 
@@ -262,17 +261,6 @@ class Ui_MainWindow(object):
         left_layout.addLayout(mzml_layout)
 
         r_env_layout = QHBoxLayout()
-        r_env_layout.setSpacing(5)
-        self.label_7 = QLabel()
-        self.label_7.setObjectName("label_7")
-        self.label_7.setText("R env dir:")
-        self.label_7.setFixedWidth(100)
-        self.lineEdit_r_env_dir = QLineEdit()
-        self.lineEdit_r_env_dir.setObjectName("lineEdit_r_env_dir")
-        r_env_layout.addWidget(self.label_7)
-        r_env_layout.addWidget(self.lineEdit_r_env_dir)
-        left_layout.addLayout(r_env_layout)
-
         workplace_layout = QHBoxLayout()
         workplace_layout.setSpacing(5)
         self.label_8 = QLabel()
@@ -617,9 +605,6 @@ class Ui_MainWindow(object):
         self.label_3.setText(
             QCoreApplication.translate("MainWindow", "Fixed mod:", None)
         )
-        self.label_7.setText(
-            QCoreApplication.translate("MainWindow", "R env dir", None)
-        )
         self.label_10.setText(
             QCoreApplication.translate("MainWindow", "Terminal mass error(ppm)", None)
         )
@@ -842,7 +827,6 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
         self._refresh_prsm_id_table(param_dict)
 
         self.lineEdit_msalign_file_dir.setText(param_dict.get("msalign_file_dir", ""))
-        self.lineEdit_r_env_dir.setText(param_dict.get("r_env_dir", ""))
         self.lineEdit_mzml_file_dir.setText(param_dict.get("mzml_file_dir", ""))
         self.lineEdit_workplace_dir.setText(param_dict.get("workplace_dir", ""))
         self.checkBox_mass_calibration.setChecked(
@@ -1067,7 +1051,6 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
             return False
 
         param_dict["msalign_file_dir"] = self.lineEdit_msalign_file_dir.text()
-        param_dict["r_env_dir"] = self.lineEdit_r_env_dir.text()
         param_dict["mzml_file_dir"] = self.lineEdit_mzml_file_dir.text()
         param_dict["workplace_dir"] = self.lineEdit_workplace_dir.text()
         param_dict["mass_calibration"] = self.checkBox_mass_calibration.isChecked()

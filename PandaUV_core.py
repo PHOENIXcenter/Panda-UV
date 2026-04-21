@@ -21,34 +21,7 @@ H_proton_mass = 1.00782503207
 from post_process_utils.post_process import get_process_info
 from post_process_utils import stratage_4
 from visual_utils.site_map_plot import seg_map_plot_main
-from visual_utils.fragment_yeild_plot import fragment_abundance_plot_main
 from msalign_utils.msalign_reader import get_dec_info
-
-
-r_script = """
-library(enviPat)
-library(data.table)
-
-FragIon.IsoPattern <- function(FragIons.chemform, ChargeZ){
-  data(isotopes)
-  Final.chemform <- paste0(FragIons.chemform, paste0('H', ChargeZ))
-  CalPeaks <- isopattern(isotopes,
-                         chemforms = Final.chemform,
-                         charge = ChargeZ,
-                         plotit = FALSE,
-                         algo = 2,
-                         emass = 0.00054858,
-                         threshold=0.1,
-                         verbose = FALSE)
-  Cal.envelope <- envelope(CalPeaks,
-                           verbose = FALSE,
-                           resolution = 1E5,
-                           dmz = 0.01)
-  Cal.mz <- vdetect(Cal.envelope, detect="centroid", plotit= FALSE, verbose=FALSE)
-  Cal.mz <- as.data.table(Cal.mz[[1]])
-  return(Cal.mz)
-}
-"""
 
 
 def print_time():
@@ -220,8 +193,6 @@ class Param(dict):
         workplace_dir: Working directory path, output results will be saved here
                     Subdirectories named by prsm_id, e.g., workplace_dir/prsm346/
 
-        r_env_dir: R environment directory path, used by enviPat library for isotope peak calculation
-
         unloc_mod: Variable modification config (header + scan indexed data)
                 header: ["name", "formula", "start_loc", "end_loc", "ion type"]
                 - name: modification name
@@ -272,7 +243,6 @@ class Param(dict):
         return {
             "sequence": {},
             "msalign_file_dir": "",
-            "r_env_dir": "G:\\software\\R\\R-4.2.3",
             "unloc_mod": {
                 "header": ["name", "formula", "start_loc", "end_loc", "ion type"]
             },
@@ -318,9 +288,6 @@ class PandaUV:
         self.param = param
         self.dec_info_list = None
         self.mzmlReader = None
-        self.r_initialized = False
-        self.r_source = None
-        self.r_lock = None
         self.first_mass_match_ppm = 20
         if self.param["mass_mode"] == "M":
             self.add_H = False
@@ -328,17 +295,7 @@ class PandaUV:
             self.add_H = True
         else:
             raise ValueError(f"Invalid mass_mode: {self.param['mass_mode']}")
-
-    def _init_r_environment(self):
-        os.environ["LC_ALL"] = "Chinese_China.65001"
-        os.environ["R_HOME"] = self.param["r_env_dir"]
-        import rpy2.robjects as robjects
-
-        self.r_source = robjects.r
-        self.r_source(r_script)
-        self.r_initialized = True
-        self.r_lock = threading.Lock()
-        print(f"Initiating R environment: {os.environ['R_HOME']}")
+        self.lock = threading.Lock()
 
     def _apply_mass_mode_adjustment(self, mono_arr):
         if self.add_H:
@@ -370,7 +327,6 @@ class PandaUV:
         print_time()
         self.dec_info_list = get_dec_info(self.param["msalign_file_dir"])
         self.mzmlReader = list(mzml.read(self.param["mzml_file_dir"], use_index=True))
-        self._init_r_environment()
 
     def get_unloc_mod(self, scan):
         unloc_mod_json = self.param.get("unloc_mod", "")
@@ -478,13 +434,10 @@ class PandaUV:
     def calculate_scores(self, pandauv_output, mz_int_arr):
         print("PCC scoring...")
 
-        def _get_score_with_lock(x):
-            with self.r_lock:
-                return get_score_term(
-                    mz_int_arr, x, self.r_source, self.param["peak_match_error"]
-                )
-
-        score_term_series = pandauv_output.apply(_get_score_with_lock, axis=1)
+        def _get_score(x):
+            return get_score_term(mz_int_arr, x, self.param["peak_match_error"])
+        with self.lock:
+            score_term_series = pandauv_output.apply(_get_score, axis=1)
         score_term_df = pd.DataFrame(
             np.vstack(score_term_series),
             columns=["PCC", "adjust_PCC", "dx", "dy", "peak num", "missing peak num"],
@@ -580,7 +533,6 @@ class PandaUV:
         scans = self.param["scans"]
         total_count = len(scans)
         completed_count = 0
-        lock = threading.Lock()
 
         def process_one_scan(scan):
             nonlocal completed_count
@@ -589,13 +541,13 @@ class PandaUV:
                 print(f"Processing scan {scan}")
                 self.match(scan, sequence, self.param["workplace_dir"])
 
-                with lock:
+                with self.lock:
                     completed_count += 1
                     print(f"Progress: {completed_count}/{total_count}")
             except Exception as e:
-                with lock:
+                with self.lock:
                     print(f"Scan {scan} failed with error: {e}")
-                executor.shutdown(wait=False, cancel_futures=True)
+                executor.shutdown(wait=False)
                 raise
 
         with ThreadPoolExecutor(max_workers=max_workers) as executor:
@@ -606,7 +558,7 @@ class PandaUV:
                     future.result()
                 except Exception as e:
                     print(f"Scan {scan} failed with error, stopping...")
-                    executor.shutdown(wait=False, cancel_futures=True)
+                    executor.shutdown(wait=False)
                     return
 
 
@@ -633,8 +585,6 @@ def argp():
 
 if __name__ == "__main__":
     param = Param()
-    param.read_param(
-        r"example_param_Ub_monomer.json"
-    )
-    # param.read_param("example_param.json")
+    # param.read_param(r"example_param_Ub_monomer.json")
+    param.read_param("example_param_OT_rep1_toppic1.5.4.json")
     main(param)
