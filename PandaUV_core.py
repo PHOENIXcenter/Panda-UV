@@ -574,7 +574,6 @@ class PandaUV:
 
     def run_parallel(self, max_workers=4):
         self.initialize()
-
         from concurrent.futures import ThreadPoolExecutor, as_completed
 
         scans = self.param["scans"]
