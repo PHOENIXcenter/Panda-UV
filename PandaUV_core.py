@@ -3,13 +3,9 @@ import copy
 import pandas as pd
 import numpy as np
 import json
-from ion_match_utils.ion_match_utils import (
-    get_Nterminal_output,
-    get_Cterminal_output,
-    get_internal_output,
+from ion_match_utils.ion_match import (
+    get_all_output,
 )
-from ion_match_utils.ProteinClass import Protein, Mod
-from ion_match_utils.ion_match_utils import _process_unknown_mod
 from ion_match_utils.utils import cal_mz
 from MS_calibration.Scoring_function_utils import get_score_term
 import argparse
@@ -35,148 +31,8 @@ def mono_preprocess(mono_mass_arr, ppm_shift):
     mono_mass_arr[:, 0] = cal_mz(mono_mass_arr[:, 0], ppm_shift)
     return mono_mass_arr
 
-
-def get_all_output(
-    mono_mass_arr,
-    protein,
-    n_terminal_frag_type,
-    c_terminal_frag_type,
-    internal_frag_type,
-    terminal_mass_error,
-    internal_mass_error,
-    unloc_mod_df,
-):
-    output_columns = [
-        "Frag Type",
-        "Observed Mass",
-        "Theoretical Mass",
-        "Start AA",
-        "End AA",
-        "Error",
-        "Fixed Mod",
-        "Unlocalized Mod",
-        "Sequence",
-        "Intensity",
-        "Formula",
-        "Charge",
-        "mz",
-    ]
-    final_output = []
-    internal_frag_type_len = len(internal_frag_type)
-    n_terminal_frag_type_len = len(n_terminal_frag_type)
-    c_terminal_frag_type_len = len(c_terminal_frag_type)
-    if n_terminal_frag_type_len != 0:
-        N_Terminal_output = get_Nterminal_output(
-            mono_mass_arr,
-            protein,
-            n_terminal_frag_type,
-            terminal_mass_error,
-            unloc_mod_df,
-        )
-        if len(N_Terminal_output):
-            final_output.append(N_Terminal_output)
-    if c_terminal_frag_type_len != 0:
-        C_Terminal_output = get_Cterminal_output(
-            mono_mass_arr,
-            protein,
-            c_terminal_frag_type,
-            terminal_mass_error,
-            unloc_mod_df,
-        )
-        if len(C_Terminal_output):
-            final_output.append(C_Terminal_output)
-    if internal_frag_type_len != 0:
-        Internal_output = get_internal_output(
-            mono_mass_arr,
-            protein,
-            internal_frag_type,
-            internal_mass_error,
-            unloc_mod_df,
-        )
-        if len(Internal_output):
-            final_output.append(Internal_output)
-    if len(final_output) == 0:
-        return final_output
-    final_output = pd.concat(final_output, ignore_index=True)
-    final_output = pd.DataFrame(final_output.values, columns=output_columns)
-    return final_output
-
-
-def get_terminal_output(
-    mono_mass_arr,
-    protein,
-    n_terminal_frag_type,
-    c_terminal_frag_type,
-    terminal_mass_error,
-    unloc_mod_df,
-):
-    output_columns = [
-        "Frag Type",
-        "Observed Mass",
-        "Theoretical Mass",
-        "Start AA",
-        "End AA",
-        "Error",
-        "Fixed Mod",
-        "Unlocalized Mod",
-        "Sequence",
-        "Intensity",
-        "Formula",
-        "Charge",
-        "mz",
-    ]
-    final_output = []
-    n_terminal_frag_type_len = len(n_terminal_frag_type)
-    c_terminal_frag_type_len = len(c_terminal_frag_type)
-    if n_terminal_frag_type_len != 0:
-        N_Terminal_output = get_Nterminal_output(
-            mono_mass_arr,
-            protein,
-            n_terminal_frag_type,
-            terminal_mass_error,
-            unloc_mod_df,
-        )
-        if len(N_Terminal_output):
-            final_output.append(N_Terminal_output)
-    if c_terminal_frag_type_len != 0:
-        C_Terminal_output = get_Cterminal_output(
-            mono_mass_arr,
-            protein,
-            c_terminal_frag_type,
-            terminal_mass_error,
-            unloc_mod_df,
-        )
-        if len(C_Terminal_output):
-            final_output.append(C_Terminal_output)
-    if len(final_output) == 0:
-        return final_output
-    final_output = pd.concat(final_output, ignore_index=True)
-    final_output = pd.DataFrame(final_output.values, columns=output_columns)
-    return final_output
-
-
 def get_terminal_error(terminal_output):
     return np.mean(terminal_output["Error"])
-
-
-def add_mod(protein, mod_df):
-    if mod_df is not None:
-        print("Adding fixed mod...")
-        for _, item in mod_df.iterrows():
-            name = item["name"]
-            formula = item["formula"]
-            loc = item["loc"]
-
-            final_formula, final_mass = _process_unknown_mod(name, formula)
-
-            mod = Mod(
-                name=name,
-                formula=final_formula,
-                loc=loc,
-                _mass=final_mass,
-            )
-            protein += mod
-    return protein
 
 
 class Param(dict):
@@ -369,15 +225,8 @@ class PandaUV:
             fixed_mod_df["loc"] = fixed_mod_df["loc"].astype(int)
         return fixed_mod_df
 
-    def load_protein(self, sequence):
-        protein = Protein(sequence)
-        print("Sequence: ", protein)
-        print("Length: ", protein.SEQLEN)
-        print("Mass: ", protein.MASS)
-        return protein
-
     # first match get mass shift
-    def first_match(self, mono_arr, protein, unloc_mod_df):
+    def first_match(self, mono_arr, sequence, fixed_mod_df, unloc_mod_df):
         mass_shift_ppm = 0
         n_terminal_frag_type = self.param["n_terminal_frag_type"]
         c_terminal_frag_type = self.param["c_terminal_frag_type"]
@@ -388,14 +237,17 @@ class PandaUV:
         if (mass_calibration or ms_calibration) and (
             len(n_terminal_frag_type) > 0 or len(c_terminal_frag_type) > 0
         ):
-            terminal_output = get_terminal_output(
-                mono_arr,
-                protein,
-                n_terminal_frag_type,
-                c_terminal_frag_type,
-                self.first_mass_match_ppm,
-                unloc_mod_df,
-            )
+            terminal_output = get_all_output(
+            mono_arr,
+            sequence,
+            fixed_mod_df,
+            unloc_mod_df,
+            self.param["n_terminal_frag_type"],
+            self.param["c_terminal_frag_type"],
+            [],
+            self.first_mass_match_ppm,
+            self.first_mass_match_ppm,
+        )
             if len(terminal_output) == 0:
                 print("No fragment matched, please check input")
             else:
@@ -423,17 +275,18 @@ class PandaUV:
         return mz_int_arr
 
     # second match get the terminal and internal fragment results
-    def second_match(self, mono_arr, protein, unloc_mod_df):
+    def second_match(self, mono_arr, sequence, fixed_mod_df, unloc_mod_df):
         print("Matching fragments...")
         pandauv_output = get_all_output(
             mono_arr,
-            protein,
+            sequence,
+            fixed_mod_df,
+            unloc_mod_df,
             self.param["n_terminal_frag_type"],
             self.param["c_terminal_frag_type"],
             self.param["internal_frag_type"],
             self.param["terminal_mass_error"],
             self.param["internal_mass_error"],
-            unloc_mod_df,
         )
         return pandauv_output
 
@@ -453,9 +306,8 @@ class PandaUV:
         return pandauv_output_with_PCC
 
     # drop the duplicated matches
-    def post_process(self, protein, pandauv_output_with_PCC):
+    def post_process(self, seqLen, pandauv_output_with_PCC):
         print("Dropping duplicates...")
-        seqLen = protein.SEQLEN
         pandauv_output_with_PCC = stratage_4.post_process(
             pandauv_output_with_PCC, seqLen
         )
@@ -478,7 +330,7 @@ class PandaUV:
         print("DataFrame saving successful. ")
 
     def save_and_plot(
-        self, protein, pandauv_output_with_PCC, mono_arr, sequence, output_dir
+        self, seqLen, pandauv_output_with_PCC, mono_arr, sequence, output_dir
     ):
 
         print("Saving result....")
@@ -487,7 +339,7 @@ class PandaUV:
         )
 
         with open(f"{output_dir}/fragment_matching_result_sta.txt", mode="w") as f:
-            f.write(get_process_info(pandauv_output_with_PCC, mono_arr, protein.SEQLEN))
+            f.write(get_process_info(pandauv_output_with_PCC, mono_arr, seqLen))
 
         print(f"Output dir: {output_dir}")
         print_time()
@@ -509,19 +361,18 @@ class PandaUV:
         mz_int_arr = self._get_mz_int_arr_by_scan(scan)
         unloc_mod_df = self.get_unloc_mod(scan)
         fixed_mod_df = self.get_fixed_mod(scan)
-        protein = self.load_protein(sequence)
-        protein = add_mod(protein, fixed_mod_df)
-        mass_shift_ppm = self.first_match(mono_arr, protein, unloc_mod_df)
+        seqLen = len(sequence)
+        mass_shift_ppm = self.first_match(mono_arr, sequence, fixed_mod_df, unloc_mod_df)
         mono_arr = self.calibrate_mass(mono_arr, mass_shift_ppm)
         mz_int_arr = self.calibrate_mz(mz_int_arr, mass_shift_ppm)
-        pandauv_output = self.second_match(mono_arr, protein, unloc_mod_df)
+        pandauv_output = self.second_match(mono_arr, sequence, fixed_mod_df, unloc_mod_df)
         if len(pandauv_output) == 0:
             print(f"Scan {scan} not match fragments")
             return
         pandauv_output_with_PCC = self.calculate_scores(pandauv_output, mz_int_arr)
-        pandauv_output_with_PCC = self.post_process(protein, pandauv_output_with_PCC)
+        pandauv_output_with_PCC = self.post_process(seqLen, pandauv_output_with_PCC)
         self.save_and_plot(
-            protein, pandauv_output_with_PCC, mono_arr, sequence, output_dir
+            seqLen, pandauv_output_with_PCC, mono_arr, sequence, output_dir
         )
         # return pandauv_output_with_PCC
 
@@ -592,8 +443,8 @@ def argp():
 
 if __name__ == "__main__":
     param = Param()
-    #param.read_param(r"example_param_Ub_monomer.json")
-    param.read_param("example_param_OT_rep1_toppic1.5.4.json")
+    param.read_param(r"example_param_Mb_monomer.json")
+    #param.read_param("example_param_OT_rep1_toppic1.5.4.json")
     #param.read_param(r"Z:\I\EnvCNN_Publish_Data\Ovarian_Tumor_Data\raw\CPTAC_Intact_rep1_15Jan15_Bane_C2-14-08-02RZ_html\toppic_prsm_cutoff\data_js\prsms\Panda-UV_param.json")
-    param["thread"] = 4
+    param["thread"] = 1
     main(param)

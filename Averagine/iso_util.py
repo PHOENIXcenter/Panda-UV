@@ -1,7 +1,8 @@
 import sys
-#sys.path.insert(0, r'.')
-import averagine
+import os
 from pyteomics import mass
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from Averagine import averagine
 
 avgDict = dict({'C':4.9384,'H':7.7583,'O':1.4773,'N':1.3577,'S':0.0417})
 eleDict = dict({'C':12.00,'H':1.00782503207,'O':15.99491461956,'N':14.0030740048,'S':31.972071})
