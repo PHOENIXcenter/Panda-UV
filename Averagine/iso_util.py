@@ -1,5 +1,5 @@
 import sys
-sys.path.insert(0, r'.')
+#sys.path.insert(0, r'.')
 import averagine
 from pyteomics import mass
 

@@ -4,9 +4,9 @@ import sys
 import os
 import copy
 
-sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)),r"../Averagine"))
-import averagine
-from iso_util import iso_adjust,mass_to_formula
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from Averagine import averagine
+from Averagine.iso_util import iso_adjust,mass_to_formula
 
 # 计算两个值之间，向量之间，向量和值之间的误差。
 def cal_ppm(mz1, mz2):

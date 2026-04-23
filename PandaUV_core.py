@@ -3,12 +3,13 @@ import copy
 import pandas as pd
 import numpy as np
 import json
-from ion_match_utils.terminal_ion_match import (
-    get_Nterminal_CM_output,
-    get_Cterminal_CM_output,
+from ion_match_utils.ion_match_utils import (
+    get_Nterminal_output,
+    get_Cterminal_output,
+    get_internal_output,
 )
-from ion_match_utils.internal_ion_match import get_internal_CM_output
 from ion_match_utils.ProteinClass import Protein, Mod
+from ion_match_utils.ion_match_utils import _process_unknown_mod
 from ion_match_utils.utils import cal_mz
 from MS_calibration.Scoring_function_utils import get_score_term
 import argparse
@@ -16,7 +17,7 @@ import datetime
 import os
 import threading
 
-from Averagine.iso_util import mass_to_formula,H_proton_mass
+from Averagine.iso_util import H_proton_mass
 
 from post_process_utils.post_process import get_process_info
 from post_process_utils import stratage_4
@@ -65,7 +66,7 @@ def get_all_output(
     n_terminal_frag_type_len = len(n_terminal_frag_type)
     c_terminal_frag_type_len = len(c_terminal_frag_type)
     if n_terminal_frag_type_len != 0:
-        N_Terminal_output = get_Nterminal_CM_output(
+        N_Terminal_output = get_Nterminal_output(
             mono_mass_arr,
             protein,
             n_terminal_frag_type,
@@ -75,7 +76,7 @@ def get_all_output(
         if len(N_Terminal_output):
             final_output.append(N_Terminal_output)
     if c_terminal_frag_type_len != 0:
-        C_Terminal_output = get_Cterminal_CM_output(
+        C_Terminal_output = get_Cterminal_output(
             mono_mass_arr,
             protein,
             c_terminal_frag_type,
@@ -85,7 +86,7 @@ def get_all_output(
         if len(C_Terminal_output):
             final_output.append(C_Terminal_output)
     if internal_frag_type_len != 0:
-        Internal_output = get_internal_CM_output(
+        Internal_output = get_internal_output(
             mono_mass_arr,
             protein,
             internal_frag_type,
@@ -128,7 +129,7 @@ def get_terminal_output(
     n_terminal_frag_type_len = len(n_terminal_frag_type)
     c_terminal_frag_type_len = len(c_terminal_frag_type)
     if n_terminal_frag_type_len != 0:
-        N_Terminal_output = get_Nterminal_CM_output(
+        N_Terminal_output = get_Nterminal_output(
             mono_mass_arr,
             protein,
             n_terminal_frag_type,
@@ -138,7 +139,7 @@ def get_terminal_output(
         if len(N_Terminal_output):
             final_output.append(N_Terminal_output)
     if c_terminal_frag_type_len != 0:
-        C_Terminal_output = get_Cterminal_CM_output(
+        C_Terminal_output = get_Cterminal_output(
             mono_mass_arr,
             protein,
             c_terminal_frag_type,
@@ -166,14 +167,7 @@ def add_mod(protein, mod_df):
             formula = item["formula"]
             loc = item["loc"]
 
-            if name.replace('.', '', 1).isdigit() and formula.lower() == "unknown":
-                inferred_formula = mass_to_formula(float(name))
-                final_formula = inferred_formula
-                final_mass = float(name)
-                print(f"Warning: Unknown formula for modification {name}, inferred as {final_formula}")
-            else:
-                final_formula = formula
-                final_mass = mass.calculate_mass(formula=formula)
+            final_formula, final_mass = _process_unknown_mod(name, formula)
 
             mod = Mod(
                 name=name,
@@ -598,8 +592,8 @@ def argp():
 
 if __name__ == "__main__":
     param = Param()
-    # param.read_param(r"example_param_Ub_monomer.json")
-    #param.read_param("example_param_OT_rep1_toppic1.5.4.json")
-    param.read_param(r"Z:\I\EnvCNN_Publish_Data\Ovarian_Tumor_Data\raw\CPTAC_Intact_rep1_15Jan15_Bane_C2-14-08-02RZ_html\toppic_prsm_cutoff\data_js\prsms\Panda-UV_param.json")
-    param["thread"] = 8
+    #param.read_param(r"example_param_Ub_monomer.json")
+    param.read_param("example_param_OT_rep1_toppic1.5.4.json")
+    #param.read_param(r"Z:\I\EnvCNN_Publish_Data\Ovarian_Tumor_Data\raw\CPTAC_Intact_rep1_15Jan15_Bane_C2-14-08-02RZ_html\toppic_prsm_cutoff\data_js\prsms\Panda-UV_param.json")
+    param["thread"] = 4
     main(param)
