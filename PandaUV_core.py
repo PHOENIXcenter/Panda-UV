@@ -16,7 +16,7 @@ import datetime
 import os
 import threading
 
-H_proton_mass = 1.00782503207
+from Averagine.iso_util import mass_to_formula,H_proton_mass
 
 from post_process_utils.post_process import get_process_info
 from post_process_utils import stratage_4
@@ -162,11 +162,24 @@ def add_mod(protein, mod_df):
     if mod_df is not None:
         print("Adding fixed mod...")
         for _, item in mod_df.iterrows():
+            name = item["name"]
+            formula = item["formula"]
+            loc = item["loc"]
+
+            if name.replace('.', '', 1).isdigit() and formula.lower() == "unknown":
+                inferred_formula = mass_to_formula(float(name))
+                final_formula = inferred_formula
+                final_mass = float(name)
+                print(f"Warning: Unknown formula for modification {name}, inferred as {final_formula}")
+            else:
+                final_formula = formula
+                final_mass = mass.calculate_mass(formula=formula)
+
             mod = Mod(
-                name=item["name"],
-                formula=item["formula"],
-                loc=item["loc"],
-                _mass=mass.calculate_mass(formula=item["formula"]),
+                name=name,
+                formula=final_formula,
+                loc=loc,
+                _mass=final_mass,
             )
             protein += mod
     return protein
@@ -586,5 +599,7 @@ def argp():
 if __name__ == "__main__":
     param = Param()
     # param.read_param(r"example_param_Ub_monomer.json")
-    param.read_param("example_param_OT_rep1_toppic1.5.4.json")
+    #param.read_param("example_param_OT_rep1_toppic1.5.4.json")
+    param.read_param(r"Z:\I\EnvCNN_Publish_Data\Ovarian_Tumor_Data\raw\CPTAC_Intact_rep1_15Jan15_Bane_C2-14-08-02RZ_html\toppic_prsm_cutoff\data_js\prsms\Panda-UV_param.json")
+    param["thread"] = 8
     main(param)

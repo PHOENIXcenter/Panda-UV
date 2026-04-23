@@ -6,7 +6,7 @@ import copy
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)),r"../Averagine"))
 import averagine
-
+from iso_util import iso_adjust,mass_to_formula
 
 # 计算两个值之间，向量之间，向量和值之间的误差。
 def cal_ppm(mz1, mz2):
@@ -284,8 +284,12 @@ def get_score_term(ms_peak_arr_shift, ions_df_i, peak_match_error):
     # print(ions_df_i)
     formula = comp_to_formula(ions_df_i["Formula"])
     charge = int(ions_df_i["Charge"])
+    _mass = ions_df_i["Theoretical Mass"]
     # 根据分子式和电荷计算理论同位素分布
+    #use emass based averagine model cal iso peak arr
     iso_peak_arr = averagine.formula_to_iso(formula, charge)
+    #ensure the mono peak m/z align to the mass. the formula mass may not equal to the input mass cause averagine has error.
+    iso_peak_arr = iso_adjust(_mass,charge,iso_peak_arr)
     # 根据理论同位素峰分布匹配实验分布，没有匹配到则使用对应的理论峰填充，强度设为0
     match_peak_arr = iso_peak_match(
         iso_peak_arr, ms_peak_arr_shift, peak_match_error
@@ -313,7 +317,15 @@ def get_score_term(ms_peak_arr_shift, ions_df_i, peak_match_error):
 
 
 if __name__ == "__main__":
-    result1 = averagine.formula_to_iso("H749C470O136N131S1", 5)
+    test_formula = 'H749C470O136N131S1'
+    test_mass = mass.calculate_mass(formula = test_formula,charge=0)
+    result1 = averagine.formula_to_iso(test_formula, 5)
     print(result1)
-    result2 = averagine.mass_to_iso(mass.calculate_mass("H749C470O136N131S1"), 5)
+    result2 = averagine.mass_to_iso(test_mass, 5)
     print(result2)
+    # 返回 shape=(N, 2) 的 numpy array
+    # 每行 [mass, relative_abundance]
+    test_avg_formula = mass_to_formula(test_mass)
+    result3 = averagine.formula_to_iso(test_avg_formula,5)
+    result3 = iso_adjust(test_mass,5,result3)
+    print(result3)

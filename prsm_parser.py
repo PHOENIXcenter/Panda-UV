@@ -112,7 +112,8 @@ def parse_prsm_directory(msalign_file_dir, mzml_file_dir, workplace_dir, prsm_di
 
 
 if __name__ == "__main__":
-    base_dir = r".\examples\CPTAC_Intact_rep1_15Jan15_Bane_C2-14-08-02RZ"
+    #base_dir = r".\examples\CPTAC_Intact_rep1_15Jan15_Bane_C2-14-08-02RZ"
+    base_dir = r"Z:\I\EnvCNN_Publish_Data\Ovarian_Tumor_Data\raw"
     mzml_file_dir = os.path.join(
         base_dir, "CPTAC_Intact_rep1_15Jan15_Bane_C2-14-08-02RZ.mzML"
     )
