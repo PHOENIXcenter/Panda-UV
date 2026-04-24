@@ -110,8 +110,8 @@ class Param(dict):
                 "header": ["name", "formula", "start_loc", "end_loc", "ion type"]
             },
             "fixed_mod": {"header": ["name", "formula", "loc"]},
-            "mass_calibration": False,
-            "ms_calibration": False,
+            "mass_calibration": True,
+            "ms_calibration": True,
             "mass_mode": "M",
             "terminal_mass_error": 10,
             "internal_mass_error": 10,
@@ -443,8 +443,9 @@ def argp():
 
 if __name__ == "__main__":
     param = Param()
-    param.read_param(r"example_param_CA_monomer.json")
+    #param.read_param(r"example_param_plasma_HCD_C18_toppic1.5.4.json")
     #param.read_param("example_param_OT_rep1_toppic1.5.4.json")
     #param.read_param(r"Z:\I\EnvCNN_Publish_Data\Ovarian_Tumor_Data\raw\CPTAC_Intact_rep1_15Jan15_Bane_C2-14-08-02RZ_html\toppic_prsm_cutoff\data_js\prsms\Panda-UV_param.json")
+    param.read_param(r"Panda-UV_param.json")
     param["thread"] = 1
     main(param)

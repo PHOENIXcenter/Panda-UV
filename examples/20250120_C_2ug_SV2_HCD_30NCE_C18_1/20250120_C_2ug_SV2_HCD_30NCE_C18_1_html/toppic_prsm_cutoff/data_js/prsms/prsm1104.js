@@ -1,0 +1,6358 @@
+prsm_data =
+{
+    "prsm": {
+        "prsm_id": "1104",
+        "p_value": "2.88e-03",
+        "e_value": "2.88e-03",
+        "fdr": "1.47e-03",
+        "matched_fragment_number": "11",
+        "matched_peak_number": "15",
+        "ms": {
+            "ms_header": {
+                "spectrum_file_name": "E:/Zhuyl/LiuNing/TopFDOut/20250120_C_2ug_SV2_HCD_30NCE_C18_1_ms2.msalign",
+                "ms1_ids": "3348",
+                "ms1_scans": "9719",
+                "ids": "6385",
+                "scans": "9736",
+                "precursor_mono_mass": "2315.2023",
+                "precursor_charge": "3",
+                "precursor_mz": "772.7414",
+                "feature_inte": "1.9332e+06"
+            },
+            "peaks": {
+                "peak": [
+                    {
+                        "spec_id": "6385",
+                        "peak_id": "0",
+                        "monoisotopic_mass": "2217.0016",
+                        "monoisotopic_mz": "740.0078",
+                        "intensity": "910086.04",
+                        "charge": "3"
+                    },
+                    {
+                        "spec_id": "6385",
+                        "peak_id": "1",
+                        "monoisotopic_mass": "1088.5853",
+                        "monoisotopic_mz": "545.2999",
+                        "intensity": "547818.98",
+                        "charge": "2",
+                        "matched_ions_num": "1",
+                        "matched_ions": {
+                            "matched_ion": {
+                                "ion_type": "Y",
+                                "match_shift": "0.0000000000",
+                                "theoretical_mass": "1088.5727",
+                                "ion_position": "11",
+                                "ion_display_position": "11",
+                                "ion_sort_name": "Y00011",
+                                "ion_left_position": "11",
+                                "mass_error": "0.0126",
+                                "ppm": "11.58"
+                            }
+                        }
+                    },
+                    {
+                        "spec_id": "6385",
+                        "peak_id": "2",
+                        "monoisotopic_mass": "2315.2011",
+                        "monoisotopic_mz": "772.7410",
+                        "intensity": "764823.61",
+                        "charge": "3"
+                    },
+                    {
+                        "spec_id": "6385",
+                        "peak_id": "3",
+                        "monoisotopic_mass": "2088.0365",
+                        "monoisotopic_mz": "1045.0255",
+                        "intensity": "238193.31",
+                        "charge": "2",
+                        "matched_ions_num": "1",
+                        "matched_ions": {
+                            "matched_ion": {
+                                "ion_type": "Y",
+                                "match_shift": "0.0000000000",
+                                "theoretical_mass": "2088.0137",
+                                "ion_position": "2",
+                                "ion_display_position": "20",
+                                "ion_sort_name": "Y00020",
+                                "ion_left_position": "2",
+                                "mass_error": "0.0228",
+                                "ppm": "10.92"
+                            }
+                        }
+                    },
+                    {
+                        "spec_id": "6385",
+                        "peak_id": "4",
+                        "monoisotopic_mass": "772.0236",
+                        "monoisotopic_mz": "773.0308",
+                        "intensity": "385192.53",
+                        "charge": "1"
+                    },
+                    {
+                        "spec_id": "6385",
+                        "peak_id": "5",
+                        "monoisotopic_mass": "1226.6177",
+                        "monoisotopic_mz": "1227.6250",
+                        "intensity": "259930.68",
+                        "charge": "1",
+                        "matched_ions_num": "1",
+                        "matched_ions": {
+                            "matched_ion": {
+                                "ion_type": "B",
+                                "match_shift": "0.0000000000",
+                                "theoretical_mass": "1226.6044",
+                                "ion_position": "11",
+                                "ion_display_position": "11",
+                                "ion_sort_name": "B00011",
+                                "ion_left_position": "11",
+                                "mass_error": "0.0133",
+                                "ppm": "10.87"
+                            }
+                        }
+                    },
+                    {
+                        "spec_id": "6385",
+                        "peak_id": "6",
+                        "monoisotopic_mass": "2119.9450",
+                        "monoisotopic_mz": "1060.9798",
+                        "intensity": "242031.09",
+                        "charge": "2"
+                    },
+                    {
+                        "spec_id": "6385",
+                        "peak_id": "7",
+                        "monoisotopic_mass": "1323.6723",
+                        "monoisotopic_mz": "662.8434",
+                        "intensity": "197693.06",
+                        "charge": "2",
+                        "matched_ions_num": "1",
+                        "matched_ions": {
+                            "matched_ion": {
+                                "ion_type": "B",
+                                "match_shift": "0.0000000000",
+                                "theoretical_mass": "1323.6571",
+                                "ion_position": "12",
+                                "ion_display_position": "12",
+                                "ion_sort_name": "B00012",
+                                "ion_left_position": "12",
+                                "mass_error": "0.0152",
+                                "ppm": "11.48"
+                            }
+                        }
+                    },
+                    {
+                        "spec_id": "6385",
+                        "peak_id": "8",
+                        "monoisotopic_mass": "1973.9929",
+                        "monoisotopic_mz": "988.0037",
+                        "intensity": "185438.64",
+                        "charge": "2",
+                        "matched_ions_num": "1",
+                        "matched_ions": {
+                            "matched_ion": {
+                                "ion_type": "Y",
+                                "match_shift": "0.0000000000",
+                                "theoretical_mass": "1973.9708",
+                                "ion_position": "3",
+                                "ion_display_position": "19",
+                                "ion_sort_name": "Y00019",
+                                "ion_left_position": "3",
+                                "mass_error": "0.0222",
+                                "ppm": "11.23"
+                            }
+                        }
+                    },
+                    {
+                        "spec_id": "6385",
+                        "peak_id": "9",
+                        "monoisotopic_mass": "894.4768",
+                        "monoisotopic_mz": "895.4841",
+                        "intensity": "195527.04",
+                        "charge": "1",
+                        "matched_ions_num": "1",
+                        "matched_ions": {
+                            "matched_ion": {
+                                "ion_type": "Y",
+                                "match_shift": "0.0000000000",
+                                "theoretical_mass": "894.4672",
+                                "ion_position": "13",
+                                "ion_display_position": "9",
+                                "ion_sort_name": "Y00009",
+                                "ion_left_position": "13",
+                                "mass_error": "0.0096",
+                                "ppm": "10.76"
+                            }
+                        }
+                    },
+                    {
+                        "spec_id": "6385",
+                        "peak_id": "10",
+                        "monoisotopic_mass": "2215.9988",
+                        "monoisotopic_mz": "1109.0067",
+                        "intensity": "210968.47",
+                        "charge": "2"
+                    },
+                    {
+                        "spec_id": "6385",
+                        "peak_id": "11",
+                        "monoisotopic_mass": "2198.9895",
+                        "monoisotopic_mz": "734.0038",
+                        "intensity": "163695.93",
+                        "charge": "3"
+                    },
+                    {
+                        "spec_id": "6385",
+                        "peak_id": "12",
+                        "monoisotopic_mass": "991.5303",
+                        "monoisotopic_mz": "992.5376",
+                        "intensity": "164904.29",
+                        "charge": "1",
+                        "matched_ions_num": "1",
+                        "matched_ions": {
+                            "matched_ion": {
+                                "ion_type": "Y",
+                                "match_shift": "0.0000000000",
+                                "theoretical_mass": "991.5199",
+                                "ion_position": "12",
+                                "ion_display_position": "10",
+                                "ion_sort_name": "Y00010",
+                                "ion_left_position": "12",
+                                "mass_error": "0.0104",
+                                "ppm": "10.48"
+                            }
+                        }
+                    },
+                    {
+                        "spec_id": "6385",
+                        "peak_id": "13",
+                        "monoisotopic_mass": "991.5316",
+                        "monoisotopic_mz": "496.7731",
+                        "intensity": "240186.21",
+                        "charge": "2",
+                        "matched_ions_num": "1",
+                        "matched_ions": {
+                            "matched_ion": {
+                                "ion_type": "Y",
+                                "match_shift": "0.0000000000",
+                                "theoretical_mass": "991.5199",
+                                "ion_position": "12",
+                                "ion_display_position": "10",
+                                "ion_sort_name": "Y00010",
+                                "ion_left_position": "12",
+                                "mass_error": "0.0117",
+                                "ppm": "11.76"
+                            }
+                        }
+                    },
+                    {
+                        "spec_id": "6385",
+                        "peak_id": "14",
+                        "monoisotopic_mass": "726.3852",
+                        "monoisotopic_mz": "727.3925",
+                        "intensity": "196186.34",
+                        "charge": "1",
+                        "matched_ions_num": "1",
+                        "matched_ions": {
+                            "matched_ion": {
+                                "ion_type": "Y",
+                                "match_shift": "0.0000000000",
+                                "theoretical_mass": "726.3773",
+                                "ion_position": "15",
+                                "ion_display_position": "7",
+                                "ion_sort_name": "Y00007",
+                                "ion_left_position": "15",
+                                "mass_error": "0.0080",
+                                "ppm": "10.95"
+                            }
+                        }
+                    },
+                    {
+                        "spec_id": "6385",
+                        "peak_id": "15",
+                        "monoisotopic_mass": "1876.8217",
+                        "monoisotopic_mz": "939.4181",
+                        "intensity": "117325.15",
+                        "charge": "2"
+                    },
+                    {
+                        "spec_id": "6385",
+                        "peak_id": "16",
+                        "monoisotopic_mass": "2299.0526",
+                        "monoisotopic_mz": "767.3581",
+                        "intensity": "117451.72",
+                        "charge": "3"
+                    },
+                    {
+                        "spec_id": "6385",
+                        "peak_id": "17",
+                        "monoisotopic_mass": "2003.9158",
+                        "monoisotopic_mz": "1002.9652",
+                        "intensity": "119258.92",
+                        "charge": "2"
+                    },
+                    {
+                        "spec_id": "6385",
+                        "peak_id": "18",
+                        "monoisotopic_mass": "1226.6185",
+                        "monoisotopic_mz": "614.3165",
+                        "intensity": "82041.29",
+                        "charge": "2",
+                        "matched_ions_num": "1",
+                        "matched_ions": {
+                            "matched_ion": {
+                                "ion_type": "B",
+                                "match_shift": "0.0000000000",
+                                "theoretical_mass": "1226.6044",
+                                "ion_position": "11",
+                                "ion_display_position": "11",
+                                "ion_sort_name": "B00011",
+                                "ion_left_position": "11",
+                                "mass_error": "0.0141",
+                                "ppm": "11.51"
+                            }
+                        }
+                    },
+                    {
+                        "spec_id": "6385",
+                        "peak_id": "19",
+                        "monoisotopic_mass": "2146.0649",
+                        "monoisotopic_mz": "716.3622",
+                        "intensity": "208909.95",
+                        "charge": "3"
+                    },
+                    {
+                        "spec_id": "6385",
+                        "peak_id": "20",
+                        "monoisotopic_mass": "1588.8176",
+                        "monoisotopic_mz": "795.4161",
+                        "intensity": "105302.32",
+                        "charge": "2",
+                        "matched_ions_num": "1",
+                        "matched_ions": {
+                            "matched_ion": {
+                                "ion_type": "B",
+                                "match_shift": "0.0000000000",
+                                "theoretical_mass": "1588.7998",
+                                "ion_position": "15",
+                                "ion_display_position": "15",
+                                "ion_sort_name": "B00015",
+                                "ion_left_position": "15",
+                                "mass_error": "0.0178",
+                                "ppm": "11.21"
+                            }
+                        }
+                    },
+                    {
+                        "spec_id": "6385",
+                        "peak_id": "21",
+                        "monoisotopic_mass": "1420.7236",
+                        "monoisotopic_mz": "711.3691",
+                        "intensity": "110616.99",
+                        "charge": "2",
+                        "matched_ions_num": "1",
+                        "matched_ions": {
+                            "matched_ion": {
+                                "ion_type": "B",
+                                "match_shift": "0.0000000000",
+                                "theoretical_mass": "1420.7099",
+                                "ion_position": "13",
+                                "ion_display_position": "13",
+                                "ion_sort_name": "B00013",
+                                "ion_left_position": "13",
+                                "mass_error": "0.0137",
+                                "ppm": "9.64"
+                            }
+                        }
+                    },
+                    {
+                        "spec_id": "6385",
+                        "peak_id": "22",
+                        "monoisotopic_mass": "1544.7154",
+                        "monoisotopic_mz": "773.3650",
+                        "intensity": "684842.26",
+                        "charge": "2"
+                    },
+                    {
+                        "spec_id": "6385",
+                        "peak_id": "23",
+                        "monoisotopic_mass": "2186.1028",
+                        "monoisotopic_mz": "1094.0587",
+                        "intensity": "90702.50",
+                        "charge": "2"
+                    },
+                    {
+                        "spec_id": "6385",
+                        "peak_id": "24",
+                        "monoisotopic_mass": "726.3862",
+                        "monoisotopic_mz": "364.2004",
+                        "intensity": "108440.70",
+                        "charge": "2",
+                        "matched_ions_num": "1",
+                        "matched_ions": {
+                            "matched_ion": {
+                                "ion_type": "Y",
+                                "match_shift": "0.0000000000",
+                                "theoretical_mass": "726.3773",
+                                "ion_position": "15",
+                                "ion_display_position": "7",
+                                "ion_sort_name": "Y00007",
+                                "ion_left_position": "15",
+                                "mass_error": "0.0089",
+                                "ppm": "12.27"
+                            }
+                        }
+                    },
+                    {
+                        "spec_id": "6385",
+                        "peak_id": "25",
+                        "monoisotopic_mass": "683.3393",
+                        "monoisotopic_mz": "684.3466",
+                        "intensity": "24657.70",
+                        "charge": "1"
+                    },
+                    {
+                        "spec_id": "6385",
+                        "peak_id": "26",
+                        "monoisotopic_mass": "1088.5840",
+                        "monoisotopic_mz": "1089.5913",
+                        "intensity": "49772.72",
+                        "charge": "1",
+                        "matched_ions_num": "1",
+                        "matched_ions": {
+                            "matched_ion": {
+                                "ion_type": "Y",
+                                "match_shift": "0.0000000000",
+                                "theoretical_mass": "1088.5727",
+                                "ion_position": "11",
+                                "ion_display_position": "11",
+                                "ion_sort_name": "Y00011",
+                                "ion_left_position": "11",
+                                "mass_error": "0.0113",
+                                "ppm": "10.42"
+                            }
+                        }
+                    },
+                    {
+                        "spec_id": "6385",
+                        "peak_id": "27",
+                        "monoisotopic_mass": "740.6707",
+                        "monoisotopic_mz": "741.6780",
+                        "intensity": "26455.20",
+                        "charge": "1"
+                    },
+                    {
+                        "spec_id": "6385",
+                        "peak_id": "28",
+                        "monoisotopic_mass": "2004.9186",
+                        "monoisotopic_mz": "669.3135",
+                        "intensity": "71419.85",
+                        "charge": "3"
+                    },
+                    {
+                        "spec_id": "6385",
+                        "peak_id": "29",
+                        "monoisotopic_mass": "797.4219",
+                        "monoisotopic_mz": "798.4291",
+                        "intensity": "36750.00",
+                        "charge": "1",
+                        "matched_ions_num": "1",
+                        "matched_ions": {
+                            "matched_ion": {
+                                "ion_type": "Y",
+                                "match_shift": "0.0000000000",
+                                "theoretical_mass": "797.4144",
+                                "ion_position": "14",
+                                "ion_display_position": "8",
+                                "ion_sort_name": "Y00008",
+                                "ion_left_position": "14",
+                                "mass_error": "0.0075",
+                                "ppm": "9.36"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "annotated_protein": {
+            "sequence_id": "24",
+            "proteoform_id": "1338",
+            "sequence_name": "sp|Q15942|ZYX_HUMAN",
+            "sequence_description": "Zyxin OS=Homo sapiens OX=9606 GN=ZYX PE=1 SV=1",
+            "proteoform_mass": "2315.1771",
+            "n_acetylation": "0",
+            "unexpected_shift_number": "0",
+            "annotation": {
+                "protein_length": "572",
+                "first_residue_position": "34",
+                "last_residue_position": "55",
+                "annotated_seq": "P.KVNPFRPGDSEPPPAPGAQRAQ.M",
+                "residue": [
+                    {
+                        "position": "0",
+                        "acid": "M"
+                    },
+                    {
+                        "position": "1",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "2",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "3",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "4",
+                        "acid": "R"
+                    },
+                    {
+                        "position": "5",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "6",
+                        "acid": "S"
+                    },
+                    {
+                        "position": "7",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "8",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "9",
+                        "acid": "I"
+                    },
+                    {
+                        "position": "10",
+                        "acid": "S"
+                    },
+                    {
+                        "position": "11",
+                        "acid": "V"
+                    },
+                    {
+                        "position": "12",
+                        "acid": "S"
+                    },
+                    {
+                        "position": "13",
+                        "acid": "V"
+                    },
+                    {
+                        "position": "14",
+                        "acid": "S"
+                    },
+                    {
+                        "position": "15",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "16",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "17",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "18",
+                        "acid": "F"
+                    },
+                    {
+                        "position": "19",
+                        "acid": "Y"
+                    },
+                    {
+                        "position": "20",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "21",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "22",
+                        "acid": "Q"
+                    },
+                    {
+                        "position": "23",
+                        "acid": "K"
+                    },
+                    {
+                        "position": "24",
+                        "acid": "K"
+                    },
+                    {
+                        "position": "25",
+                        "acid": "F"
+                    },
+                    {
+                        "position": "26",
+                        "acid": "G"
+                    },
+                    {
+                        "position": "27",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "28",
+                        "acid": "V"
+                    },
+                    {
+                        "position": "29",
+                        "acid": "V"
+                    },
+                    {
+                        "position": "30",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "31",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "32",
+                        "acid": "K"
+                    },
+                    {
+                        "position": "33",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "34",
+                        "acid": "K"
+                    },
+                    {
+                        "position": "35",
+                        "acid": "V"
+                    },
+                    {
+                        "position": "36",
+                        "acid": "N"
+                    },
+                    {
+                        "position": "37",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "38",
+                        "acid": "F"
+                    },
+                    {
+                        "position": "39",
+                        "acid": "R"
+                    },
+                    {
+                        "position": "40",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "41",
+                        "acid": "G"
+                    },
+                    {
+                        "position": "42",
+                        "acid": "D"
+                    },
+                    {
+                        "position": "43",
+                        "acid": "S"
+                    },
+                    {
+                        "position": "44",
+                        "acid": "E"
+                    },
+                    {
+                        "position": "45",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "46",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "47",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "48",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "49",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "50",
+                        "acid": "G"
+                    },
+                    {
+                        "position": "51",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "52",
+                        "acid": "Q"
+                    },
+                    {
+                        "position": "53",
+                        "acid": "R"
+                    },
+                    {
+                        "position": "54",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "55",
+                        "acid": "Q"
+                    },
+                    {
+                        "position": "56",
+                        "acid": "M"
+                    },
+                    {
+                        "position": "57",
+                        "acid": "G"
+                    },
+                    {
+                        "position": "58",
+                        "acid": "R"
+                    },
+                    {
+                        "position": "59",
+                        "acid": "V"
+                    },
+                    {
+                        "position": "60",
+                        "acid": "G"
+                    },
+                    {
+                        "position": "61",
+                        "acid": "E"
+                    },
+                    {
+                        "position": "62",
+                        "acid": "I"
+                    },
+                    {
+                        "position": "63",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "64",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "65",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "66",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "67",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "68",
+                        "acid": "E"
+                    },
+                    {
+                        "position": "69",
+                        "acid": "D"
+                    },
+                    {
+                        "position": "70",
+                        "acid": "F"
+                    },
+                    {
+                        "position": "71",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "72",
+                        "acid": "L"
+                    },
+                    {
+                        "position": "73",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "74",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "75",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "76",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "77",
+                        "acid": "L"
+                    },
+                    {
+                        "position": "78",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "79",
+                        "acid": "G"
+                    },
+                    {
+                        "position": "80",
+                        "acid": "D"
+                    },
+                    {
+                        "position": "81",
+                        "acid": "G"
+                    },
+                    {
+                        "position": "82",
+                        "acid": "D"
+                    },
+                    {
+                        "position": "83",
+                        "acid": "D"
+                    },
+                    {
+                        "position": "84",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "85",
+                        "acid": "E"
+                    },
+                    {
+                        "position": "86",
+                        "acid": "G"
+                    },
+                    {
+                        "position": "87",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "88",
+                        "acid": "L"
+                    },
+                    {
+                        "position": "89",
+                        "acid": "G"
+                    },
+                    {
+                        "position": "90",
+                        "acid": "G"
+                    },
+                    {
+                        "position": "91",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "92",
+                        "acid": "F"
+                    },
+                    {
+                        "position": "93",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "94",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "95",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "96",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "97",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "98",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "99",
+                        "acid": "I"
+                    },
+                    {
+                        "position": "100",
+                        "acid": "E"
+                    },
+                    {
+                        "position": "101",
+                        "acid": "E"
+                    },
+                    {
+                        "position": "102",
+                        "acid": "S"
+                    },
+                    {
+                        "position": "103",
+                        "acid": "F"
+                    },
+                    {
+                        "position": "104",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "105",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "106",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "107",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "108",
+                        "acid": "L"
+                    },
+                    {
+                        "position": "109",
+                        "acid": "E"
+                    },
+                    {
+                        "position": "110",
+                        "acid": "E"
+                    },
+                    {
+                        "position": "111",
+                        "acid": "E"
+                    },
+                    {
+                        "position": "112",
+                        "acid": "I"
+                    },
+                    {
+                        "position": "113",
+                        "acid": "F"
+                    },
+                    {
+                        "position": "114",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "115",
+                        "acid": "S"
+                    },
+                    {
+                        "position": "116",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "117",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "118",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "119",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "120",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "121",
+                        "acid": "E"
+                    },
+                    {
+                        "position": "122",
+                        "acid": "E"
+                    },
+                    {
+                        "position": "123",
+                        "acid": "E"
+                    },
+                    {
+                        "position": "124",
+                        "acid": "G"
+                    },
+                    {
+                        "position": "125",
+                        "acid": "G"
+                    },
+                    {
+                        "position": "126",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "127",
+                        "acid": "E"
+                    },
+                    {
+                        "position": "128",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "129",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "130",
+                        "acid": "I"
+                    },
+                    {
+                        "position": "131",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "132",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "133",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "134",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "135",
+                        "acid": "Q"
+                    },
+                    {
+                        "position": "136",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "137",
+                        "acid": "R"
+                    },
+                    {
+                        "position": "138",
+                        "acid": "E"
+                    },
+                    {
+                        "position": "139",
+                        "acid": "K"
+                    },
+                    {
+                        "position": "140",
+                        "acid": "V"
+                    },
+                    {
+                        "position": "141",
+                        "acid": "S"
+                    },
+                    {
+                        "position": "142",
+                        "acid": "S"
+                    },
+                    {
+                        "position": "143",
+                        "acid": "I"
+                    },
+                    {
+                        "position": "144",
+                        "acid": "D"
+                    },
+                    {
+                        "position": "145",
+                        "acid": "L"
+                    },
+                    {
+                        "position": "146",
+                        "acid": "E"
+                    },
+                    {
+                        "position": "147",
+                        "acid": "I"
+                    },
+                    {
+                        "position": "148",
+                        "acid": "D"
+                    },
+                    {
+                        "position": "149",
+                        "acid": "S"
+                    },
+                    {
+                        "position": "150",
+                        "acid": "L"
+                    },
+                    {
+                        "position": "151",
+                        "acid": "S"
+                    },
+                    {
+                        "position": "152",
+                        "acid": "S"
+                    },
+                    {
+                        "position": "153",
+                        "acid": "L"
+                    },
+                    {
+                        "position": "154",
+                        "acid": "L"
+                    },
+                    {
+                        "position": "155",
+                        "acid": "D"
+                    },
+                    {
+                        "position": "156",
+                        "acid": "D"
+                    },
+                    {
+                        "position": "157",
+                        "acid": "M"
+                    },
+                    {
+                        "position": "158",
+                        "acid": "T"
+                    },
+                    {
+                        "position": "159",
+                        "acid": "K"
+                    },
+                    {
+                        "position": "160",
+                        "acid": "N"
+                    },
+                    {
+                        "position": "161",
+                        "acid": "D"
+                    },
+                    {
+                        "position": "162",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "163",
+                        "acid": "F"
+                    },
+                    {
+                        "position": "164",
+                        "acid": "K"
+                    },
+                    {
+                        "position": "165",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "166",
+                        "acid": "R"
+                    },
+                    {
+                        "position": "167",
+                        "acid": "V"
+                    },
+                    {
+                        "position": "168",
+                        "acid": "S"
+                    },
+                    {
+                        "position": "169",
+                        "acid": "S"
+                    },
+                    {
+                        "position": "170",
+                        "acid": "G"
+                    },
+                    {
+                        "position": "171",
+                        "acid": "Y"
+                    },
+                    {
+                        "position": "172",
+                        "acid": "V"
+                    },
+                    {
+                        "position": "173",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "174",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "175",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "176",
+                        "acid": "V"
+                    },
+                    {
+                        "position": "177",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "178",
+                        "acid": "T"
+                    },
+                    {
+                        "position": "179",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "180",
+                        "acid": "F"
+                    },
+                    {
+                        "position": "181",
+                        "acid": "S"
+                    },
+                    {
+                        "position": "182",
+                        "acid": "S"
+                    },
+                    {
+                        "position": "183",
+                        "acid": "K"
+                    },
+                    {
+                        "position": "184",
+                        "acid": "S"
+                    },
+                    {
+                        "position": "185",
+                        "acid": "S"
+                    },
+                    {
+                        "position": "186",
+                        "acid": "T"
+                    },
+                    {
+                        "position": "187",
+                        "acid": "K"
+                    },
+                    {
+                        "position": "188",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "189",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "190",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "191",
+                        "acid": "G"
+                    },
+                    {
+                        "position": "192",
+                        "acid": "G"
+                    },
+                    {
+                        "position": "193",
+                        "acid": "T"
+                    },
+                    {
+                        "position": "194",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "195",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "196",
+                        "acid": "L"
+                    },
+                    {
+                        "position": "197",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "198",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "199",
+                        "acid": "W"
+                    },
+                    {
+                        "position": "200",
+                        "acid": "K"
+                    },
+                    {
+                        "position": "201",
+                        "acid": "S"
+                    },
+                    {
+                        "position": "202",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "203",
+                        "acid": "S"
+                    },
+                    {
+                        "position": "204",
+                        "acid": "S"
+                    },
+                    {
+                        "position": "205",
+                        "acid": "S"
+                    },
+                    {
+                        "position": "206",
+                        "acid": "Q"
+                    },
+                    {
+                        "position": "207",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "208",
+                        "acid": "L"
+                    },
+                    {
+                        "position": "209",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "210",
+                        "acid": "Q"
+                    },
+                    {
+                        "position": "211",
+                        "acid": "V"
+                    },
+                    {
+                        "position": "212",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "213",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "214",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "215",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "216",
+                        "acid": "Q"
+                    },
+                    {
+                        "position": "217",
+                        "acid": "S"
+                    },
+                    {
+                        "position": "218",
+                        "acid": "Q"
+                    },
+                    {
+                        "position": "219",
+                        "acid": "T"
+                    },
+                    {
+                        "position": "220",
+                        "acid": "Q"
+                    },
+                    {
+                        "position": "221",
+                        "acid": "F"
+                    },
+                    {
+                        "position": "222",
+                        "acid": "H"
+                    },
+                    {
+                        "position": "223",
+                        "acid": "V"
+                    },
+                    {
+                        "position": "224",
+                        "acid": "Q"
+                    },
+                    {
+                        "position": "225",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "226",
+                        "acid": "Q"
+                    },
+                    {
+                        "position": "227",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "228",
+                        "acid": "Q"
+                    },
+                    {
+                        "position": "229",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "230",
+                        "acid": "K"
+                    },
+                    {
+                        "position": "231",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "232",
+                        "acid": "Q"
+                    },
+                    {
+                        "position": "233",
+                        "acid": "V"
+                    },
+                    {
+                        "position": "234",
+                        "acid": "Q"
+                    },
+                    {
+                        "position": "235",
+                        "acid": "L"
+                    },
+                    {
+                        "position": "236",
+                        "acid": "H"
+                    },
+                    {
+                        "position": "237",
+                        "acid": "V"
+                    },
+                    {
+                        "position": "238",
+                        "acid": "Q"
+                    },
+                    {
+                        "position": "239",
+                        "acid": "S"
+                    },
+                    {
+                        "position": "240",
+                        "acid": "Q"
+                    },
+                    {
+                        "position": "241",
+                        "acid": "T"
+                    },
+                    {
+                        "position": "242",
+                        "acid": "Q"
+                    },
+                    {
+                        "position": "243",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "244",
+                        "acid": "V"
+                    },
+                    {
+                        "position": "245",
+                        "acid": "S"
+                    },
+                    {
+                        "position": "246",
+                        "acid": "L"
+                    },
+                    {
+                        "position": "247",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "248",
+                        "acid": "N"
+                    },
+                    {
+                        "position": "249",
+                        "acid": "T"
+                    },
+                    {
+                        "position": "250",
+                        "acid": "Q"
+                    },
+                    {
+                        "position": "251",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "252",
+                        "acid": "R"
+                    },
+                    {
+                        "position": "253",
+                        "acid": "G"
+                    },
+                    {
+                        "position": "254",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "255",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "256",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "257",
+                        "acid": "S"
+                    },
+                    {
+                        "position": "258",
+                        "acid": "S"
+                    },
+                    {
+                        "position": "259",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "260",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "261",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "262",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "263",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "264",
+                        "acid": "K"
+                    },
+                    {
+                        "position": "265",
+                        "acid": "F"
+                    },
+                    {
+                        "position": "266",
+                        "acid": "S"
+                    },
+                    {
+                        "position": "267",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "268",
+                        "acid": "V"
+                    },
+                    {
+                        "position": "269",
+                        "acid": "T"
+                    },
+                    {
+                        "position": "270",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "271",
+                        "acid": "K"
+                    },
+                    {
+                        "position": "272",
+                        "acid": "F"
+                    },
+                    {
+                        "position": "273",
+                        "acid": "T"
+                    },
+                    {
+                        "position": "274",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "275",
+                        "acid": "V"
+                    },
+                    {
+                        "position": "276",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "277",
+                        "acid": "S"
+                    },
+                    {
+                        "position": "278",
+                        "acid": "K"
+                    },
+                    {
+                        "position": "279",
+                        "acid": "F"
+                    },
+                    {
+                        "position": "280",
+                        "acid": "S"
+                    },
+                    {
+                        "position": "281",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "282",
+                        "acid": "G"
+                    },
+                    {
+                        "position": "283",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "284",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "285",
+                        "acid": "G"
+                    },
+                    {
+                        "position": "286",
+                        "acid": "G"
+                    },
+                    {
+                        "position": "287",
+                        "acid": "S"
+                    },
+                    {
+                        "position": "288",
+                        "acid": "G"
+                    },
+                    {
+                        "position": "289",
+                        "acid": "S"
+                    },
+                    {
+                        "position": "290",
+                        "acid": "Q"
+                    },
+                    {
+                        "position": "291",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "292",
+                        "acid": "N"
+                    },
+                    {
+                        "position": "293",
+                        "acid": "Q"
+                    },
+                    {
+                        "position": "294",
+                        "acid": "K"
+                    },
+                    {
+                        "position": "295",
+                        "acid": "L"
+                    },
+                    {
+                        "position": "296",
+                        "acid": "G"
+                    },
+                    {
+                        "position": "297",
+                        "acid": "H"
+                    },
+                    {
+                        "position": "298",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "299",
+                        "acid": "E"
+                    },
+                    {
+                        "position": "300",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "301",
+                        "acid": "L"
+                    },
+                    {
+                        "position": "302",
+                        "acid": "S"
+                    },
+                    {
+                        "position": "303",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "304",
+                        "acid": "G"
+                    },
+                    {
+                        "position": "305",
+                        "acid": "T"
+                    },
+                    {
+                        "position": "306",
+                        "acid": "G"
+                    },
+                    {
+                        "position": "307",
+                        "acid": "S"
+                    },
+                    {
+                        "position": "308",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "309",
+                        "acid": "Q"
+                    },
+                    {
+                        "position": "310",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "311",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "312",
+                        "acid": "S"
+                    },
+                    {
+                        "position": "313",
+                        "acid": "F"
+                    },
+                    {
+                        "position": "314",
+                        "acid": "T"
+                    },
+                    {
+                        "position": "315",
+                        "acid": "Y"
+                    },
+                    {
+                        "position": "316",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "317",
+                        "acid": "Q"
+                    },
+                    {
+                        "position": "318",
+                        "acid": "Q"
+                    },
+                    {
+                        "position": "319",
+                        "acid": "R"
+                    },
+                    {
+                        "position": "320",
+                        "acid": "E"
+                    },
+                    {
+                        "position": "321",
+                        "acid": "K"
+                    },
+                    {
+                        "position": "322",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "323",
+                        "acid": "R"
+                    },
+                    {
+                        "position": "324",
+                        "acid": "V"
+                    },
+                    {
+                        "position": "325",
+                        "acid": "Q"
+                    },
+                    {
+                        "position": "326",
+                        "acid": "E"
+                    },
+                    {
+                        "position": "327",
+                        "acid": "K"
+                    },
+                    {
+                        "position": "328",
+                        "acid": "Q"
+                    },
+                    {
+                        "position": "329",
+                        "acid": "H"
+                    },
+                    {
+                        "position": "330",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "331",
+                        "acid": "V"
+                    },
+                    {
+                        "position": "332",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "333",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "334",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "335",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "336",
+                        "acid": "Q"
+                    },
+                    {
+                        "position": "337",
+                        "acid": "N"
+                    },
+                    {
+                        "position": "338",
+                        "acid": "Q"
+                    },
+                    {
+                        "position": "339",
+                        "acid": "N"
+                    },
+                    {
+                        "position": "340",
+                        "acid": "Q"
+                    },
+                    {
+                        "position": "341",
+                        "acid": "V"
+                    },
+                    {
+                        "position": "342",
+                        "acid": "R"
+                    },
+                    {
+                        "position": "343",
+                        "acid": "S"
+                    },
+                    {
+                        "position": "344",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "345",
+                        "acid": "G"
+                    },
+                    {
+                        "position": "346",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "347",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "348",
+                        "acid": "G"
+                    },
+                    {
+                        "position": "349",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "350",
+                        "acid": "L"
+                    },
+                    {
+                        "position": "351",
+                        "acid": "T"
+                    },
+                    {
+                        "position": "352",
+                        "acid": "L"
+                    },
+                    {
+                        "position": "353",
+                        "acid": "K"
+                    },
+                    {
+                        "position": "354",
+                        "acid": "E"
+                    },
+                    {
+                        "position": "355",
+                        "acid": "V"
+                    },
+                    {
+                        "position": "356",
+                        "acid": "E"
+                    },
+                    {
+                        "position": "357",
+                        "acid": "E"
+                    },
+                    {
+                        "position": "358",
+                        "acid": "L"
+                    },
+                    {
+                        "position": "359",
+                        "acid": "E"
+                    },
+                    {
+                        "position": "360",
+                        "acid": "Q"
+                    },
+                    {
+                        "position": "361",
+                        "acid": "L"
+                    },
+                    {
+                        "position": "362",
+                        "acid": "T"
+                    },
+                    {
+                        "position": "363",
+                        "acid": "Q"
+                    },
+                    {
+                        "position": "364",
+                        "acid": "Q"
+                    },
+                    {
+                        "position": "365",
+                        "acid": "L"
+                    },
+                    {
+                        "position": "366",
+                        "acid": "M"
+                    },
+                    {
+                        "position": "367",
+                        "acid": "Q"
+                    },
+                    {
+                        "position": "368",
+                        "acid": "D"
+                    },
+                    {
+                        "position": "369",
+                        "acid": "M"
+                    },
+                    {
+                        "position": "370",
+                        "acid": "E"
+                    },
+                    {
+                        "position": "371",
+                        "acid": "H"
+                    },
+                    {
+                        "position": "372",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "373",
+                        "acid": "Q"
+                    },
+                    {
+                        "position": "374",
+                        "acid": "R"
+                    },
+                    {
+                        "position": "375",
+                        "acid": "Q"
+                    },
+                    {
+                        "position": "376",
+                        "acid": "N"
+                    },
+                    {
+                        "position": "377",
+                        "acid": "V"
+                    },
+                    {
+                        "position": "378",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "379",
+                        "acid": "V"
+                    },
+                    {
+                        "position": "380",
+                        "acid": "N"
+                    },
+                    {
+                        "position": "381",
+                        "acid": "E"
+                    },
+                    {
+                        "position": "382",
+                        "acid": "L"
+                    },
+                    {
+                        "position": "383",
+                        "acid": "C"
+                    },
+                    {
+                        "position": "384",
+                        "acid": "G"
+                    },
+                    {
+                        "position": "385",
+                        "acid": "R"
+                    },
+                    {
+                        "position": "386",
+                        "acid": "C"
+                    },
+                    {
+                        "position": "387",
+                        "acid": "H"
+                    },
+                    {
+                        "position": "388",
+                        "acid": "Q"
+                    },
+                    {
+                        "position": "389",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "390",
+                        "acid": "L"
+                    },
+                    {
+                        "position": "391",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "392",
+                        "acid": "R"
+                    },
+                    {
+                        "position": "393",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "394",
+                        "acid": "Q"
+                    },
+                    {
+                        "position": "395",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "396",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "397",
+                        "acid": "V"
+                    },
+                    {
+                        "position": "398",
+                        "acid": "R"
+                    },
+                    {
+                        "position": "399",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "400",
+                        "acid": "L"
+                    },
+                    {
+                        "position": "401",
+                        "acid": "G"
+                    },
+                    {
+                        "position": "402",
+                        "acid": "Q"
+                    },
+                    {
+                        "position": "403",
+                        "acid": "L"
+                    },
+                    {
+                        "position": "404",
+                        "acid": "F"
+                    },
+                    {
+                        "position": "405",
+                        "acid": "H"
+                    },
+                    {
+                        "position": "406",
+                        "acid": "I"
+                    },
+                    {
+                        "position": "407",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "408",
+                        "acid": "C"
+                    },
+                    {
+                        "position": "409",
+                        "acid": "F"
+                    },
+                    {
+                        "position": "410",
+                        "acid": "T"
+                    },
+                    {
+                        "position": "411",
+                        "acid": "C"
+                    },
+                    {
+                        "position": "412",
+                        "acid": "H"
+                    },
+                    {
+                        "position": "413",
+                        "acid": "Q"
+                    },
+                    {
+                        "position": "414",
+                        "acid": "C"
+                    },
+                    {
+                        "position": "415",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "416",
+                        "acid": "Q"
+                    },
+                    {
+                        "position": "417",
+                        "acid": "Q"
+                    },
+                    {
+                        "position": "418",
+                        "acid": "L"
+                    },
+                    {
+                        "position": "419",
+                        "acid": "Q"
+                    },
+                    {
+                        "position": "420",
+                        "acid": "G"
+                    },
+                    {
+                        "position": "421",
+                        "acid": "Q"
+                    },
+                    {
+                        "position": "422",
+                        "acid": "Q"
+                    },
+                    {
+                        "position": "423",
+                        "acid": "F"
+                    },
+                    {
+                        "position": "424",
+                        "acid": "Y"
+                    },
+                    {
+                        "position": "425",
+                        "acid": "S"
+                    },
+                    {
+                        "position": "426",
+                        "acid": "L"
+                    },
+                    {
+                        "position": "427",
+                        "acid": "E"
+                    },
+                    {
+                        "position": "428",
+                        "acid": "G"
+                    },
+                    {
+                        "position": "429",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "430",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "431",
+                        "acid": "Y"
+                    },
+                    {
+                        "position": "432",
+                        "acid": "C"
+                    },
+                    {
+                        "position": "433",
+                        "acid": "E"
+                    },
+                    {
+                        "position": "434",
+                        "acid": "G"
+                    },
+                    {
+                        "position": "435",
+                        "acid": "C"
+                    },
+                    {
+                        "position": "436",
+                        "acid": "Y"
+                    },
+                    {
+                        "position": "437",
+                        "acid": "T"
+                    },
+                    {
+                        "position": "438",
+                        "acid": "D"
+                    },
+                    {
+                        "position": "439",
+                        "acid": "T"
+                    },
+                    {
+                        "position": "440",
+                        "acid": "L"
+                    },
+                    {
+                        "position": "441",
+                        "acid": "E"
+                    },
+                    {
+                        "position": "442",
+                        "acid": "K"
+                    },
+                    {
+                        "position": "443",
+                        "acid": "C"
+                    },
+                    {
+                        "position": "444",
+                        "acid": "N"
+                    },
+                    {
+                        "position": "445",
+                        "acid": "T"
+                    },
+                    {
+                        "position": "446",
+                        "acid": "C"
+                    },
+                    {
+                        "position": "447",
+                        "acid": "G"
+                    },
+                    {
+                        "position": "448",
+                        "acid": "E"
+                    },
+                    {
+                        "position": "449",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "450",
+                        "acid": "I"
+                    },
+                    {
+                        "position": "451",
+                        "acid": "T"
+                    },
+                    {
+                        "position": "452",
+                        "acid": "D"
+                    },
+                    {
+                        "position": "453",
+                        "acid": "R"
+                    },
+                    {
+                        "position": "454",
+                        "acid": "M"
+                    },
+                    {
+                        "position": "455",
+                        "acid": "L"
+                    },
+                    {
+                        "position": "456",
+                        "acid": "R"
+                    },
+                    {
+                        "position": "457",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "458",
+                        "acid": "T"
+                    },
+                    {
+                        "position": "459",
+                        "acid": "G"
+                    },
+                    {
+                        "position": "460",
+                        "acid": "K"
+                    },
+                    {
+                        "position": "461",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "462",
+                        "acid": "Y"
+                    },
+                    {
+                        "position": "463",
+                        "acid": "H"
+                    },
+                    {
+                        "position": "464",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "465",
+                        "acid": "H"
+                    },
+                    {
+                        "position": "466",
+                        "acid": "C"
+                    },
+                    {
+                        "position": "467",
+                        "acid": "F"
+                    },
+                    {
+                        "position": "468",
+                        "acid": "T"
+                    },
+                    {
+                        "position": "469",
+                        "acid": "C"
+                    },
+                    {
+                        "position": "470",
+                        "acid": "V"
+                    },
+                    {
+                        "position": "471",
+                        "acid": "V"
+                    },
+                    {
+                        "position": "472",
+                        "acid": "C"
+                    },
+                    {
+                        "position": "473",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "474",
+                        "acid": "R"
+                    },
+                    {
+                        "position": "475",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "476",
+                        "acid": "L"
+                    },
+                    {
+                        "position": "477",
+                        "acid": "E"
+                    },
+                    {
+                        "position": "478",
+                        "acid": "G"
+                    },
+                    {
+                        "position": "479",
+                        "acid": "T"
+                    },
+                    {
+                        "position": "480",
+                        "acid": "S"
+                    },
+                    {
+                        "position": "481",
+                        "acid": "F"
+                    },
+                    {
+                        "position": "482",
+                        "acid": "I"
+                    },
+                    {
+                        "position": "483",
+                        "acid": "V"
+                    },
+                    {
+                        "position": "484",
+                        "acid": "D"
+                    },
+                    {
+                        "position": "485",
+                        "acid": "Q"
+                    },
+                    {
+                        "position": "486",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "487",
+                        "acid": "N"
+                    },
+                    {
+                        "position": "488",
+                        "acid": "R"
+                    },
+                    {
+                        "position": "489",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "490",
+                        "acid": "H"
+                    },
+                    {
+                        "position": "491",
+                        "acid": "C"
+                    },
+                    {
+                        "position": "492",
+                        "acid": "V"
+                    },
+                    {
+                        "position": "493",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "494",
+                        "acid": "D"
+                    },
+                    {
+                        "position": "495",
+                        "acid": "Y"
+                    },
+                    {
+                        "position": "496",
+                        "acid": "H"
+                    },
+                    {
+                        "position": "497",
+                        "acid": "K"
+                    },
+                    {
+                        "position": "498",
+                        "acid": "Q"
+                    },
+                    {
+                        "position": "499",
+                        "acid": "Y"
+                    },
+                    {
+                        "position": "500",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "501",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "502",
+                        "acid": "R"
+                    },
+                    {
+                        "position": "503",
+                        "acid": "C"
+                    },
+                    {
+                        "position": "504",
+                        "acid": "S"
+                    },
+                    {
+                        "position": "505",
+                        "acid": "V"
+                    },
+                    {
+                        "position": "506",
+                        "acid": "C"
+                    },
+                    {
+                        "position": "507",
+                        "acid": "S"
+                    },
+                    {
+                        "position": "508",
+                        "acid": "E"
+                    },
+                    {
+                        "position": "509",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "510",
+                        "acid": "I"
+                    },
+                    {
+                        "position": "511",
+                        "acid": "M"
+                    },
+                    {
+                        "position": "512",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "513",
+                        "acid": "E"
+                    },
+                    {
+                        "position": "514",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "515",
+                        "acid": "G"
+                    },
+                    {
+                        "position": "516",
+                        "acid": "R"
+                    },
+                    {
+                        "position": "517",
+                        "acid": "D"
+                    },
+                    {
+                        "position": "518",
+                        "acid": "E"
+                    },
+                    {
+                        "position": "519",
+                        "acid": "T"
+                    },
+                    {
+                        "position": "520",
+                        "acid": "V"
+                    },
+                    {
+                        "position": "521",
+                        "acid": "R"
+                    },
+                    {
+                        "position": "522",
+                        "acid": "V"
+                    },
+                    {
+                        "position": "523",
+                        "acid": "V"
+                    },
+                    {
+                        "position": "524",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "525",
+                        "acid": "L"
+                    },
+                    {
+                        "position": "526",
+                        "acid": "D"
+                    },
+                    {
+                        "position": "527",
+                        "acid": "K"
+                    },
+                    {
+                        "position": "528",
+                        "acid": "N"
+                    },
+                    {
+                        "position": "529",
+                        "acid": "F"
+                    },
+                    {
+                        "position": "530",
+                        "acid": "H"
+                    },
+                    {
+                        "position": "531",
+                        "acid": "M"
+                    },
+                    {
+                        "position": "532",
+                        "acid": "K"
+                    },
+                    {
+                        "position": "533",
+                        "acid": "C"
+                    },
+                    {
+                        "position": "534",
+                        "acid": "Y"
+                    },
+                    {
+                        "position": "535",
+                        "acid": "K"
+                    },
+                    {
+                        "position": "536",
+                        "acid": "C"
+                    },
+                    {
+                        "position": "537",
+                        "acid": "E"
+                    },
+                    {
+                        "position": "538",
+                        "acid": "D"
+                    },
+                    {
+                        "position": "539",
+                        "acid": "C"
+                    },
+                    {
+                        "position": "540",
+                        "acid": "G"
+                    },
+                    {
+                        "position": "541",
+                        "acid": "K"
+                    },
+                    {
+                        "position": "542",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "543",
+                        "acid": "L"
+                    },
+                    {
+                        "position": "544",
+                        "acid": "S"
+                    },
+                    {
+                        "position": "545",
+                        "acid": "I"
+                    },
+                    {
+                        "position": "546",
+                        "acid": "E"
+                    },
+                    {
+                        "position": "547",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "548",
+                        "acid": "D"
+                    },
+                    {
+                        "position": "549",
+                        "acid": "D"
+                    },
+                    {
+                        "position": "550",
+                        "acid": "N"
+                    },
+                    {
+                        "position": "551",
+                        "acid": "G"
+                    },
+                    {
+                        "position": "552",
+                        "acid": "C"
+                    },
+                    {
+                        "position": "553",
+                        "acid": "F"
+                    },
+                    {
+                        "position": "554",
+                        "acid": "P"
+                    },
+                    {
+                        "position": "555",
+                        "acid": "L"
+                    },
+                    {
+                        "position": "556",
+                        "acid": "D"
+                    },
+                    {
+                        "position": "557",
+                        "acid": "G"
+                    },
+                    {
+                        "position": "558",
+                        "acid": "H"
+                    },
+                    {
+                        "position": "559",
+                        "acid": "V"
+                    },
+                    {
+                        "position": "560",
+                        "acid": "L"
+                    },
+                    {
+                        "position": "561",
+                        "acid": "C"
+                    },
+                    {
+                        "position": "562",
+                        "acid": "R"
+                    },
+                    {
+                        "position": "563",
+                        "acid": "K"
+                    },
+                    {
+                        "position": "564",
+                        "acid": "C"
+                    },
+                    {
+                        "position": "565",
+                        "acid": "H"
+                    },
+                    {
+                        "position": "566",
+                        "acid": "T"
+                    },
+                    {
+                        "position": "567",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "568",
+                        "acid": "R"
+                    },
+                    {
+                        "position": "569",
+                        "acid": "A"
+                    },
+                    {
+                        "position": "570",
+                        "acid": "Q"
+                    },
+                    {
+                        "position": "571",
+                        "acid": "T"
+                    }
+                ],
+                "cleavage": [
+                    {
+                        "position": "0",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "1",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "2",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "3",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "4",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "5",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "6",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "7",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "8",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "9",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "10",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "11",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "12",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "13",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "14",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "15",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "16",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "17",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "18",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "19",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "20",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "21",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "22",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "23",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "24",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "25",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "26",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "27",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "28",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "29",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "30",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "31",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "32",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "33",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "34",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "35",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "36",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "1",
+                        "matched_peaks": {
+                            "matched_peak": {
+                                "ion_type": "Y",
+                                "ion_position": "2",
+                                "ion_display_position": "20",
+                                "spec_id": "6385",
+                                "peak_id": "3",
+                                "peak_charge": "2"
+                            }
+                        }
+                    },
+                    {
+                        "position": "37",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "1",
+                        "matched_peaks": {
+                            "matched_peak": {
+                                "ion_type": "Y",
+                                "ion_position": "3",
+                                "ion_display_position": "19",
+                                "spec_id": "6385",
+                                "peak_id": "8",
+                                "peak_charge": "2"
+                            }
+                        }
+                    },
+                    {
+                        "position": "38",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "39",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "40",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "41",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "42",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "43",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "44",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "45",
+                        "exist_n_ion": "1",
+                        "exist_c_ion": "1",
+                        "matched_peaks": {
+                            "matched_peak": [
+                                {
+                                    "ion_type": "Y",
+                                    "ion_position": "11",
+                                    "ion_display_position": "11",
+                                    "spec_id": "6385",
+                                    "peak_id": "26",
+                                    "peak_charge": "1"
+                                },
+                                {
+                                    "ion_type": "Y",
+                                    "ion_position": "11",
+                                    "ion_display_position": "11",
+                                    "spec_id": "6385",
+                                    "peak_id": "1",
+                                    "peak_charge": "2"
+                                },
+                                {
+                                    "ion_type": "B",
+                                    "ion_position": "11",
+                                    "ion_display_position": "11",
+                                    "spec_id": "6385",
+                                    "peak_id": "5",
+                                    "peak_charge": "1"
+                                },
+                                {
+                                    "ion_type": "B",
+                                    "ion_position": "11",
+                                    "ion_display_position": "11",
+                                    "spec_id": "6385",
+                                    "peak_id": "18",
+                                    "peak_charge": "2"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "position": "46",
+                        "exist_n_ion": "1",
+                        "exist_c_ion": "1",
+                        "matched_peaks": {
+                            "matched_peak": [
+                                {
+                                    "ion_type": "Y",
+                                    "ion_position": "12",
+                                    "ion_display_position": "10",
+                                    "spec_id": "6385",
+                                    "peak_id": "12",
+                                    "peak_charge": "1"
+                                },
+                                {
+                                    "ion_type": "Y",
+                                    "ion_position": "12",
+                                    "ion_display_position": "10",
+                                    "spec_id": "6385",
+                                    "peak_id": "13",
+                                    "peak_charge": "2"
+                                },
+                                {
+                                    "ion_type": "B",
+                                    "ion_position": "12",
+                                    "ion_display_position": "12",
+                                    "spec_id": "6385",
+                                    "peak_id": "7",
+                                    "peak_charge": "2"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "position": "47",
+                        "exist_n_ion": "1",
+                        "exist_c_ion": "1",
+                        "matched_peaks": {
+                            "matched_peak": [
+                                {
+                                    "ion_type": "Y",
+                                    "ion_position": "13",
+                                    "ion_display_position": "9",
+                                    "spec_id": "6385",
+                                    "peak_id": "9",
+                                    "peak_charge": "1"
+                                },
+                                {
+                                    "ion_type": "B",
+                                    "ion_position": "13",
+                                    "ion_display_position": "13",
+                                    "spec_id": "6385",
+                                    "peak_id": "21",
+                                    "peak_charge": "2"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "position": "48",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "1",
+                        "matched_peaks": {
+                            "matched_peak": {
+                                "ion_type": "Y",
+                                "ion_position": "14",
+                                "ion_display_position": "8",
+                                "spec_id": "6385",
+                                "peak_id": "29",
+                                "peak_charge": "1"
+                            }
+                        }
+                    },
+                    {
+                        "position": "49",
+                        "exist_n_ion": "1",
+                        "exist_c_ion": "1",
+                        "matched_peaks": {
+                            "matched_peak": [
+                                {
+                                    "ion_type": "Y",
+                                    "ion_position": "15",
+                                    "ion_display_position": "7",
+                                    "spec_id": "6385",
+                                    "peak_id": "14",
+                                    "peak_charge": "1"
+                                },
+                                {
+                                    "ion_type": "Y",
+                                    "ion_position": "15",
+                                    "ion_display_position": "7",
+                                    "spec_id": "6385",
+                                    "peak_id": "24",
+                                    "peak_charge": "2"
+                                },
+                                {
+                                    "ion_type": "B",
+                                    "ion_position": "15",
+                                    "ion_display_position": "15",
+                                    "spec_id": "6385",
+                                    "peak_id": "20",
+                                    "peak_charge": "2"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "position": "50",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "51",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "52",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "53",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "54",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "55",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "56",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "57",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "58",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "59",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "60",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "61",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "62",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "63",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "64",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "65",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "66",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "67",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "68",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "69",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "70",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "71",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "72",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "73",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "74",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "75",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "76",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "77",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "78",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "79",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "80",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "81",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "82",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "83",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "84",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "85",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "86",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "87",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "88",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "89",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "90",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "91",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "92",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "93",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "94",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "95",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "96",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "97",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "98",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "99",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "100",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "101",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "102",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "103",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "104",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "105",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "106",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "107",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "108",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "109",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "110",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "111",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "112",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "113",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "114",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "115",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "116",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "117",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "118",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "119",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "120",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "121",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "122",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "123",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "124",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "125",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "126",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "127",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "128",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "129",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "130",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "131",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "132",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "133",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "134",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "135",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "136",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "137",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "138",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "139",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "140",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "141",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "142",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "143",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "144",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "145",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "146",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "147",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "148",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "149",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "150",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "151",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "152",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "153",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "154",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "155",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "156",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "157",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "158",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "159",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "160",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "161",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "162",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "163",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "164",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "165",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "166",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "167",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "168",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "169",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "170",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "171",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "172",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "173",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "174",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "175",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "176",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "177",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "178",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "179",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "180",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "181",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "182",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "183",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "184",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "185",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "186",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "187",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "188",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "189",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "190",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "191",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "192",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "193",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "194",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "195",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "196",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "197",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "198",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "199",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "200",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "201",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "202",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "203",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "204",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "205",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "206",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "207",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "208",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "209",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "210",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "211",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "212",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "213",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "214",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "215",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "216",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "217",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "218",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "219",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "220",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "221",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "222",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "223",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "224",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "225",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "226",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "227",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "228",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "229",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "230",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "231",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "232",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "233",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "234",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "235",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "236",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "237",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "238",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "239",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "240",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "241",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "242",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "243",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "244",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "245",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "246",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "247",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "248",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "249",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "250",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "251",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "252",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "253",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "254",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "255",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "256",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "257",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "258",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "259",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "260",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "261",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "262",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "263",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "264",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "265",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "266",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "267",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "268",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "269",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "270",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "271",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "272",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "273",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "274",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "275",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "276",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "277",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "278",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "279",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "280",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "281",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "282",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "283",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "284",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "285",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "286",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "287",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "288",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "289",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "290",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "291",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "292",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "293",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "294",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "295",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "296",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "297",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "298",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "299",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "300",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "301",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "302",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "303",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "304",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "305",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "306",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "307",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "308",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "309",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "310",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "311",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "312",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "313",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "314",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "315",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "316",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "317",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "318",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "319",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "320",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "321",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "322",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "323",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "324",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "325",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "326",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "327",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "328",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "329",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "330",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "331",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "332",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "333",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "334",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "335",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "336",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "337",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "338",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "339",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "340",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "341",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "342",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "343",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "344",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "345",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "346",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "347",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "348",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "349",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "350",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "351",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "352",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "353",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "354",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "355",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "356",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "357",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "358",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "359",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "360",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "361",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "362",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "363",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "364",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "365",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "366",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "367",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "368",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "369",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "370",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "371",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "372",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "373",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "374",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "375",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "376",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "377",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "378",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "379",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "380",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "381",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "382",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "383",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "384",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "385",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "386",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "387",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "388",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "389",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "390",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "391",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "392",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "393",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "394",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "395",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "396",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "397",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "398",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "399",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "400",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "401",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "402",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "403",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "404",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "405",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "406",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "407",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "408",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "409",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "410",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "411",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "412",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "413",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "414",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "415",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "416",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "417",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "418",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "419",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "420",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "421",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "422",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "423",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "424",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "425",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "426",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "427",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "428",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "429",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "430",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "431",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "432",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "433",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "434",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "435",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "436",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "437",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "438",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "439",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "440",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "441",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "442",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "443",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "444",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "445",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "446",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "447",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "448",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "449",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "450",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "451",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "452",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "453",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "454",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "455",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "456",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "457",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "458",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "459",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "460",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "461",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "462",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "463",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "464",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "465",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "466",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "467",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "468",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "469",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "470",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "471",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "472",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "473",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "474",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "475",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "476",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "477",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "478",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "479",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "480",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "481",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "482",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "483",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "484",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "485",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "486",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "487",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "488",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "489",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "490",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "491",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "492",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "493",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "494",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "495",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "496",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "497",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "498",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "499",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "500",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "501",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "502",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "503",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "504",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "505",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "506",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "507",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "508",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "509",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "510",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "511",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "512",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "513",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "514",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "515",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "516",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "517",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "518",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "519",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "520",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "521",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "522",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "523",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "524",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "525",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "526",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "527",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "528",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "529",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "530",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "531",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "532",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "533",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "534",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "535",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "536",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "537",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "538",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "539",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "540",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "541",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "542",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "543",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "544",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "545",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "546",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "547",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "548",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "549",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "550",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "551",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "552",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "553",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "554",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "555",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "556",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "557",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "558",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "559",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "560",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "561",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "562",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "563",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "564",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "565",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "566",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "567",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "568",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "569",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "570",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "571",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    },
+                    {
+                        "position": "572",
+                        "exist_n_ion": "0",
+                        "exist_c_ion": "0",
+                        "matched_peaks": null
+                    }
+                ]
+            }
+        }
+    }
+}

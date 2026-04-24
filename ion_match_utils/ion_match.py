@@ -90,6 +90,12 @@ def combine_formulas(*formulas):
     combined = formula_init(combined)
     return combined
 
+def _is_number(s):
+    try:
+        float(s)
+        return True
+    except ValueError:
+        return False
 
 def _process_unknown_mod(name, formula):
     """处理未知修饰，返回 (final_formula, final_mass)
@@ -101,7 +107,7 @@ def _process_unknown_mod(name, formula):
     if cache_key in _unknown_mod_cache:
         return _unknown_mod_cache[cache_key]
 
-    if name.replace('.', '', 1).isdigit() and formula.lower() == "unknown":
+    if _is_number(name) and formula.lower() == "unknown":
         inferred_formula = mass_to_formula(float(name))
         print(f"Warning: Unknown formula for modification {name}, inferred as {inferred_formula}")
         result = (inferred_formula, float(name))

@@ -1,0 +1,14 @@
+Total number of fragments: 20
+Total sequence coverage: 0.3548387096774194
+Number of matched decovoluted fragments: 20
+Percentage of explained dconvoluted fragments: 0.3333333333333333
+
+Number of terminal fragments: 15
+Sequence coverage of terminal fragments: 0.2903225806451613
+Number of matched decovoluted fragments: 15
+Percentage of explained dconvoluted fragments: 0.25
+
+Number of internal fragments: 5
+Sequence coverage of internal fragments: 0.16129032258064516
+Number of matched decovoluted fragments: 5
+Number of matched decovoluted fragments: 0.08333333333333333

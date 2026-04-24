@@ -1,0 +1,1434 @@
+{
+  "sequence": {
+    "9109": "ETQEKNPLPSKETIEQEKQAGES",
+    "9114": "PLPSKETIEQEKQAGES",
+    "9118": "SYNRGDSTFESKSYKMADEAGSEADHEGTHSTKRGHA",
+    "9120": "ETQEKNPLPSKETIEQEKQAGES",
+    "9122": "HEALHNHYTQKSLSLSPG",
+    "9123": "TETQEKNPLPSKETIEQEKQAGES",
+    "9130": "QEKNPLPSKETIEQEKQAGES",
+    "9138": "RIGEIKEETTSHLRSCEYKGRPPKAGAEPASEREVS",
+    "9143": "RIGEIKEETTSHLRSCEYKGRPPKAGAEPASEREVS",
+    "9147": "RIGEIKEETTSHLRSCEYKGRPPKAGAEPASEREVS",
+    "9149": "SSSYSKQFTSSTSYNRGDSTFESKSYKMADEAGSEADHEGTHSTKRGHA",
+    "9150": "RIGEIKEETTSHLRSCEYKGRPPKAGAEPASEREVS",
+    "9158": "QEKNPLPSKETIEQEKQAGES",
+    "9161": "VLEEDEEVTEEAEMEPEDKGH",
+    "9163": "EEVTEEAEMEPEDKGH",
+    "9182": "SSSYSKQFTSSTSYNRGD",
+    "9185": "NGFKSHALQLNNRQIR",
+    "9186": "SGKDPDRFRPDGLPKKY",
+    "9187": "EEVTEEAEMEPEDKGH",
+    "9190": "TETQEKNPLPSKETIEQEKQAGES",
+    "9193": "TETQEKNPLPSKETIEQEKQAGES",
+    "9196": "DGNKSPAPKPSDLRPGDVS",
+    "9208": "EEVTEEAEMEPEDKGH",
+    "9218": "SSRIGEIKEETTVSPPHTSMAPAQDEERDSG",
+    "9228": "HVQPQPQPKPQVQLHVQSQT",
+    "9238": "GKSSSYSKQFTSSTSYNRGDSTFESKS",
+    "9239": "GDSTFESKSYKMADEAGSEADHEGTHSTKRGHA",
+    "9240": "GKSSSYSKQFTSSTSYNRGDSTFESKS",
+    "9246": "GDSTFESKSYKMADEAGSEADHEGTHSTKRGHA",
+    "9247": "GKSSSYSKQFTSSTSYNRGDSTFESKS",
+    "9249": "GDSTFESKSYKMADEAGSEADHEGTHSTKRGHA",
+    "9251": "GDSTFESKSYKMADEAGSEADHEGTHSTKRGHA",
+    "9282": "GHRPLDKKREEAPSLRPAPPPISGGGY",
+    "9294": "GDSTFESKSYKMADEAGSEADHEGTHSTKRGHA",
+    "9298": "GDSTFESKSYKMADEAGSEADHEGTHSTKRGHA",
+    "9308": "ESSSHHPGIAEFPSRG",
+    "9316": "DGQVINETSQHHDDLE",
+    "9317": "SLQVRQDGGKSRLKKSQFLIKT",
+    "9318": "SSRIGEIKEETTVSPPHTSMAPAQDEERDSGKEQGHTRRHDWGHEKQ",
+    "9326": "SEETKENEGFTVTAEGKGQ",
+    "9327": "KDYEEVGADSADGEDEGEEY",
+    "9344": "NDQEEESFAEGHSE",
+    "9356": "NPLPSKETIEQEKQAGES",
+    "9363": "NPLPSKETIEQEKQAGES",
+    "9383": "STFESKSYKMADEAGSEADHEGTHSTKRGHAKSRPV",
+    "9400": "DKTLLRDEKKMEKL",
+    "9406": "EKVDVGKDQEFTVKSKGAGGQGKVASKIVGPSG",
+    "9407": "EKVDVGKDQEFTVKSKGAGGQGKVASKIVGPSG",
+    "9411": "APKPKVNPFRPGDSEPPPAPGAQRAQ",
+    "9414": "KMADEAGSEADHEGTHSTKRGHAKSRPV",
+    "9428": "SSSYSKQFTSSTSYNRGDSTFESKSYKMADEAGSEADHEGTHSTKRGHA",
+    "9429": "LHNHYTQKSLSLSPG",
+    "9436": "EKVDVGKDQEFTVKSKGAGGQGKVASKIVGPSG",
+    "9440": "SSPTAAGTPNKETAGLKVG",
+    "9441": "EKVDVGKDQEFTVKSKGAGGQGKVASKIVGPSG",
+    "9444": "SSPTAAGTPNKETAGLKVG",
+    "9456": "ADEAGSEADHEGTHSTKRGHA",
+    "9460": "YSKQFTSSTSYNRGDSTFESKS",
+    "9467": "YSKQFTSSTSYNRGDSTFESKS",
+    "9468": "SSTSYNRGDSTFESKSYKMADEAGSEADHEGTHSTKRGHA",
+    "9469": "SSSYSKQFTSSTSYNRGDSTFESKSYKMADEAGSEADHEGTHSTKRGHAKSRPV",
+    "9470": "EETKENEGFTVTAEGK",
+    "9477": "ADEAGSEADHEGTHSTKRGHAKSRPV",
+    "9479": "SSPTAAGTPNKETAGLKVG",
+    "9488": "SSSYSKQFTSSTSYNRGDSTFESKSYKMADEAGSEADHEGTHSTKRGHAKSRPV",
+    "9489": "NPLPSKETIEQEKQAGES",
+    "9490": "SEETKENEGFTVTAEGK",
+    "9504": "RHQGVMVGMGQKDSYVGDEAQSKRGILT",
+    "9505": "RHQGVMVGMGQKDSYVGDEAQSKRGILT",
+    "9506": "SSSYSKQFTSSTSYNRGDSTFESKSYKMADEAGSEADHEGTHSTKRGHAKSRPV",
+    "9507": "SSSYSKQFTSSTSYNRGDSTFESKSYKMADEAGSEADHEGTHSTKRGHAKSRPV",
+    "9508": "SSSYSKQFTSSTSYNRGDSTFESKSYKMADEAGSEADHEGTHSTKRGHAKSRPV",
+    "9521": "EETKENEGFTVTAEGK",
+    "9523": "SSRIGEIKEETTSHLRSCEYKGRPPKAGAEPASEREVS",
+    "9548": "HVQPQPQPKPQVQLHVQ",
+    "9558": "MKRPPGFSPFRSSRIGEIKEETTVSPPHTSMAPAQDEERDSGKEQGHT",
+    "9562": "AEIEKFDKSKLKKTETQEKNPLPSKETIEQEKQAGES",
+    "9570": "FSPMLGEFVSETESRGSESGIFTNTKESSSHHPGIAEFPSRGKSSSYSKQFTSSTSYNRGDSTFESKSYKMADEAGSEADHEGTHSTKRGHAKSRPV",
+    "9571": "KMADEAGSEADHEGTHSTKRGHAKSRPV",
+    "9575": "SSRIGEIKEETTSHLRSCEYKGRPPKAGAEPASEREVS",
+    "9585": "SSRIGEIKEETTVSPPHTSMAPAQDEERDSGKEQGHTRRHDWGHEKQ",
+    "9586": "SSRIGEIKEETTVSPPHTSMAPAQDEERDSGKEQGHTRRHDWGHEKQ",
+    "9587": "SEETKENEGFTVTAEGK",
+    "9591": "EILESEEKGDPNKPSGFRS",
+    "9597": "HGPGLIYRQPN",
+    "9600": "SSRIGEIKEETTSHLRSCEYKGRPPKAGAEPASEREVS",
+    "9602": "TLPTKETIEQEKRSEIS",
+    "9610": "SLMKRPPGFSPFRSSRIGEIKEETTVSPPHTSMAPAQDEERDSGKEQGHT",
+    "9611": "SSRIGEIKEETTVSPPHTSMAPAQDEERDSGKEQGHT",
+    "9619": "SSRIGEIKEETTSHLRSCEYKGRPPKAGAEPASEREVS",
+    "9624": "SSRIGEIKEETTSHLRSCEYKGRPPKAGAEPASEREVS",
+    "9630": "SSRIGEIKEETTSHLRSCEYKGRPPKAGAEPASEREVS",
+    "9673": "SSRIGEIKEETTSHLRSCEYKGRPPKAGAEPASEREVS",
+    "9676": "SSSYSKQFTSSTSYNRGDSTFESKSYKMADEAGSEADHEGTHSTKRGHAKSRPV",
+    "9678": "SSSYSKQFTSSTSYNRGDSTFESKSYKMADEAGSEADHEGTHSTKRGHAKSRPV",
+    "9679": "SSSYSKQFTSSTSYNRGDSTFESKSYKMADEAGSEADHEGTHSTKRGHAKSRPV",
+    "9687": "HAEVVFTANDSGPRRYTIAALLSPYSYSTTAVVTNPKE",
+    "9708": "KMADEAGSEADHEGTHSTKRGHAKSRPV",
+    "9712": "DAHKSEVAHRFKDLGEEN",
+    "9721": "SSRIGEIKEETTSHLRS",
+    "9722": "SSRIGEIKEETTSHLRSCEYKGRPPKAGAEPASEREVS",
+    "9723": "HGPGLIYRQPN",
+    "9724": "EILESEEKGDPNKPSGFR",
+    "9734": "EILESEEKGDPNKPSGFR",
+    "9736": "KVNPFRPGDSEPPPAPGAQRAQ",
+    "9746": "SYSTTAVVTNPKE",
+    "9784": "SSRIGEIKEETTSHLRSCEYKGRPPKAGAEPASEREVS",
+    "9793": "SSSYSKQFTSSTSYNRGDSTFESKSYKMADEAGSEADHEGTHSTKRGHAKSRPV",
+    "9796": "KVNPFRPGDSEPPPAPGAQRAQ",
+    "9800": "SSRIGEIKEETTSHLRSCEYKGRPPKAGAEPASEREVS",
+    "9801": "SSRIGEIKEETTSHLRSCEYKGRPPKAGAEPASEREVS",
+    "9803": "SSSYSKQFTSSTSYNRGDSTFESKSYKMADEAGSEADHEGTHSTKRGHAKSRPV",
+    "9823": "SSRIGEIKEETTSHLR",
+    "9832": "SSRIGEIKEETTSHLRSCEYKGRPPKAGAEPASEREVS",
+    "9833": "IGEIKEETTVSPPHTSMAPAQDEERDS",
+    "9848": "ALHNHYTQKSLSLSPG",
+    "9850": "RPPGFSPFRSSRIGEIKEETTVSPPHTSMAPAQDEERDSGKEQGHT",
+    "9851": "SSRIGEIKEETTSHLRSCEYKGRPPKAGAEPASEREVS",
+    "9853": "NGFKSHALQLNNRQIR",
+    "9854": "EKNPLPSKETIEQE",
+    "9855": "GKSSSYSKQFTSSTSYNRGDSTFESKSYKMADEAGSEADHEGTHSTKRGHAKSRPV",
+    "9856": "SSRIGEIKEETTSHLRSCEYKGRPPKAGAEPASEREVS",
+    "9857": "SDKPDMAEIEKFDKSKLKKTETQ",
+    "9859": "GKSSSYSKQFTSSTSYNRGDSTFESKSYKMADEAGSEADHEGTHSTKRGHAKSRPV",
+    "9869": "RPPGFSPFRSSRIGEIKEETTVSPPHTSMAPAQDEERDSGKEQGHT",
+    "9870": "SDKPDMAEIEKFDKSKLKKTETQ",
+    "9873": "GKSSSYSKQFTSSTSYNRGDSTFESKSYKMADEAGSEADHEGTHSTKRGHAKSRPV",
+    "9878": "GKSSSYSKQFTSSTSYNRGDSTFESKSYKMADEAGSEADHEGTHSTKRGHAKSRPV",
+    "9887": "GKSSSYSKQFTSSTSYNRGDSTFESKSYKMADEAGSEADHEGTHSTKRGHAKSRPV",
+    "9889": "GKSSSYSKQFTSSTSYNRGDSTFESKSYKMADEAGSEADHEGTHSTKRGHAKSRPV",
+    "9890": "GKSSSYSKQFTSSTSYNRGDSTFESKSYKMADEAGSEADHEGTHSTKRGHAKSRPV",
+    "9902": "GKSSSYSKQFTSSTSYNRGDSTFESKSYKMADEAGSEADHEGTHSTKRGHAKSRPV",
+    "9903": "GKSSSYSKQFTSSTSYNRGDSTFESKSYKMADEAGSEADHEGTHSTKRGHAKSRPV",
+    "9907": "GKSSSYSKQFTSSTSYNRGDSTFESKSYKMADEAGSEADHEGTHSTKRGHAKSRPV",
+    "9934": "DAHKSEVAHRFKDLGEENFK",
+    "9941": "SDKPDMAEIEKFDKSKLKKTE",
+    "9942": "SDKPDMAEIEKFDKSKLKKTE",
+    "9950": "SSRIGEIKEETTSHLRSCEYKGRPPKAGAEPASEREVS",
+    "9962": "EEAGARVQQNVPSGTDTGDPQSKPLG",
+    "9966": "TQEKNPLPSKETIEQE",
+    "9968": "QFTSSTSYNRGDSTFESKSYKMADEAGSEADHEGTHSTKRGHAKSRPV",
+    "9981": "SDKPDMAEIEKFDKSKLKKTET",
+    "9986": "SDKPDMAEIEKFDKSKLKKTET",
+    "10002": "SSRIGEIKEETTVSPPHTSMAPAQDEERDSGKEQGHTRRHDWGHEKQRK",
+    "10014": "PNDQEEESFAEGHSE",
+    "10017": "HYTQKSLSLSPG",
+    "10020": "GMISLMKRPPGFSPFRSSRIGEIKEETTVSPPHTSMAPAQDEERDSGKEQGHT",
+    "10022": "SSRIGEIKEETTVSPPHTSMAPAQDEERDSGKEQGHTRRHDWGHEKQRK",
+    "10024": "SSRIGEIKEETTVSPPHTSMAPAQDEERDSGKEQGHTRRHDWGHEKQRK",
+    "10040": "GLSSPVTKSFNRGEC",
+    "10049": "CSVMHEALHNHYTQKSLSLSPG",
+    "10055": "KTPDGNKSPAPKPSDLRPGDVSSKRNLWEKQS",
+    "10071": "SDKPDMAEIEKFDKSKLKKTETQE",
+    "10072": "SYSKQFTSSTSYNRGDSTFESKS",
+    "10074": "SDKPDMAEIEKFDKSKLKKTETQE",
+    "10075": "SYSKQFTSSTSYNRGDSTFESKS",
+    "10084": "SSRIGEIKEETTSHLRSCEYKGRPPKAGAEPASEREVS",
+    "10086": "HYTQKSLSLSPG",
+    "10090": "SSRIGEIKEETTSHLRSCEYKGRPPKAGAEPASEREVS",
+    "10091": "SSRIGEIKEETTSHLRSCEYKGRPPKAGAEPASEREVS",
+    "10111": "EKNPLPSKETIEQEKQAGES",
+    "10112": "SSRIGEIKEETTSHLRSCEYKGRPPKAGAEPASEREVS",
+    "10118": "TSSTSYNRGDSTFESKSYKMA",
+    "10121": "VELGTQPATQ",
+    "10135": "NPLPSKETIEQEKQAGES",
+    "10143": "HYTQKSLSLSPG",
+    "10155": "MDHYDSQQTNDYMQPE",
+    "10161": "VELGTQPATQ",
+    "10166": "SSSYSKQFTSSTSYNRGDSTFESKSYKMADEAGSEADHEGTHSTKRGHAKSRPV",
+    "10167": "SSSHSRAGQSAAGAAPGGGVDTRDAEMPA",
+    "10170": "MDHYDSQQTND",
+    "10171": "SSRIGEIKEETTSHLRSCEYKGRPPKAGAEPASEREVS",
+    "10173": "NHYTQKSLSLSPG",
+    "10174": "SSSYSKQFTSSTSYNRGDSTFESKS",
+    "10182": "NHYTQKSLSLSPG",
+    "10187": "EVTHQGLSSPVTKSFNRGEC",
+    "10195": "MDHYDSQQTNDY",
+    "10200": "SSRIGEIKEETTSHLRSCEYKGRPPKAGAEPASEREVS",
+    "10221": "KFSPGAPGGSGSQPNQKLGHPEALS",
+    "10231": "NHYTQKSLSLSPG",
+    "10235": "KERELEEARKKLAQIRQ",
+    "10246": "KFSPGAPGGSGSQPNQKLGHPEALS",
+    "10249": "KERELEEARKKLAQIRQ",
+    "10261": "SSRIGEIKEETTSHLRSCEYKGRPPKAGAEPASEREVS",
+    "10266": "EDEEVTEEAEMEPEDKGH",
+    "10276": "SSSHSRAGQSAAGAAPGGGVDTRDAEMPATE",
+    "10280": "EKAEEWGRSGKDPDRFRPDGLPK",
+    "10285": "KERELEEARKKLAQIRQ",
+    "10288": "SSSHSRAGQSAAGAAPGGGVDTRDAEMPATE",
+    "10300": "FESKSYKMADEAGSEADHEGTHSTKRGHAKSRP",
+    "10311": "SSSYSKQFTSSTSYNRGDSTFESKSYKMADEAGSEADHEGTHSTKRGHAKSRPV",
+    "10312": "QGAKIPKPEASFSPR",
+    "10315": "SSSYSKQFTSSTSYNRGDSTFESKSYKMADEAGSEADHEGTHSTKRGHAKSRPV",
+    "10317": "TQRLPDRVTGVDTD",
+    "10320": "KSSSYSKQFTSSTSYNRGDSTFESKSYKMADEAGSEADHEGTHSTKRGHAKSRPV",
+    "10330": "SYSKQFTSSTSYNRGDSTFESKSYKMADEAGSEADHEGTHSTKRGHAKSRPV",
+    "10334": "SYSKQFTSSTSYNRGDSTFESKSYKMADEAGSEADHEGTHSTKRGHAKSRPV",
+    "10340": "SYSKQFTSSTSYNRGDSTFESKSYKMADEAGSEADHEGTHSTKRGHAKSRPV",
+    "10348": "SSRIGEIKEETTVSPPH",
+    "10352": "SSSYSKQFTSSTSYNRGDSTFESKSYKMADEAGSEADHEGTHSTKRGHAKSRPV"
+  },
+  "msalign_file_dir": ".\\examples\\20250120_C_2ug_SV2_HCD_30NCE_C18_1\\20250120_C_2ug_SV2_HCD_30NCE_C18_1_ms2.msalign",
+  "unloc_mod": {
+    "header": [
+      "name",
+      "formula",
+      "start_loc",
+      "end_loc",
+      "ion type"
+    ],
+    "9109": [
+      [
+        "-128.0362",
+        "unknown",
+        1,
+        3,
+        "any"
+      ]
+    ],
+    "9118": [
+      [
+        "-0.8379",
+        "unknown",
+        20,
+        23,
+        "any"
+      ]
+    ],
+    "9120": [
+      [
+        "-128.0414",
+        "unknown",
+        1,
+        7,
+        "any"
+      ]
+    ],
+    "9149": [
+      [
+        "15.0596",
+        "unknown",
+        11,
+        28,
+        "any"
+      ]
+    ],
+    "9161": [
+      [
+        "28.2769",
+        "unknown",
+        1,
+        7,
+        "any"
+      ]
+    ],
+    "9218": [
+      [
+        "7.0378",
+        "unknown",
+        26,
+        31,
+        "any"
+      ]
+    ],
+    "9282": [
+      [
+        "16.0217",
+        "unknown",
+        7,
+        18,
+        "any"
+      ]
+    ],
+    "9318": [
+      [
+        "-16.9683",
+        "unknown",
+        38,
+        47,
+        "any"
+      ]
+    ],
+    "9327": [
+      [
+        "-162.9821",
+        "unknown",
+        15,
+        20,
+        "any"
+      ]
+    ],
+    "9383": [
+      [
+        "25.4361",
+        "unknown",
+        1,
+        10,
+        "any"
+      ]
+    ],
+    "9414": [
+      [
+        "-29.4593",
+        "unknown",
+        1,
+        2,
+        "any"
+      ]
+    ],
+    "9456": [
+      [
+        "-3.4127",
+        "unknown",
+        1,
+        2,
+        "any"
+      ]
+    ],
+    "9477": [
+      [
+        "-97.9895",
+        "unknown",
+        1,
+        2,
+        "any"
+      ]
+    ],
+    "9504": [
+      [
+        "32.0121",
+        "unknown",
+        6,
+        9,
+        "any"
+      ]
+    ],
+    "9505": [
+      [
+        "32.0145",
+        "unknown",
+        6,
+        9,
+        "any"
+      ]
+    ],
+    "9523": [
+      [
+        "-33.9493",
+        "unknown",
+        14,
+        23,
+        "any"
+      ]
+    ],
+    "9558": [
+      [
+        "11.9850",
+        "unknown",
+        1,
+        11,
+        "any"
+      ]
+    ],
+    "9570": [
+      [
+        "-5.7136",
+        "unknown",
+        1,
+        51,
+        "any"
+      ]
+    ],
+    "9571": [
+      [
+        "-37.4525",
+        "unknown",
+        1,
+        2,
+        "any"
+      ]
+    ],
+    "9575": [
+      [
+        "119.0421",
+        "unknown",
+        15,
+        19,
+        "any"
+      ]
+    ],
+    "9585": [
+      [
+        "-16.9740",
+        "unknown",
+        41,
+        47,
+        "any"
+      ]
+    ],
+    "9586": [
+      [
+        "-16.9737",
+        "unknown",
+        38,
+        47,
+        "any"
+      ]
+    ],
+    "9600": [
+      [
+        "119.0520",
+        "unknown",
+        17,
+        26,
+        "any"
+      ]
+    ],
+    "9610": [
+      [
+        "-189.3017",
+        "unknown",
+        11,
+        13,
+        "any"
+      ]
+    ],
+    "9619": [
+      [
+        "121.0577",
+        "unknown",
+        17,
+        19,
+        "any"
+      ]
+    ],
+    "9624": [
+      [
+        "119.0489",
+        "unknown",
+        10,
+        19,
+        "any"
+      ]
+    ],
+    "9630": [
+      [
+        "119.0528",
+        "unknown",
+        17,
+        18,
+        "any"
+      ]
+    ],
+    "9673": [
+      [
+        "-33.9457",
+        "unknown",
+        12,
+        24,
+        "any"
+      ]
+    ],
+    "9687": [
+      [
+        "62.1193",
+        "unknown",
+        4,
+        27,
+        "any"
+      ]
+    ],
+    "9722": [
+      [
+        "-33.9437",
+        "unknown",
+        15,
+        29,
+        "any"
+      ]
+    ],
+    "9784": [
+      [
+        "176.0679",
+        "unknown",
+        15,
+        19,
+        "any"
+      ]
+    ],
+    "9800": [
+      [
+        "175.0571",
+        "unknown",
+        13,
+        19,
+        "any"
+      ]
+    ],
+    "9801": [
+      [
+        "176.0759",
+        "unknown",
+        11,
+        19,
+        "any"
+      ]
+    ],
+    "9832": [
+      [
+        "176.0651",
+        "unknown",
+        13,
+        19,
+        "any"
+      ]
+    ],
+    "9833": [
+      [
+        "-451.6802",
+        "unknown",
+        24,
+        27,
+        "any"
+      ]
+    ],
+    "9850": [
+      [
+        "-59.1904",
+        "unknown",
+        1,
+        6,
+        "any"
+      ]
+    ],
+    "9851": [
+      [
+        "-33.9473",
+        "unknown",
+        12,
+        21,
+        "any"
+      ]
+    ],
+    "9856": [
+      [
+        "-33.9473",
+        "unknown",
+        14,
+        21,
+        "any"
+      ]
+    ],
+    "9869": [
+      [
+        "-60.0574",
+        "unknown",
+        1,
+        15,
+        "any"
+      ]
+    ],
+    "9903": [
+      [
+        "2.2396",
+        "unknown",
+        10,
+        11,
+        "any"
+      ]
+    ],
+    "9950": [
+      [
+        "-33.9477",
+        "unknown",
+        18,
+        19,
+        "any"
+      ]
+    ],
+    "9986": [
+      [
+        "16.0201",
+        "unknown",
+        6,
+        8,
+        "any"
+      ]
+    ],
+    "10002": [
+      [
+        "-10.0615",
+        "unknown",
+        38,
+        49,
+        "any"
+      ]
+    ],
+    "10014": [
+      [
+        "0.0132",
+        "unknown",
+        1,
+        3,
+        "any"
+      ]
+    ],
+    "10020": [
+      [
+        "-198.1674",
+        "unknown",
+        15,
+        16,
+        "any"
+      ]
+    ],
+    "10022": [
+      [
+        "-10.0665",
+        "unknown",
+        41,
+        49,
+        "any"
+      ]
+    ],
+    "10024": [
+      [
+        "-10.0645",
+        "unknown",
+        38,
+        49,
+        "any"
+      ]
+    ],
+    "10049": [
+      [
+        "-87.0027",
+        "unknown",
+        1,
+        5,
+        "any"
+      ]
+    ],
+    "10074": [
+      [
+        "16.0226",
+        "unknown",
+        6,
+        7,
+        "any"
+      ]
+    ],
+    "10084": [
+      [
+        "19.1057",
+        "unknown",
+        11,
+        30,
+        "any"
+      ]
+    ],
+    "10090": [
+      [
+        "-33.9454",
+        "unknown",
+        11,
+        19,
+        "any"
+      ]
+    ],
+    "10091": [
+      [
+        "32.0262",
+        "unknown",
+        14,
+        18,
+        "any"
+      ]
+    ],
+    "10111": [
+      [
+        "-256.1441",
+        "unknown",
+        1,
+        4,
+        "any"
+      ]
+    ],
+    "10112": [
+      [
+        "-33.9432",
+        "unknown",
+        13,
+        19,
+        "any"
+      ]
+    ],
+    "10155": [
+      [
+        "44.2483",
+        "unknown",
+        12,
+        16,
+        "any"
+      ]
+    ],
+    "10171": [
+      [
+        "-33.9508",
+        "unknown",
+        11,
+        19,
+        "any"
+      ]
+    ],
+    "10187": [
+      [
+        "119.0190",
+        "unknown",
+        15,
+        20,
+        "any"
+      ]
+    ],
+    "10195": [
+      [
+        "58.0127",
+        "unknown",
+        1,
+        3,
+        "any"
+      ]
+    ],
+    "10200": [
+      [
+        "32.0161",
+        "unknown",
+        12,
+        18,
+        "any"
+      ]
+    ],
+    "10261": [
+      [
+        "48.1532",
+        "unknown",
+        11,
+        30,
+        "any"
+      ]
+    ],
+    "10300": [
+      [
+        "-5.2810",
+        "unknown",
+        1,
+        8,
+        "any"
+      ]
+    ],
+    "10320": [
+      [
+        "-129.0547",
+        "unknown",
+        1,
+        2,
+        "any"
+      ]
+    ]
+  },
+  "fixed_mod": {
+    "header": [
+      "name",
+      "formula",
+      "loc"
+    ],
+    "9123": [
+      [
+        "-0.8950",
+        "unknown",
+        15
+      ]
+    ],
+    "9130": [
+      [
+        "0.9961",
+        "unknown",
+        4
+      ]
+    ],
+    "9138": [
+      [
+        "-74.9853",
+        "unknown",
+        1
+      ]
+    ],
+    "9143": [
+      [
+        "-74.9877",
+        "unknown",
+        1
+      ]
+    ],
+    "9147": [
+      [
+        "-76.9915",
+        "unknown",
+        1
+      ]
+    ],
+    "9150": [
+      [
+        "-76.9929",
+        "unknown",
+        1
+      ]
+    ],
+    "9247": [
+      [
+        "-0.9717",
+        "unknown",
+        27
+      ]
+    ],
+    "9611": [
+      [
+        "180.6391",
+        "unknown",
+        13
+      ]
+    ],
+    "9708": [
+      [
+        "-37.4592",
+        "unknown",
+        1
+      ]
+    ],
+    "9712": [
+      [
+        "-16.9297",
+        "unknown",
+        18
+      ]
+    ],
+    "9721": [
+      [
+        "-0.9717",
+        "unknown",
+        17
+      ]
+    ],
+    "9853": [
+      [
+        "1.0010",
+        "unknown",
+        10
+      ]
+    ],
+    "9857": [
+      [
+        "Acetyl",
+        "C2H2O",
+        1
+      ],
+      [
+        "16.0205",
+        "unknown",
+        6
+      ]
+    ],
+    "9870": [
+      [
+        "Acetyl",
+        "C2H2O",
+        1
+      ],
+      [
+        "16.0210",
+        "unknown",
+        6
+      ]
+    ],
+    "9934": [
+      [
+        "-0.9596",
+        "unknown",
+        20
+      ]
+    ],
+    "9941": [
+      [
+        "Acetyl",
+        "C2H2O",
+        1
+      ],
+      [
+        "16.0192",
+        "unknown",
+        6
+      ]
+    ],
+    "9942": [
+      [
+        "Acetyl",
+        "C2H2O",
+        1
+      ],
+      [
+        "16.0231",
+        "unknown",
+        6
+      ]
+    ],
+    "9981": [
+      [
+        "Acetyl",
+        "C2H2O",
+        1
+      ],
+      [
+        "16.0197",
+        "unknown",
+        6
+      ]
+    ],
+    "9986": [
+      [
+        "Acetyl",
+        "C2H2O",
+        1
+      ]
+    ],
+    "10040": [
+      [
+        "176.0409",
+        "unknown",
+        15
+      ]
+    ],
+    "10071": [
+      [
+        "Acetyl",
+        "C2H2O",
+        1
+      ],
+      [
+        "16.0176",
+        "unknown",
+        6
+      ]
+    ],
+    "10074": [
+      [
+        "Acetyl",
+        "C2H2O",
+        1
+      ]
+    ],
+    "10121": [
+      [
+        "21.9893",
+        "unknown",
+        5
+      ]
+    ],
+    "10155": [
+      [
+        "Acetyl",
+        "C2H2O",
+        1
+      ]
+    ],
+    "10167": [
+      [
+        "Acetyl",
+        "C2H2O",
+        1
+      ]
+    ],
+    "10170": [
+      [
+        "Acetyl",
+        "C2H2O",
+        1
+      ]
+    ],
+    "10276": [
+      [
+        "Acetyl",
+        "C2H2O",
+        1
+      ]
+    ],
+    "10288": [
+      [
+        "Acetyl",
+        "C2H2O",
+        1
+      ]
+    ],
+    "10348": [
+      [
+        "-3.2437",
+        "unknown",
+        17
+      ]
+    ]
+  },
+  "mass_calibration": true,
+  "ms_calibration": true,
+  "mass_mode": "M",
+  "terminal_mass_error": 10,
+  "internal_mass_error": 10,
+  "peak_match_error": 10,
+  "n_terminal_frag_type": [
+    "b"
+  ],
+  "c_terminal_frag_type": [
+    "y"
+  ],
+  "internal_frag_type": [
+    "by"
+  ],
+  "mzml_file_dir": ".\\examples\\20250120_C_2ug_SV2_HCD_30NCE_C18_1\\20250120_C_2ug_SV2_HCD_30NCE_C18_1.mzML",
+  "scans": [
+    9109,
+    9114,
+    9118,
+    9120,
+    9122,
+    9123,
+    9130,
+    9138,
+    9143,
+    9147,
+    9149,
+    9150,
+    9158,
+    9161,
+    9163,
+    9182,
+    9185,
+    9186,
+    9187,
+    9190,
+    9193,
+    9196,
+    9208,
+    9218,
+    9228,
+    9238,
+    9239,
+    9240,
+    9246,
+    9247,
+    9249,
+    9251,
+    9282,
+    9294,
+    9298,
+    9308,
+    9316,
+    9317,
+    9318,
+    9326,
+    9327,
+    9344,
+    9356,
+    9363,
+    9383,
+    9400,
+    9406,
+    9407,
+    9411,
+    9414,
+    9428,
+    9429,
+    9436,
+    9440,
+    9441,
+    9444,
+    9456,
+    9460,
+    9467,
+    9468,
+    9469,
+    9470,
+    9477,
+    9479,
+    9488,
+    9489,
+    9490,
+    9504,
+    9505,
+    9506,
+    9507,
+    9508,
+    9521,
+    9523,
+    9548,
+    9558,
+    9562,
+    9570,
+    9571,
+    9575,
+    9585,
+    9586,
+    9587,
+    9591,
+    9597,
+    9600,
+    9602,
+    9610,
+    9611,
+    9619,
+    9624,
+    9630,
+    9673,
+    9676,
+    9678,
+    9679,
+    9687,
+    9708,
+    9712,
+    9721,
+    9722,
+    9723,
+    9724,
+    9734,
+    9736,
+    9746,
+    9784,
+    9793,
+    9796,
+    9800,
+    9801,
+    9803,
+    9823,
+    9832,
+    9833,
+    9848,
+    9850,
+    9851,
+    9853,
+    9854,
+    9855,
+    9856,
+    9857,
+    9859,
+    9869,
+    9870,
+    9873,
+    9878,
+    9887,
+    9889,
+    9890,
+    9902,
+    9903,
+    9907,
+    9934,
+    9941,
+    9942,
+    9950,
+    9962,
+    9966,
+    9968,
+    9981,
+    9986,
+    10002,
+    10014,
+    10017,
+    10020,
+    10022,
+    10024,
+    10040,
+    10049,
+    10055,
+    10071,
+    10072,
+    10074,
+    10075,
+    10084,
+    10086,
+    10090,
+    10091,
+    10111,
+    10112,
+    10118,
+    10121,
+    10135,
+    10143,
+    10155,
+    10161,
+    10166,
+    10167,
+    10170,
+    10171,
+    10173,
+    10174,
+    10182,
+    10187,
+    10195,
+    10200,
+    10221,
+    10231,
+    10235,
+    10246,
+    10249,
+    10261,
+    10266,
+    10276,
+    10280,
+    10285,
+    10288,
+    10300,
+    10311,
+    10312,
+    10315,
+    10317,
+    10320,
+    10330,
+    10334,
+    10340,
+    10348,
+    10352
+  ],
+  "prsm_id": {
+    "9109": 1000,
+    "9114": 1001,
+    "9118": 1002,
+    "9120": 1003,
+    "9122": 1004,
+    "9123": 1005,
+    "9130": 1006,
+    "9138": 1007,
+    "9143": 1008,
+    "9147": 1009,
+    "9149": 1010,
+    "9150": 1011,
+    "9158": 1012,
+    "9161": 1013,
+    "9163": 1014,
+    "9182": 1015,
+    "9185": 1016,
+    "9186": 1017,
+    "9187": 1018,
+    "9190": 1019,
+    "9193": 1020,
+    "9196": 1021,
+    "9208": 1022,
+    "9218": 1023,
+    "9228": 1024,
+    "9238": 1025,
+    "9239": 1026,
+    "9240": 1027,
+    "9246": 1028,
+    "9247": 1029,
+    "9249": 1030,
+    "9251": 1031,
+    "9282": 1032,
+    "9294": 1033,
+    "9298": 1034,
+    "9308": 1035,
+    "9316": 1036,
+    "9317": 1037,
+    "9318": 1038,
+    "9326": 1039,
+    "9327": 1040,
+    "9344": 1041,
+    "9356": 1042,
+    "9363": 1043,
+    "9383": 1044,
+    "9400": 1045,
+    "9406": 1046,
+    "9407": 1047,
+    "9411": 1048,
+    "9414": 1049,
+    "9428": 1050,
+    "9429": 1051,
+    "9436": 1052,
+    "9440": 1053,
+    "9441": 1054,
+    "9444": 1055,
+    "9456": 1056,
+    "9460": 1057,
+    "9467": 1058,
+    "9468": 1059,
+    "9469": 1060,
+    "9470": 1061,
+    "9477": 1062,
+    "9479": 1063,
+    "9488": 1064,
+    "9489": 1065,
+    "9490": 1066,
+    "9504": 1067,
+    "9505": 1068,
+    "9506": 1069,
+    "9507": 1070,
+    "9508": 1071,
+    "9521": 1072,
+    "9523": 1073,
+    "9548": 1074,
+    "9558": 1075,
+    "9562": 1076,
+    "9570": 1077,
+    "9571": 1078,
+    "9575": 1079,
+    "9585": 1080,
+    "9586": 1081,
+    "9587": 1082,
+    "9591": 1083,
+    "9597": 1084,
+    "9600": 1085,
+    "9602": 1086,
+    "9610": 1087,
+    "9611": 1088,
+    "9619": 1089,
+    "9624": 1090,
+    "9630": 1091,
+    "9673": 1092,
+    "9676": 1093,
+    "9678": 1094,
+    "9679": 1095,
+    "9687": 1096,
+    "9708": 1097,
+    "9712": 1098,
+    "9721": 1099,
+    "9722": 1100,
+    "9723": 1101,
+    "9724": 1102,
+    "9734": 1103,
+    "9736": 1104,
+    "9746": 1105,
+    "9784": 1106,
+    "9793": 1107,
+    "9796": 1108,
+    "9800": 1109,
+    "9801": 1110,
+    "9803": 1111,
+    "9823": 1112,
+    "9832": 1113,
+    "9833": 1114,
+    "9848": 1115,
+    "9850": 1116,
+    "9851": 1117,
+    "9853": 1118,
+    "9854": 1119,
+    "9855": 1120,
+    "9856": 1121,
+    "9857": 1122,
+    "9859": 1123,
+    "9869": 1124,
+    "9870": 1125,
+    "9873": 1126,
+    "9878": 1127,
+    "9887": 1128,
+    "9889": 1129,
+    "9890": 1130,
+    "9902": 1131,
+    "9903": 1132,
+    "9907": 1133,
+    "9934": 1134,
+    "9941": 1135,
+    "9942": 1136,
+    "9950": 1137,
+    "9962": 1138,
+    "9966": 1139,
+    "9968": 1140,
+    "9981": 1141,
+    "9986": 1142,
+    "10002": 1143,
+    "10014": 1144,
+    "10017": 1145,
+    "10020": 1146,
+    "10022": 1147,
+    "10024": 1148,
+    "10040": 1149,
+    "10049": 1150,
+    "10055": 1151,
+    "10071": 1152,
+    "10072": 1153,
+    "10074": 1154,
+    "10075": 1155,
+    "10084": 1156,
+    "10086": 1157,
+    "10090": 1158,
+    "10091": 1159,
+    "10111": 1160,
+    "10112": 1161,
+    "10118": 1162,
+    "10121": 1163,
+    "10135": 1164,
+    "10143": 1165,
+    "10155": 1166,
+    "10161": 1167,
+    "10166": 1168,
+    "10167": 1169,
+    "10170": 1170,
+    "10171": 1171,
+    "10173": 1172,
+    "10174": 1173,
+    "10182": 1174,
+    "10187": 1175,
+    "10195": 1176,
+    "10200": 1177,
+    "10221": 1178,
+    "10231": 1179,
+    "10235": 1180,
+    "10246": 1181,
+    "10249": 1182,
+    "10261": 1183,
+    "10266": 1184,
+    "10276": 1185,
+    "10280": 1186,
+    "10285": 1187,
+    "10288": 1188,
+    "10300": 1189,
+    "10311": 1190,
+    "10312": 1191,
+    "10315": 1192,
+    "10317": 1193,
+    "10320": 1194,
+    "10330": 1195,
+    "10334": 1196,
+    "10340": 1197,
+    "10348": 1198,
+    "10352": 1199
+  },
+  "workplace_dir": ".\\examples\\20250120_C_2ug_SV2_HCD_30NCE_C18_1\\20250120_C_2ug_SV2_HCD_30NCE_C18_1_html\\toppic_prsm_cutoff\\data_js\\prsms",
+  "thread": 4
+}
