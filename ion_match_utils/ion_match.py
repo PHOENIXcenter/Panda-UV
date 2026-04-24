@@ -10,6 +10,7 @@ from ion_match_utils.utils import mz_tolerance, cal_ppm
 from Averagine.iso_util import mass_to_formula
 
 _atom_pattern = r'([A-Z][a-z+]*)([+-]?\d+)?'
+_unknown_mod_cache = {}
 
 ION_TYPE_MODIFIERS = {
     "a":   {"formula": "H-2O-2C-1", "mass": -46.005479303259996},
@@ -94,13 +95,21 @@ def _process_unknown_mod(name, formula):
     """处理未知修饰，返回 (final_formula, final_mass)
 
     如果name是纯数字且formula为unknown，用averagine推断分子式
+    结果会被缓存以避免重复计算
     """
+    cache_key = (name, formula)
+    if cache_key in _unknown_mod_cache:
+        return _unknown_mod_cache[cache_key]
+
     if name.replace('.', '', 1).isdigit() and formula.lower() == "unknown":
         inferred_formula = mass_to_formula(float(name))
         print(f"Warning: Unknown formula for modification {name}, inferred as {inferred_formula}")
-        return inferred_formula, float(name)
+        result = (inferred_formula, float(name))
     else:
-        return formula, mass.calculate_mass(formula=formula)
+        result = (formula, mass.calculate_mass(formula=formula))
+
+    _unknown_mod_cache[cache_key] = result
+    return result
 
 
 def _get_applicable_fixed_mods(fixed_mod_df, start, end):
@@ -122,7 +131,7 @@ def _get_applicable_fixed_mods(fixed_mod_df, start, end):
         if start <= mod_loc <= end:
             formula = row["formula"]
             name = row["name"]
-            mod_mass = mass.calculate_mass(formula=formula) if formula else 0
+            _, mod_mass = _process_unknown_mod(name, formula) if formula else (None, 0)
             applicable.append((mod_mass, formula, name))
     return applicable
 
@@ -270,9 +279,12 @@ def get_ion_output(mono_mass_arr, sequence, fixed_mod_df, unloc_mod_df, ion_type
         fixed_mods = _get_applicable_fixed_mods(fixed_mod_df, start, end)
         for ion_type in ion_type_list:
             unloc_mods = _get_applicable_unloc_mods(unloc_mod_df, ion_type, start, end)
-            ion_info = calculate_ion(sequence, start, end, ion_type, fixed_mods, unloc_mods)
-            results = _match_ion(mono_mass_arr, ion_info, ion_type, start, end, fixed_mods, unloc_mods, ppm)
-            all_results.extend(results)
+            #if applicable unloc mod exists first match ion with unloc mod
+            if len(unloc_mods):
+                ion_info = calculate_ion(sequence, start, end, ion_type, fixed_mods, unloc_mods)
+                results = _match_ion(mono_mass_arr, ion_info, ion_type, start, end, fixed_mods, unloc_mods, ppm)
+                all_results.extend(results)
+            #match ion without unloc mod anyway
             ion_info = calculate_ion(sequence, start, end, ion_type, fixed_mods, [])
             results = _match_ion(mono_mass_arr, ion_info, ion_type, start, end, fixed_mods, [], ppm)
             all_results.extend(results)

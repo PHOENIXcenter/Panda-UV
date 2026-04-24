@@ -1,8 +1,8 @@
 {
   "sequence": {
-    "1": "GLSDGEWQQVLNVWGKVEADIAGHGQEVLIRLFTGHPETLEKFDKFKHLKTEAEMKASEDLKKHGTVVLTALGGILKKKGHHEAELKPLAQSHATKHKIPIKYLEFISDAIIHVLHSKHPGDFGADAQGAMTKALELFRNDIAAKYKELGFQG"
+    "1": "SHHWGYGKHNGPEHWHKDFPIANGERQSPVDIDTKAVVQDPALKPLALVYGEATSRRMVNNGHSFNVEYDDSQDKAVLKDGPLTGTYRLVQFHFHWGSSDDQGSEHTVDRKKYAAELHLVHWNTKYGDFGTAAQQPDGLAVVGVFLKVGDANPALQKVLDALDSIKTKGKSTDFPNFDPGSLLPNVLDYWTYPGSLTTPPLLESVTWIVLKEPISVSSQQMLKFRTLNFNAEGEPELLMLANWRPAQPLKNRQVRGFPK"
   },
-  "msalign_file_dir": ".\\examples\\20230621_Mb_Different_Energy_193nm_uvpd_1_1mj_Z8_2196_1\\20230621_Mb_Different_Energy_193nm_uvpd_1_1mj_Z8_2196_1_ms2.msalign",
+  "msalign_file_dir": ".\\examples\\20220411_NativeCA_UVPD193_Z10_AT1_1\\20220411_NativeCA_UVPD193_Z10_AT1_1_ms2.msalign",
   "unloc_mod": {
     "header": [
       "name",
@@ -11,20 +11,26 @@
       "end_loc",
       "ion type"
     ],
-    "1": 
-    [[
-      "615.1694679916101",
-      "unknown",
+    "2": 
+    [
+      ["Zn",
+      "ZnH-2",
       "any",
       "any",
-      "any"
-    ]]
+      "any"]
+    ]
   },
   "fixed_mod": {
     "header": [
       "name",
       "formula",
       "loc"
+    ],
+    "1": 
+    [
+      ["Ac",
+      "H2C2O",
+      1]
     ]
   },
   "mass_calibration": true,
@@ -56,13 +62,13 @@
     "cx",
     "cy"
   ],
-  "mzml_file_dir": ".\\examples\\20230621_Mb_Different_Energy_193nm_uvpd_1_1mj_Z8_2196_1\\20230621_Mb_Different_Energy_193nm_uvpd_1_1mj_Z8_2196_1.mzML",
+  "mzml_file_dir": ".\\examples\\20220411_NativeCA_UVPD193_Z10_AT1_1\\20220411_NativeCA_UVPD193_Z10_AT1_1.mzML",
   "scans": [
     1
   ],
   "prsm_id": {
     "1": 0
   },
-  "workplace_dir": ".\\examples\\20230621_Mb_Different_Energy_193nm_uvpd_1_1mj_Z8_2196_1",
+  "workplace_dir": ".\\examples\\20220411_NativeCA_UVPD193_Z10_AT1_1",
   "thread": 1
 }

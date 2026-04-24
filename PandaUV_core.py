@@ -443,7 +443,7 @@ def argp():
 
 if __name__ == "__main__":
     param = Param()
-    param.read_param(r"example_param_Mb_monomer.json")
+    param.read_param(r"example_param_CA_monomer.json")
     #param.read_param("example_param_OT_rep1_toppic1.5.4.json")
     #param.read_param(r"Z:\I\EnvCNN_Publish_Data\Ovarian_Tumor_Data\raw\CPTAC_Intact_rep1_15Jan15_Bane_C2-14-08-02RZ_html\toppic_prsm_cutoff\data_js\prsms\Panda-UV_param.json")
     param["thread"] = 1
