@@ -1,3 +1,4 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 examples/CPTAC_Intact_rep1_15Jan15_Bane_C2-14-08-02RZ/*.mzML filter=lfs diff=lfs merge=lfs -text
+examples/20250120_C_2ug_SV2_HCD_30NCE_C18_1/*.mzML filter=lfs diff=lfs merge=lfs -text
