@@ -209,7 +209,7 @@ def parse_prsm_directory(msalign_file_dir, mzml_file_dir, workplace_dir, prsm_di
 
 if __name__ == "__main__":
     # Example 1: Full directory parsing
-    base_dir = r"D:\F\JUPYTER\BPRC-2025\DICP-2025\LiuNing\TopPICOut\TopFD\20250120_C_2ug_SV2_HCD_30NCE_C18_1"
+    base_dir = r".\examples\20250120_C_2ug_SV2_HCD_30NCE_C18_1"
     mzml_file_dir = os.path.join(
         base_dir, "20250120_C_2ug_SV2_HCD_30NCE_C18_1.mzML"
     )
@@ -225,8 +225,3 @@ if __name__ == "__main__":
         msalign_file_dir, mzml_file_dir, workplace_dir, prsm_dir
     )
     param.save_param()
-
-    # Example 2: Single file parsing for testing
-    #prsm_data = parse_prsm_file("prsm27.js")
-    #sub_param = prsm_to_pandauv_param(prsm_data)
-    #print(sub_param)
